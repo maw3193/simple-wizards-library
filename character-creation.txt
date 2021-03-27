@@ -1,0 +1,85 @@
+Character Creation
+==================
+
+Firstly, don't worry too much about getting your character sheet right at character creation, I am happy for players to tweak it later.
+
+Below are some character creation rules. In addition, I will be making example characters, some based off these rules and some weirder; and feel free to talk to me if you have a character concept you want to try.
+
+Point budget
+------------
+
+Your characters in this campaign start as 75-point characters, where 25 of those points are earmarked for magical abilities.
+
+Your characters are assumed to have settled lifestyles with ordinary jobs and hobbies, take some time to think about what skills might be useful for adventuring and an ordinary job.
+Admittedly, short of being a professional athlete or martial arts instructor, combat skills aren't part of your job.
+
+e.g.
+* Savoir-Faire (Servant) is useful for customer service jobs, and also lets you infiltrate a place by impersonating service staff.
+* Research is useful for a librarian or academic, and also useful for looking stuff up.
+
+Your point spending rules are:
+* Point budget of 50 points to be spent freely
+* -50 points of Disadvantages
+* -5 points of Quirks
+* A total of 105 points can be spent in attributes, advantages and skills
+* Up to 5 of those points can be spent on perks, though I'd recommend coming back to this after you've decided on your magical abilities.
+  - Basic Set page 100 has a brief explanation of perks and some examples.
+  - There are more examples of perks in GURPS Power-ups 2: Perks
+  - In general, anything that provides a small bonus in certain situations, or a bigger bonus in rare situations counts as a perk.
+  - Attribute Substitution, which can be used on all skills and spells, is strongly recommended.
+  - The optional rule Faster Casting (Thaumatology:39) may be picked up by spending a perk on it.
+  - Replacing your magical critical failure table with a variant from Thaumatology:256 is a perk.
+  - Experienced players may want to pick up Spell Variation, to use Adjustable Spells (Thaumatology p39) on one spell
+  - Experienced players may want to pick up Spell Enhancement, to use Adjustable Spells (Thaumatology p39) to apply an enhancement to any spell they know.
+
+Magical Abilities
+-----------------
+
+You have 25 points to spend on magical abilities.
+
+Spellcasting is heavily based off a player character's Intelligence (IQ), but that would limit the kind of characters you can play if the only way to do cool stuff was to be a wizard, so I have multiple ways to do magic.
+
+Wizard
+~~~~~~
+
+A person who casts spells. Spells are a special kind of skill which takes a certain amount of time and energy (usually from fatigue points, FP) to cast. Roll against the spell's skill level to activate the spell, and then potentially roll against a different skill to deliver the spell (e.g. Innate Attack(Missile) to aim a fireball).
+Spells are by default IQ/Hard skills with a bonus based on their level of the Magery advantage.
+Spells are divided into a large number of colleges (see the table of contents of GURPS Magic for all 24).
+
+In this setting, wizards are naturally somewhat specialised, having higher Magery for one college than others.
+i.e. if you pick a mage you will have Magery 1 [15], and Magery +1 (one college only, -40%) [6]
+You may specialise in any college except Gate, but Enchant is not particularly useful.
+
+An untrained mage (i.e. a starting player character) learns up to 4 points in spells as their brain develops. Called "babble-spells", they are easier than normal spells (i.e. they are IQ/Average difficulty), but wizards look down on using them because they sound like baby-speak instead of a dignified ancient language.
+The easiest way to pick spells is to flick between GURPS Magic and GURPS Magic - Spell Charts.
+
+I am explicitly allowing any wizard to use the Trading Energy for Skill option from GURPS Thaumatology, page 39 (tl;dr, use the Extra Energy bonuses from Ceremonial Magic in Basic Set p238 for all spellcasting)
+
+Mage
+~~~~
+
+A person who uses magical abilities, which aren't necessarily spells. Wizards may also learn non-spell magical abilities later.
+
+A magical ability is any ability built out of advantages in GURPS that has the (magical, -10%) limitation applied to it.
+e.g. a magical missile could be built as Innate Attack (crushing) 2 (Magical, -10%) [9].
+
+Since this flexibility isn't very helpful, feel free to ask me or find inspiration from:
+* GURPS Thaumatology:Sorcery, starting from page 12.
+* GURPS Powers, sample abilities starting from page 136.
+or https://enragedeggplant.blogspot.com/2017/03/sorcery-spell-index.html for ideas.
+
+Magic-resistant
+~~~~~~~~~~~~~~~
+
+Not particularly a magical ability, it's still more interesting than being totally mundane.
+Having any level of Magic Resistance makes you unable to cast spells.
+Buy as many levels as you like of:
+* Damage Resistance (Magic only -20%) [4/level] - Reduces the amount of damage taken by magic attacks only
+* Magic Resistance [2/level] - A penalty of -1 per level to any spell cast on you, and a +1 bonus to resist that spell.
+* Spend any spare points freely.
+
+Damage Resistance and Magic Resistance do not necessarily apply to every spell.
+* A fireball is not cast *on* you, it is cast to create a projectile that's thrown at you, and so Damage Resistance reduces the damage, but there is no skill penalty or resistance bonus.
+* A healing spell is cast on you, but is neither resistible, nor does it inflict damage. It would suffer a penalty from Magic Resistance, even when cast by a friend.
+* Death Vision is a spell with no resistance roll that doesn't inflict damage, the skill penalty would apply, but there is no bonus to resist, and no damage to reduce.
+* Dehydrate is a damaging spell that is cast on you and resisted. The caster suffers a penalty, you gain a bonus, and if you fail any damage is reduced by your levels of Damage Resistance.

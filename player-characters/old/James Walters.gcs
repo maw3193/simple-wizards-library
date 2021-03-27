@@ -1,0 +1,2481 @@
+{
+	"type": "character",
+	"version": 1,
+	"id": "f95c8606-509a-47a1-86d4-e9dccb302401",
+	"settings": {
+		"version": 1,
+		"default_length_units": "cm",
+		"default_weight_units": "kg",
+		"user_description_display": "tooltip",
+		"modifiers_display": "inline",
+		"notes_display": "inline",
+		"base_will_on_10": false,
+		"base_per_on_10": false,
+		"use_multiplicative_modifiers": false,
+		"use_modifying_dice_plus_adds": false,
+		"use_know_your_own_strength": false,
+		"use_reduced_swing": false,
+		"use_thrust_equals_swing_minus_2": false,
+		"use_simple_metric_conversions": true,
+		"show_college_in_sheet_spells": false,
+		"show_difficulty": false,
+		"use_title_in_footer": false,
+		"block_layout": [
+			"reactions",
+			"melee",
+			"ranged",
+			"advantages skills",
+			"spells",
+			"equipment",
+			"other_equipment",
+			"notes"
+		]
+	},
+	"created_date": "Feb 20, 2021, 2:04 PM",
+	"modified_date": "Feb 20, 2021, 6:41 PM",
+	"profile": {
+		"player_name": "phill",
+		"name": "James Walters",
+		"age": "26",
+		"birthday": "August 25",
+		"eyes": "Blue",
+		"hair": "Blond, Straight, Medium",
+		"skin": "Freckled",
+		"handedness": "Right",
+		"height": "164 cm",
+		"weight": "75 kg",
+		"gender": "Male",
+		"body_type": "humanoid",
+		"tech_level": "11"
+	},
+	"total_points": 75,
+	"ST": 10,
+	"DX": 10,
+	"IQ": 10,
+	"HT": 10,
+	"advantages": [
+		{
+			"type": "advantage",
+			"version": 1,
+			"id": "3eac2f9b-6954-4aa2-aeaf-128a88fd4ed0",
+			"based_on_id": "96072f1f-ce11-4eac-93d5-a7a08405f44c",
+			"based_on_hash": "v79Nn3biWSuLqEhJwIC13mm0rJHf8+f+pA58C4Sis+A",
+			"name": "Natural Attacks",
+			"physical": true,
+			"weapons": [
+				{
+					"type": "melee_weapon",
+					"damage": {
+						"type": "cr",
+						"st": "thr",
+						"base": "-1"
+					},
+					"usage": "Bite",
+					"reach": "C",
+					"parry": "No",
+					"block": "No",
+					"defaults": [
+						{
+							"type": "DX"
+						},
+						{
+							"type": "Skill",
+							"name": "Brawling"
+						}
+					]
+				},
+				{
+					"type": "melee_weapon",
+					"damage": {
+						"type": "cr",
+						"st": "thr",
+						"base": "-1"
+					},
+					"usage": "Punch",
+					"reach": "C",
+					"parry": "0",
+					"defaults": [
+						{
+							"type": "DX"
+						},
+						{
+							"type": "Skill",
+							"name": "Boxing"
+						},
+						{
+							"type": "Skill",
+							"name": "Brawling"
+						},
+						{
+							"type": "Skill",
+							"name": "Karate"
+						}
+					]
+				},
+				{
+					"type": "melee_weapon",
+					"damage": {
+						"type": "cr",
+						"st": "thr"
+					},
+					"usage": "Kick",
+					"reach": "C,1",
+					"parry": "No",
+					"defaults": [
+						{
+							"type": "DX",
+							"modifier": -2
+						},
+						{
+							"type": "Skill",
+							"name": "Brawling",
+							"modifier": -2
+						},
+						{
+							"type": "Skill",
+							"name": "Karate",
+							"modifier": -2
+						}
+					]
+				}
+			],
+			"reference": "B271"
+		},
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"id": "38b39cb2-1cff-45b3-b8f7-dbc7291f2a11",
+			"name": "Disadvantages",
+			"open": false,
+			"children": [
+				{
+					"type": "advantage_container",
+					"version": 1,
+					"id": "39009e29-4945-4679-8240-18eb769b9b8f",
+					"name": "Quirks",
+					"open": false,
+					"children": [
+						{
+							"type": "advantage",
+							"version": 1,
+							"id": "efd1cad6-5044-43f8-9404-d60ff968e83b",
+							"based_on_id": "7ada3a6c-f75a-4c6b-8b4c-3056a6a493ac",
+							"based_on_hash": "+JsZ7ZC+dh9vbWdF9jnwwTvf8OyiHG4hYjxV7wtzEKU",
+							"name": "Alcohol Intolerance",
+							"physical": true,
+							"base_points": -1,
+							"reference": "B165",
+							"notes": "-2 on any HT roll related to drinking",
+							"categories": [
+								"Quirk"
+							]
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"id": "9e46c4da-99a6-4f50-9ed9-356dff2aa383",
+							"based_on_id": "3d73e028-af63-4c40-963b-a52d31df4577",
+							"based_on_hash": "LrtmsMzjBuTK+JrXD0+k2m3BVHbadqPKNqA3Eq3Gav0",
+							"name": "Imaginative",
+							"mental": true,
+							"base_points": -1,
+							"reference": "B164",
+							"categories": [
+								"Quirk"
+							]
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"id": "9f69b5e9-4a57-4f8c-b85c-1f7cdf53c9c5",
+							"based_on_id": "26085661-514d-4a2d-8846-e1a24b1cc715",
+							"based_on_hash": "qmnFLjUharAPdJfUfl9rKL4HvWbLl0KnLB6KPhY0eSk",
+							"name": "Obsession",
+							"mental": true,
+							"levels": "0",
+							"base_points": -1,
+							"reference": "B164",
+							"notes": "Learning new Runes",
+							"categories": [
+								"Quirk"
+							]
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"id": "f92ebd4b-108e-478b-b2b2-dfb090534b59",
+							"based_on_id": "eb77d866-160f-4fea-8fc5-42bdadb620e7",
+							"based_on_hash": "sCjC6wKkByet9za+IgaqzPALkFHdKc6+t/t/xfzZbCk",
+							"name": "Attentive",
+							"mental": true,
+							"base_points": -1,
+							"reference": "B163",
+							"notes": "+1 bonus when working on lengthy tasks, but -3 to notice any important interruption",
+							"categories": [
+								"Quirk"
+							]
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"id": "649015c7-553c-4794-b78b-d062d1e72e1a",
+							"based_on_id": "1572d938-504a-4a58-a034-f0cde837eb4e",
+							"based_on_hash": "pzei0aAsq6aFRmw6Cl25ugJgzwLNXdsLOhXCFf2uGQg",
+							"name": "Careful",
+							"mental": true,
+							"base_points": -1,
+							"reference": "B163",
+							"categories": [
+								"Quirk"
+							]
+						}
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"id": "655df1e9-aa0b-4c81-9c0c-eaa4d011c7a2",
+					"based_on_id": "ee1c0420-ae79-4450-ba08-1ab81fa62259",
+					"based_on_hash": "rBAmVA1owwatsT3zUx9V0KQFWBl9AcLcdmBOkStL5Jw",
+					"name": "Workaholic",
+					"physical": true,
+					"base_points": -5,
+					"reference": "B162",
+					"categories": [
+						"Disadvantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"id": "cb50d1d6-2e11-4b3f-9bbf-ab9e281c488a",
+					"based_on_id": "ced7cf08-a7d9-479e-8f05-3b8ae579e9f7",
+					"based_on_hash": "htZRp2gQiHBWbTO4zbwqrweJ9nWL61nzN6Ay4XizAA4",
+					"name": "Pacifism: Reluctant Killer",
+					"mental": true,
+					"base_points": -5,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "2e0d6924-986e-4ff9-85ba-667e33dadfd0",
+							"based_on_id": "6d3031de-32e5-4203-a9ad-f1ff23f723fd",
+							"based_on_hash": "050FoMFaZVVWQQB6EmvMejqaZvwAEBKVdknmyPTlNBo",
+							"disabled": true,
+							"name": "Species-Specific",
+							"reference": "UT32",
+							"cost_type": "percentage",
+							"cost": -80,
+							"affects": "total"
+						}
+					],
+					"reference": "B148",
+					"notes": "You are psychologically unprepared to kill people. Whenever you make a deadly attack (e.g., with a knife or a gun) against an obvious person whose face is visible to you, you are at -4 to hit and may not Aim. If you cannot see the foe’s face (due to a mask, darkness, or distance, or because you attacked from behind), the penalty is only -2, save in close combat. You have no penalty to attack a vehicle (even an occupied one), an opponent you do not believe is a person (including things with Horrific or Monstrous appearance), or a target you can’t actually see (e.g., a set of map coordinates or a blip on a radar screen). If you kill a recognizable person, the effect on you is the same as for Pacifism: Cannot Kill. You have no problem with your allies killing; you may even supply ammo, loaded weapons, and encouragement! You just can’t do the killing yourself.",
+					"categories": [
+						"Disadvantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"id": "53de5ba8-8440-4e42-8fd3-2fc4f91fb1c3",
+					"based_on_id": "d32cbfce-3995-4c4c-982c-4c06bdd2841f",
+					"based_on_hash": "4HzYTpuAJcsu2h5sYjvGNuITsWUEFzfbf77X1v9neZg",
+					"name": "Post-Combat Shakes",
+					"mental": true,
+					"base_points": -5,
+					"cr": 12,
+					"reference": "B150",
+					"notes": "Make a self-control roll at the end of any battle. If you fail, roll 3d, add the amount by which you failed your self-control roll, and look up the result on the Fright Check Table.",
+					"categories": [
+						"Disadvantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"id": "06423d32-5db1-4211-aacc-ad419e313043",
+					"based_on_id": "e56ec21e-3b8a-4ecf-b320-52a4add3ffaf",
+					"based_on_hash": "FXnoWVwSE0ZFaVkcEzJZIoyj56m6D5nQChQbIpOl5Ns",
+					"name": "Motion Sickness",
+					"physical": true,
+					"base_points": -10,
+					"reference": "B144",
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "skill_prereq",
+								"has": false,
+								"name": {
+									"compare": "is",
+									"qualifier": "submariner"
+								}
+							},
+							{
+								"type": "skill_prereq",
+								"has": false,
+								"name": {
+									"compare": "is",
+									"qualifier": "submarine"
+								}
+							},
+							{
+								"type": "skill_prereq",
+								"has": false,
+								"name": {
+									"compare": "is",
+									"qualifier": "spacer"
+								}
+							},
+							{
+								"type": "skill_prereq",
+								"has": false,
+								"name": {
+									"compare": "is",
+									"qualifier": "shiphandling"
+								}
+							},
+							{
+								"type": "skill_prereq",
+								"has": false,
+								"name": {
+									"compare": "is",
+									"qualifier": "seamanship"
+								}
+							},
+							{
+								"type": "skill_prereq",
+								"has": false,
+								"name": {
+									"compare": "contains",
+									"qualifier": "crewman"
+								}
+							},
+							{
+								"type": "skill_prereq",
+								"has": false,
+								"name": {
+									"compare": "is",
+									"qualifier": "boating"
+								}
+							},
+							{
+								"type": "skill_prereq",
+								"has": false,
+								"name": {
+									"compare": "is",
+									"qualifier": "airshipman"
+								}
+							},
+							{
+								"type": "skill_prereq",
+								"has": false,
+								"name": {
+									"compare": "contains",
+									"qualifier": "driving"
+								}
+							},
+							{
+								"type": "skill_prereq",
+								"has": false,
+								"name": {
+									"compare": "contains",
+									"qualifier": "piloting"
+								}
+							}
+						]
+					},
+					"notes": "You may never learn any vehicle-operation skill. You must roll vs. HT as soon as you are aboard a moving vehicle. On a failure, you vomit and are at -5 on all DX, IQ, and skill rolls for the rest of the journey. On a success, you are merely miserably queasy and at -2 on DX, IQ, and skill rolls. Roll daily on long journeys.",
+					"categories": [
+						"Disadvantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"id": "489ff222-a488-4565-a3fc-bdc0b19dad0a",
+					"based_on_id": "be5292c1-f73b-487f-a31c-1231e69f9e48",
+					"based_on_hash": "hBbexgixMYIywYSypKfdWNOYW2l004RGVQ6WJuXe7Vo",
+					"name": "Code of Honor (Professional)",
+					"mental": true,
+					"base_points": -5,
+					"reference": "B127",
+					"notes": "Adhere to the ethics of your profession; always do your job to the best of your ability; support your guild, union, or professional association.",
+					"categories": [
+						"Disadvantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"id": "866b8824-88b0-44da-bb7e-9bd85a283d74",
+					"based_on_id": "9ecab8b4-75a0-40b4-a232-cb529c165769",
+					"based_on_hash": "ZPNRbymHITEcF3+LRtgdnrLLhwSoobsW28QVfQBjtPU",
+					"name": "Insomniac",
+					"physical": true,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "e6de76e9-c1ab-420d-a544-cec9f9fdd2b8",
+							"based_on_id": "e47e9c6f-e931-4653-b330-dca69460b277",
+							"based_on_hash": "8UTtvHyU5aMaA0dD5zI+G/xHmyJgD5sN9KvnXMdk/1Y",
+							"name": "Mild",
+							"reference": "B140",
+							"cost_type": "points",
+							"cost": -10,
+							"affects": "total",
+							"notes": "GM secretly rolls 3d for the number of days between episodes"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "60ae4ae2-9fb1-497e-9e69-137985b09e39",
+							"based_on_id": "160153c2-a7b8-49f7-b638-940d2a427f25",
+							"based_on_hash": "vqvOEk/mO4YqpYQs0SHMVq63ASTFtC7NjzZlZQ2i4rQ",
+							"disabled": true,
+							"name": "Severe",
+							"reference": "B140",
+							"cost_type": "points",
+							"cost": -15,
+							"affects": "total",
+							"notes": "GM secretly rolls 2d-1 for the number of days between episodes"
+						}
+					],
+					"reference": "B140",
+					"categories": [
+						"Disadvantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"id": "c3e8c0f2-fdd9-4185-88e0-1d16c78e93c3",
+					"based_on_id": "bd56b1ff-55d0-4f27-8ed4-a7101a23a827",
+					"based_on_hash": "I4f43R9GlzlratzcJZjiQedYbPKlReg0rRZtICqohmQ",
+					"name": "Clueless",
+					"mental": true,
+					"base_points": -10,
+					"reference": "B126",
+					"features": [
+						{
+							"type": "skill_bonus",
+							"amount": -4,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "starts_with",
+								"qualifier": "savoir-faire"
+							}
+						},
+						{
+							"type": "reaction_bonus",
+							"amount": -2,
+							"situation": "from others"
+						}
+					],
+					"notes": "+4 to resist Sex Appeal",
+					"categories": [
+						"Disadvantage"
+					]
+				}
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"id": "3df787fc-060b-4619-b6a2-17a52f5e0c60",
+			"based_on_id": "149239c1-aec9-4acc-a5fe-07b64cf6a323",
+			"based_on_hash": "oBXgu3PgreWBHmR9s8lObu9I03M6NDVzuRP7Bz8HpF4",
+			"name": "Language: English",
+			"mental": true,
+			"modifiers": [
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "1bd0b6d9-a4f1-4322-b3bf-f2594319e9d9",
+					"based_on_id": "ff972d9a-b925-4895-a489-f3d14999074d",
+					"based_on_hash": "PTZ6jSAPUWKOKlORCr9hRHiy6DHR1CAf503TJLM/3rM",
+					"name": "Native",
+					"reference": "B23",
+					"cost_type": "points",
+					"cost": -6,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "546b3924-501e-48f7-83a2-2e5014b67b38",
+					"based_on_id": "e9f38c71-c4bd-45ee-a5e2-b47a33029f96",
+					"based_on_hash": "DtKZ0Vo3//iUI1VmkwoJuy/9b7gbaYUwli62x1ao3cs",
+					"disabled": true,
+					"name": "Spoken",
+					"reference": "B24",
+					"cost_type": "points",
+					"cost": 0,
+					"affects": "total",
+					"notes": "None"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "8a4add0d-b77f-4a17-b692-3cd8078e202d",
+					"based_on_id": "6cd10ab4-c4f9-4764-a47d-0e77d105d862",
+					"based_on_hash": "fUM0rV7DN4zKRRDMYD33argFmiTplQMuyap/Z8YtnoE",
+					"disabled": true,
+					"name": "Spoken",
+					"reference": "B24",
+					"cost_type": "points",
+					"cost": 1,
+					"affects": "total",
+					"notes": "Broken"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "96bd1c6b-59db-41bb-b605-ee99a0710e6e",
+					"based_on_id": "3c7caa3c-055e-4422-ac8e-6a2d632b391c",
+					"based_on_hash": "r29v7AGbJh2NjxafN936EHD4/hUhBNgHAPBe+e3906E",
+					"disabled": true,
+					"name": "Spoken",
+					"reference": "B24",
+					"cost_type": "points",
+					"cost": 2,
+					"affects": "total",
+					"notes": "Accented"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "41ad0e70-2e97-4a66-9d23-55eb9bcc47e5",
+					"based_on_id": "231ba28d-11ce-44e1-8d23-074d40ca57c6",
+					"based_on_hash": "HqLvrw3qdEeiAvADO50D/apgO+NfM8busq4EtKRpOug",
+					"name": "Spoken",
+					"reference": "B24",
+					"cost_type": "points",
+					"cost": 3,
+					"affects": "total",
+					"notes": "Native"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "72d3fed0-fcf2-4ac3-9dc1-75d8d4de24d4",
+					"based_on_id": "152ad20b-dc58-4abb-b256-71da14dbb89c",
+					"based_on_hash": "U1q00bshFEYtwcuKsNfd5Af9POb375cPsilahaLXHCs",
+					"disabled": true,
+					"name": "Written",
+					"reference": "B24",
+					"cost_type": "points",
+					"cost": 0,
+					"affects": "total",
+					"notes": "None"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "29d57077-0c2f-4c71-af42-1208178f1897",
+					"based_on_id": "6304a0d6-80f3-4a5f-b3cc-3ba2ae0c8063",
+					"based_on_hash": "kimMn5ME4U4gnqtTMo1Qs3sgqqwKog+E6DVoO+uO/9c",
+					"disabled": true,
+					"name": "Written",
+					"reference": "B24",
+					"cost_type": "points",
+					"cost": 1,
+					"affects": "total",
+					"notes": "Broken"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "ae211f22-b32d-4379-9662-d6628eac6a9c",
+					"based_on_id": "5818ab4a-2c4b-4c3e-a711-c4b6332daaca",
+					"based_on_hash": "1ZJQO6nenJpjW349i0CYwfgSVBF36JA6Htdf/zo3drY",
+					"disabled": true,
+					"name": "Written",
+					"reference": "B24",
+					"cost_type": "points",
+					"cost": 2,
+					"affects": "total",
+					"notes": "Accented"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "d1c45220-b204-4230-a038-99e5d63b940c",
+					"based_on_id": "1b77515e-5789-49a0-8238-7242900c8c2c",
+					"based_on_hash": "MoLKMZJQV3sFeR5r8Dm3Z09D1QeQqknOMkPCj0ZIQis",
+					"name": "Written",
+					"reference": "B24",
+					"cost_type": "points",
+					"cost": 3,
+					"affects": "total",
+					"notes": "Native"
+				}
+			],
+			"reference": "B24",
+			"categories": [
+				"Advantage",
+				"Language"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"id": "e4000162-f967-4b09-8c41-e84bd6056e2c",
+			"based_on_id": "25acb265-040d-41b5-82cf-80da17db93f6",
+			"based_on_hash": "X0Fv22JfhEHrWNSr2Pr4r/z70SpNkxQixzQf9+I9Dgc",
+			"name": "Increased Intelligence",
+			"mental": true,
+			"levels": "1",
+			"points_per_level": 20,
+			"reference": "B15",
+			"features": [
+				{
+					"type": "attribute_bonus",
+					"amount": 1,
+					"per_level": true,
+					"attribute": "iq"
+				}
+			],
+			"categories": [
+				"Advantage",
+				"Attribute"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"id": "ce491f58-2c94-47d9-82eb-4c1075c5f0fc",
+			"based_on_id": "4aec1709-0f45-461a-b72d-879f26b22e5f",
+			"based_on_hash": "iO63QSQBm2L58y/17PUrVFAxlNpidpcPF+Se3/NNQHQ",
+			"name": "Extra Fatigue Points",
+			"physical": true,
+			"levels": "3",
+			"points_per_level": 3,
+			"reference": "B16",
+			"features": [
+				{
+					"type": "attribute_bonus",
+					"amount": 1,
+					"per_level": true,
+					"attribute": "fp"
+				}
+			],
+			"categories": [
+				"Advantage",
+				"Attribute"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"id": "1c4d50d4-b4a3-429a-ba60-8cfe7009a22b",
+			"based_on_id": "fc1edb7b-7b9e-416f-9cb3-1498ccc2f70a",
+			"based_on_hash": "PvYJUuWgZAH/Q4dT4HqtqOjaFkdMuDgNnbrESBBs7rM",
+			"name": "Magery",
+			"mental": true,
+			"supernatural": true,
+			"levels": "1",
+			"base_points": 5,
+			"points_per_level": 10,
+			"modifiers": [
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "29625568-3bd8-46d0-878f-00de9000edbc",
+					"based_on_id": "10b7c609-d742-473c-a229-fd39e10a948f",
+					"based_on_hash": "qne7HrIsfGy+3a2F1RIYaGi99ydJHh8HaOQMCsLZj8Q",
+					"disabled": true,
+					"name": "Dance",
+					"cost_type": "percentage",
+					"cost": -40,
+					"affects": "levels_only"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "0aa91397-eed5-4fa0-b3d6-ef4f485f5fb3",
+					"based_on_id": "8cffcc39-a19c-4aa2-8a65-f270534b6ad7",
+					"based_on_hash": "0LPZ0SzkIjNbZTlQfd0e+SUjg+hB3P3HF9hjYQW5kYQ",
+					"disabled": true,
+					"name": "Dark-Aspected",
+					"cost_type": "percentage",
+					"cost": -50,
+					"affects": "levels_only"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "335418d9-61f0-4566-8ae9-fb8ac3816a16",
+					"based_on_id": "9a43b6eb-5fca-4b3b-9475-9c8922652001",
+					"based_on_hash": "yYakF9qSfCGrHUBSxdGevWjP2b1l4Xu6nAon2vWqVuw",
+					"disabled": true,
+					"name": "Day-Aspected",
+					"cost_type": "percentage",
+					"cost": -40,
+					"affects": "levels_only"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "d0dd94c4-1273-43e9-b3b8-952b967a7c34",
+					"based_on_id": "1db3c1d2-12b8-4d9f-aaec-8a1f58f99922",
+					"based_on_hash": "yXuErZjwefu4U//KDsSCvC2ysaIKzfTpGNRg7HDB3Zg",
+					"disabled": true,
+					"name": "Musical",
+					"cost_type": "percentage",
+					"cost": -50,
+					"affects": "levels_only"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "f7db6236-ff6d-4b2e-893b-d357cfe3aa8d",
+					"based_on_id": "7ef63d35-934c-4046-8b55-22208f7a99b6",
+					"based_on_hash": "xmNdgA2F0//Q0zcPnBvhmsBts/DvG+XI6UW91RCTCds",
+					"disabled": true,
+					"name": "Night-Aspected",
+					"cost_type": "percentage",
+					"cost": -40,
+					"affects": "levels_only"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "869640b6-eca5-4075-973b-ccd4bab0689c",
+					"based_on_id": "0f92e868-30bd-4a88-8dd7-d1929eb47c0e",
+					"based_on_hash": "ShrrpVNa90OJuR8CKyMAbExHTc+R4ttCb7DNJrvozPY",
+					"disabled": true,
+					"name": "One College",
+					"cost_type": "percentage",
+					"cost": -40,
+					"affects": "levels_only",
+					"notes": "@College@"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "bed69244-c316-4536-8a6b-820ff82959cb",
+					"based_on_id": "7a67c4c3-2454-43a0-acd4-aac1265bd79a",
+					"based_on_hash": "a3E3szPgpMMzeEC0JoUa0/J2zkZbFQuig2smIqpmnb8",
+					"disabled": true,
+					"name": "Solitary",
+					"cost_type": "percentage",
+					"cost": -40,
+					"affects": "levels_only"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "08a6b994-0c9e-44ae-b6da-4148352f78a0",
+					"based_on_id": "162576be-563f-43f2-9bd3-91db2defc569",
+					"based_on_hash": "DeH1r/tiJqzZUhRGVZ77Rwv5IEC/Zp7w34aSkRyC95s",
+					"disabled": true,
+					"name": "Song",
+					"cost_type": "percentage",
+					"cost": -40,
+					"affects": "levels_only"
+				}
+			],
+			"reference": "B66",
+			"features": [
+				{
+					"type": "spell_bonus",
+					"amount": 1,
+					"per_level": true,
+					"match": "all_colleges"
+				},
+				{
+					"type": "skill_bonus",
+					"amount": 1,
+					"per_level": true,
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "thaumatology"
+					}
+				}
+			],
+			"categories": [
+				"Advantage"
+			]
+		},
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"id": "88849bf7-eb3f-4d29-80ec-6cc4610d295a",
+			"name": "Maybe",
+			"open": true,
+			"children": [
+				{
+					"type": "advantage",
+					"version": 1,
+					"id": "56515f37-0806-4544-8b35-464894218797",
+					"based_on_id": "9014fdc9-c2ea-4e73-8ddb-b0a0a119043c",
+					"based_on_hash": "sUpaNiikPY1iGo57EOx+4aL6dmYNy0ect7YB886t8wY",
+					"name": "Power Talent (Runic Research)",
+					"mental": true,
+					"levels": "5",
+					"points_per_level": 5,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "ed55a21f-44d3-4538-87e7-b7ad6a72f6c0",
+							"based_on_id": "21481e22-e276-4b1b-b0c8-1b2e51c7b727",
+							"based_on_hash": "XztwtpVXxs3y5LvjOHx4nnTpzx3gvJ5vFSa9EtjNits",
+							"disabled": true,
+							"name": "Reaction Bonus",
+							"cost_type": "percentage",
+							"cost": 0,
+							"affects": "total",
+							"notes": "Students and teachers"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "1d64d39f-6199-46c9-9e6f-cc3de0ad527f",
+							"based_on_id": "e30f20a0-b0a1-4bcf-bf5f-1cb4c4fb736f",
+							"based_on_hash": "Mzu06ZgN1OLp4+8TCZddEy7bp3vnztqm0PwprINNVP4",
+							"name": "Alternate Benefit",
+							"cost_type": "percentage",
+							"cost": 0,
+							"affects": "total",
+							"notes": "+1/Level to any roll that benefits Symbol Drawing"
+						}
+					],
+					"reference": "PU3:6",
+					"features": [
+						{
+							"type": "skill_bonus",
+							"amount": 1,
+							"per_level": true,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Symbol Drawing"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": 1,
+							"per_level": true,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Artist"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": 1,
+							"per_level": true,
+							"selection_type": "skills_with_name",
+							"category": {
+								"compare": "is",
+								"qualifier": "Futhark Runes"
+							}
+						}
+					],
+					"categories": [
+						"Advantage",
+						"Talent"
+					]
+				}
+			]
+		}
+	],
+	"skills": [
+		{
+			"type": "skill",
+			"version": 1,
+			"id": "16849f2b-4158-4430-8e40-8bbd11913f47",
+			"based_on_id": "22255dbb-afc8-4e90-b9de-287713befe67",
+			"based_on_hash": "7kFBbLbj5ObDiNghYM+Hf3cNbHr21aUrB+9zpvVdNhg",
+			"name": "Research",
+			"reference": "B217",
+			"tech_level": "11",
+			"difficulty": "IQ/A",
+			"points": 1,
+			"defaulted_from": {
+				"type": "Skill",
+				"name": "Writing",
+				"modifier": -3,
+				"level": 7,
+				"adjusted_level": 7,
+				"points": -7
+			},
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "prereq_list",
+						"all": true,
+						"when_tl": {
+							"compare": "at_least",
+							"qualifier": 8
+						},
+						"prereqs": [
+							{
+								"type": "skill_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Computer Operation"
+								}
+							}
+						]
+					},
+					{
+						"type": "prereq_list",
+						"all": false,
+						"when_tl": {
+							"compare": "at_most",
+							"qualifier": 4
+						},
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "starts_with",
+									"qualifier": "Language"
+								},
+								"notes": {
+									"compare": "contains",
+									"qualifier": "Written (Native"
+								}
+							},
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "starts_with",
+									"qualifier": "Language"
+								},
+								"notes": {
+									"compare": "contains",
+									"qualifier": "Written (Accented)"
+								}
+							},
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "starts_with",
+									"qualifier": "Language"
+								},
+								"notes": {
+									"compare": "contains",
+									"qualifier": "Written (Broken)"
+								}
+							}
+						]
+					}
+				]
+			},
+			"defaults": [
+				{
+					"type": "IQ",
+					"modifier": -5
+				},
+				{
+					"type": "Skill",
+					"name": "Writing",
+					"modifier": -3
+				}
+			],
+			"categories": [
+				"Scholarly",
+				"Spy"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"id": "2a65aba8-af92-4dde-a811-7877d625cfa9",
+			"based_on_id": "f818e0a2-a332-4792-b154-49dade954638",
+			"based_on_hash": "OTTebUEcnCdw++PEgwIiuhIxmcQJoNetVEDR7So9wlg",
+			"name": "Writing",
+			"reference": "B228",
+			"difficulty": "IQ/A",
+			"points": 1,
+			"defaulted_from": {
+				"type": "IQ",
+				"modifier": -5,
+				"level": 6,
+				"adjusted_level": 6,
+				"points": -6
+			},
+			"defaults": [
+				{
+					"type": "IQ",
+					"modifier": -5
+				}
+			],
+			"categories": [
+				"Arts/Entertainment",
+				"Scholarly"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"id": "b97d1438-a3e8-4d6e-8130-415599f0481e",
+			"based_on_id": "9e5a62f6-d881-4ec2-9d7a-e353923ea3a8",
+			"based_on_hash": "28trsWGTJ/CVgznU3P4QElXspszJAP6X7P7Fwtay8uA",
+			"name": "Computer Operation",
+			"reference": "B184",
+			"tech_level": "11",
+			"difficulty": "IQ/E",
+			"points": 1,
+			"defaulted_from": {
+				"type": "IQ",
+				"modifier": -4,
+				"level": 7,
+				"adjusted_level": 7,
+				"points": -7
+			},
+			"defaults": [
+				{
+					"type": "IQ",
+					"modifier": -4
+				}
+			],
+			"categories": [
+				"Everyman",
+				"Scholarly",
+				"Technical"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"id": "73a65254-d21a-4964-854e-cf7b332530ae",
+			"based_on_id": "16df00d7-6bf6-49d3-8255-4d5fc14658e6",
+			"based_on_hash": "/Z3zvpr26zfespGux4j8iHNVHbcSDN7Y2ZhNclYV8iQ",
+			"name": "Speed-Reading",
+			"reference": "B222",
+			"difficulty": "IQ/A",
+			"points": 1,
+			"categories": [
+				"Scholarly"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"id": "6e65e06a-5009-4fb4-b010-6d8019533bef",
+			"based_on_id": "69cdfa23-3d48-498f-8443-73a156765878",
+			"based_on_hash": "kkBe3hqtV+CDEM10CFpBZ3M6Z/SRvErSQLm13oIo95s",
+			"name": "Thaumatology",
+			"reference": "B225",
+			"difficulty": "IQ/VH",
+			"points": 2,
+			"defaulted_from": {
+				"type": "IQ",
+				"modifier": -7,
+				"level": 4,
+				"adjusted_level": 4,
+				"points": -4
+			},
+			"defaults": [
+				{
+					"type": "IQ",
+					"modifier": -7
+				}
+			],
+			"categories": [
+				"Occult/Magical"
+			]
+		},
+		{
+			"type": "skill_container",
+			"version": 1,
+			"id": "e59b9776-1c95-4def-8daf-646ff3458075",
+			"name": "Runes",
+			"open": true,
+			"children": [
+				{
+					"type": "skill_container",
+					"version": 1,
+					"id": "6fa47bbf-a19d-45a0-9403-74a272e7f310",
+					"name": "Drawing",
+					"open": true,
+					"children": [
+						{
+							"type": "skill",
+							"version": 1,
+							"id": "6af11187-528a-4886-97d1-e247633b10e5",
+							"based_on_id": "ceca9876-fa4d-4b4e-a97a-ac9be0182e47",
+							"based_on_hash": "F2URIPzaaetVLK6HsbjubghvY4UU8bEKi9IZjif8iWU",
+							"name": "Artist",
+							"reference": "B179",
+							"specialization": "Calligraphy",
+							"difficulty": "IQ/H",
+							"points": 2,
+							"defaulted_from": {
+								"type": "IQ",
+								"modifier": -6,
+								"level": 5,
+								"adjusted_level": 5,
+								"points": -5
+							},
+							"defaults": [
+								{
+									"type": "IQ",
+									"modifier": -6
+								},
+								{
+									"type": "Skill",
+									"name": "Artist",
+									"specialization": "Drawing",
+									"modifier": -2
+								},
+								{
+									"type": "Skill",
+									"name": "Artist",
+									"specialization": "Illumination",
+									"modifier": -2
+								},
+								{
+									"type": "Skill",
+									"name": "Artist",
+									"specialization": "Painting",
+									"modifier": -2
+								},
+								{
+									"type": "Skill",
+									"name": "Artist",
+									"specialization": "Body Art",
+									"modifier": -4
+								},
+								{
+									"type": "Skill",
+									"name": "Artist",
+									"modifier": -6
+								}
+							],
+							"categories": [
+								"Arts/Entertainment"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"id": "8f2e070a-b159-4608-aefd-b48b87784b0f",
+							"based_on_id": "14bc906e-ef25-4677-b49a-690d06a5ed07",
+							"based_on_hash": "dCEL0i+TMoZ4HPtz3clinu3i2/9Zwg/tkWgrTD+TVgU",
+							"name": "Artist",
+							"reference": "B179",
+							"specialization": "Woodworking",
+							"difficulty": "IQ/H",
+							"points": 1,
+							"defaulted_from": {
+								"type": "IQ",
+								"modifier": -6,
+								"level": 5,
+								"adjusted_level": 5,
+								"points": -5
+							},
+							"defaults": [
+								{
+									"type": "IQ",
+									"modifier": -6
+								},
+								{
+									"type": "Skill",
+									"name": "Carpentry",
+									"modifier": -3
+								},
+								{
+									"type": "Skill",
+									"name": "Artist",
+									"specialization": "Interior Decorating",
+									"modifier": -4
+								},
+								{
+									"type": "Skill",
+									"name": "Artist",
+									"specialization": "Scene Design",
+									"modifier": -4
+								},
+								{
+									"type": "Skill",
+									"name": "Artist",
+									"modifier": -6
+								}
+							],
+							"categories": [
+								"Arts/Entertainment",
+								"Craft"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"id": "c209d59b-39ff-402c-a258-6cf0e4286cf2",
+							"based_on_id": "bfd4f41d-5b0e-451d-94a9-506ee2018772",
+							"based_on_hash": "9VsfmnsFfNoBFUG4RZaePecnqyQZtqaukSDYskjCH4w",
+							"name": "Artist",
+							"reference": "B179",
+							"specialization": "Sculpting",
+							"difficulty": "IQ/H",
+							"points": 2,
+							"defaulted_from": {
+								"type": "IQ",
+								"modifier": -6,
+								"level": 5,
+								"adjusted_level": 5,
+								"points": -5
+							},
+							"defaults": [
+								{
+									"type": "IQ",
+									"modifier": -6
+								},
+								{
+									"type": "Skill",
+									"name": "Artist",
+									"modifier": -6
+								}
+							],
+							"categories": [
+								"Arts/Entertainment",
+								"Craft"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"id": "d6066645-3813-4f84-883e-66655b98ae3a",
+							"based_on_id": "3272d174-0dec-47be-8dc4-ccb61944443e",
+							"based_on_hash": "fXOxlyvobvXHJhbgzEDvSnuEPgUDjh6tsNjY6je2Skg",
+							"name": "Symbol Drawing",
+							"reference": "B224",
+							"specialization": "Writing",
+							"difficulty": "IQ/H",
+							"points": 8,
+							"categories": [
+								"Occult/Magical"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"id": "988cf9d6-0526-4552-a3cf-25dcad337e00",
+							"based_on_id": "d6066645-3813-4f84-883e-66655b98ae3a",
+							"based_on_hash": "1fC6GS9QUetXagHqdZcy8ANS7RnwJQ1jJLnQ2gQe/7E",
+							"name": "Symbol Drawing",
+							"reference": "B224",
+							"specialization": "Carving",
+							"difficulty": "IQ/H",
+							"points": 8,
+							"categories": [
+								"Occult/Magical"
+							]
+						}
+					]
+				},
+				{
+					"type": "skill_container",
+					"version": 1,
+					"id": "54bd9bd0-3976-4c97-ab27-94857f7f27fa",
+					"name": "Symbols",
+					"open": true,
+					"children": [
+						{
+							"type": "skill",
+							"version": 1,
+							"id": "4e32f46e-2fad-4c6c-aa02-64f3ce75afb7",
+							"based_on_id": "382435c3-27c9-41c6-bc56-cfb946683130",
+							"based_on_hash": "7huSrgHfuErY16RNptlGSB9fYCW+qNkN5mhlhGr3Sew",
+							"name": "Uruz (U) [1]",
+							"difficulty": "IQ/H",
+							"points": 1,
+							"notes": "Strengthen / Repair / Make",
+							"categories": [
+								"Futhark Runes"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"id": "102532f4-7837-45cc-b410-5754114356d2",
+							"name": "Ansuz (A) [1]",
+							"difficulty": "IQ/H",
+							"points": 1,
+							"notes": "Communication / Separation / Insight",
+							"categories": [
+								"Futhark Runes"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"id": "007fe1d2-846a-495c-8fbe-5306b4c56283",
+							"based_on_id": "5bacc4e8-5449-49a1-b5b2-9850f3304b95",
+							"based_on_hash": "dqjQO90E5mXyReoRNzBYvMxs8PkzKnRLjmjpySaH97I",
+							"name": "Kenaz (K) [4]",
+							"difficulty": "IQ/A",
+							"points": 1,
+							"notes": "Fire",
+							"categories": [
+								"Futhark Runes"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"id": "5bacc4e8-5449-49a1-b5b2-9850f3304b95",
+							"based_on_id": "d56c9d71-6eaf-4dca-a48d-bede0e006ea4",
+							"based_on_hash": "PqDA6zvAqR/4xH7B6kZPLaAAxWbrf5v072P4cUVbzPU",
+							"name": "Wunjo (W) [3]",
+							"difficulty": "IQ/A",
+							"points": 1,
+							"notes": "Air",
+							"categories": [
+								"Futhark Runes"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"id": "382435c3-27c9-41c6-bc56-cfb946683130",
+							"based_on_id": "ef88a593-98e3-4992-81e5-0ca9f0101f3d",
+							"based_on_hash": "MXDLMLDvPozG1jvwIyQS4ipEbY5mSgGTafwW2fFLG5A",
+							"name": "Hagalaz (H) [1]",
+							"difficulty": "IQ/H",
+							"points": 1,
+							"notes": "Weaken / Break / Harm / End",
+							"categories": [
+								"Futhark Runes"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"id": "d56c9d71-6eaf-4dca-a48d-bede0e006ea4",
+							"based_on_id": "ad72d442-359e-4d5c-820d-741d6869530a",
+							"based_on_hash": "+rqt2Erlb/ACIeq1+TIHeEFEmrrO1s5wnoemqgmJ3Tc",
+							"name": "Eihwaz (EI) [2]",
+							"difficulty": "IQ/A",
+							"points": 1,
+							"notes": "Earth",
+							"categories": [
+								"Futhark Runes"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"id": "a746a4a6-ed9f-4407-ac73-53de602dd7c9",
+							"based_on_id": "7e9162fa-a2e0-427a-abb2-596e27d28bea",
+							"based_on_hash": "M/si3hP709cMglX7JYSBtmaPC4Euwf+1jzLNyp3zgrE",
+							"name": "Algiz (Z) [1]",
+							"difficulty": "IQ/H",
+							"points": 1,
+							"notes": "Protect / Guard",
+							"categories": [
+								"Futhark Runes"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"id": "7e9162fa-a2e0-427a-abb2-596e27d28bea",
+							"based_on_id": "4e32f46e-2fad-4c6c-aa02-64f3ce75afb7",
+							"based_on_hash": "NcBeDoJ1ZCbh88dEBTGGyec92UlqsRvJbBEWiJRz0iA",
+							"name": "Ehwaz (E) [0]",
+							"difficulty": "IQ/H",
+							"points": 1,
+							"notes": "Move / Travel / Progress",
+							"categories": [
+								"Futhark Runes"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"id": "ad72d442-359e-4d5c-820d-741d6869530a",
+							"based_on_id": "a746a4a6-ed9f-4407-ac73-53de602dd7c9",
+							"based_on_hash": "6Sy+3UffHyI+0xBWZ2okYp4KhStuL5D9fBl7tabb6cw",
+							"name": "Mannaz (M) [3]",
+							"difficulty": "IQ/A",
+							"points": 1,
+							"notes": "Body / Man / Human",
+							"categories": [
+								"Futhark Runes"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"id": "3baebb5b-ce48-4f88-a166-1a544addabc7",
+							"based_on_id": "007fe1d2-846a-495c-8fbe-5306b4c56283",
+							"based_on_hash": "y0BusIegme2bdQc2Ga2hqFMQ0y0Hf678hdTodxgcxFM",
+							"name": "Laguz (L) [2]",
+							"difficulty": "IQ/A",
+							"points": 1,
+							"notes": "Water",
+							"categories": [
+								"Futhark Runes"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"id": "ef88a593-98e3-4992-81e5-0ca9f0101f3d",
+							"based_on_id": "102532f4-7837-45cc-b410-5754114356d2",
+							"based_on_hash": "JQTBtX0RAFgbG3ABdes2b8UdjoUh1zlytj8Ls2bAKrA",
+							"name": "Ingwaz (NG)",
+							"difficulty": "IQ/H",
+							"points": 1,
+							"notes": "Healing / Fertility",
+							"categories": [
+								"Futhark Runes"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"id": "68351f20-4e42-4c05-bc76-3188b6e46fdf",
+							"based_on_id": "ef88a593-98e3-4992-81e5-0ca9f0101f3d",
+							"based_on_hash": "bq6Ca5P/Vppjow9T624AD5/Fbvsl/q4yhuEhlcih/Qg",
+							"name": "Dagaz (D)",
+							"difficulty": "IQ/A",
+							"points": 1,
+							"notes": "Light",
+							"categories": [
+								"Futhark Runes"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"id": "1610f700-d22f-46f0-84e3-7236a222c15f",
+							"based_on_id": "4e32f46e-2fad-4c6c-aa02-64f3ce75afb7",
+							"based_on_hash": "r65g/XFOuQD2xJ9cFoK4evaKidpDIJSf18bNZvLZLuk",
+							"name": "Thurisaz (TH) [3]",
+							"difficulty": "IQ/H",
+							"points": 1,
+							"notes": "Transform / Gateway / Tension",
+							"categories": [
+								"Futhark Runes"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"id": "11108f86-5839-4a79-b3bd-713cad4e8d8a",
+							"based_on_id": "382435c3-27c9-41c6-bc56-cfb946683130",
+							"based_on_hash": "fSve2/mZ1EcieppMkU9p8AgNPbJC7MdUEjql4E97Ahc",
+							"name": "Nauthiz (N) [2]",
+							"difficulty": "IQ/H",
+							"points": 1,
+							"notes": "Control / Bind",
+							"categories": [
+								"Futhark Runes"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"id": "df72d2ae-6e02-4ac3-a0c6-dbd5dcbb99a8",
+							"based_on_id": "a746a4a6-ed9f-4407-ac73-53de602dd7c9",
+							"based_on_hash": "gLRuscCh4zZhuBAHrrJGntWdaWgCt4xQ0wP4rf873S0",
+							"name": "Berkano (B) [2]",
+							"difficulty": "IQ/H",
+							"points": 1,
+							"notes": "Create / Growth",
+							"categories": [
+								"Futhark Runes"
+							]
+						}
+					]
+				},
+				{
+					"type": "skill_container",
+					"version": 1,
+					"id": "63ab06c0-eb15-4b78-8200-c9f9d118eed3",
+					"name": "Knowledge",
+					"open": false,
+					"children": [
+						{
+							"type": "skill",
+							"version": 1,
+							"id": "05c21105-40cf-464c-9dea-4bc47a4ea970",
+							"based_on_id": "6737a007-8564-46f2-b46c-446c227d5fef",
+							"based_on_hash": "+Re3K3qjUA/V7lbJZpiskL9AdILZ9vi8T6fmSbvxNPE",
+							"name": "History",
+							"reference": "B200",
+							"specialization": "Ancient Texts (Runes)",
+							"difficulty": "IQ/H",
+							"points": 1,
+							"defaulted_from": {
+								"type": "IQ",
+								"modifier": -6,
+								"level": 5,
+								"adjusted_level": 5,
+								"points": -5
+							},
+							"defaults": [
+								{
+									"type": "IQ",
+									"modifier": -6
+								}
+							],
+							"categories": [
+								"Social Sciences/Humanities"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"id": "241237d0-5cf3-4180-bf59-84362efd29cf",
+							"based_on_id": "02f3c1b9-8552-46ec-b1f8-592d39db6b51",
+							"based_on_hash": "x/3O8KGCrwH71X66KWqaqUTIrRPq/chcD915w72RHhQ",
+							"name": "Hidden Lore",
+							"reference": "B199",
+							"specialization": "Ancient Texts (Runes)",
+							"difficulty": "IQ/A",
+							"points": 1,
+							"categories": [
+								"Knowledge"
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"spells": [
+		{
+			"type": "spell_container",
+			"version": 1,
+			"id": "0fbb8e53-af69-4c39-9c04-8be25d6e3b1d",
+			"name": "Air",
+			"open": true,
+			"children": [
+				{
+					"type": "spell",
+					"version": 1,
+					"id": "2e81587b-a66d-4e53-a032-6cb22395e943",
+					"based_on_id": "343413c7-f1c8-4ba3-b2dd-2f8573eae874",
+					"based_on_hash": "eOYz5/Kj/ogDEW/MIUnu+BUOT9wbfu6a0YwSqOiXbVc",
+					"name": "Air Jet",
+					"reference": "M24",
+					"difficulty": "IQ/H",
+					"college": "Air",
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "1-3",
+					"maintenance_cost": "Same",
+					"casting_time": "1 sec",
+					"duration": "1 sec",
+					"weapons": [
+						{
+							"type": "melee_weapon",
+							"damage": {
+								"type": "kb/point",
+								"base": "2d"
+							},
+							"usage": "Jet",
+							"reach": "1/point",
+							"parry": "No",
+							"defaults": [
+								{
+									"type": "DX",
+									"modifier": -4
+								},
+								{
+									"type": "Skill",
+									"name": "Innate Attack",
+									"specialization": "Beam"
+								}
+							]
+						}
+					],
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "spell_prereq",
+								"has": true,
+								"sub_type": "name",
+								"qualifier": {
+									"compare": "is",
+									"qualifier": "shape air"
+								},
+								"quantity": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							}
+						]
+					},
+					"categories": [
+						"Air"
+					]
+				},
+				{
+					"type": "spell",
+					"version": 1,
+					"id": "42bb9299-1075-4d09-aa78-3622c7018a7d",
+					"based_on_id": "5c0772e0-63d8-4d4b-a0ba-9c7b44ab7acd",
+					"based_on_hash": "hij/A3c+ug9C5JamaBmg6PS2gDWGRCoLj4/9DsbrI8w",
+					"name": "Seek Air",
+					"reference": "M23",
+					"difficulty": "IQ/H",
+					"college": "Air",
+					"power_source": "Arcane",
+					"spell_class": "Information",
+					"casting_cost": "1",
+					"maintenance_cost": "-",
+					"casting_time": "1 sec",
+					"duration": "Instant",
+					"categories": [
+						"Air"
+					]
+				},
+				{
+					"type": "spell",
+					"version": 1,
+					"id": "657ced33-bf9f-4625-b5ab-9165a58055f8",
+					"based_on_id": "efe723e0-65f9-4a55-ba3b-c0f8f59bf405",
+					"based_on_hash": "4m5XPbNTmxeAsPoMWIAvvC0H/Ggzy/DY9aZNxSAUOhg",
+					"name": "Create Air",
+					"reference": "M23",
+					"difficulty": "IQ/H",
+					"college": "Air",
+					"power_source": "Arcane",
+					"spell_class": "Area",
+					"casting_cost": "1",
+					"maintenance_cost": "-",
+					"casting_time": "1 sec",
+					"duration": "5 sec",
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "spell_prereq",
+								"has": true,
+								"sub_type": "name",
+								"qualifier": {
+									"compare": "is",
+									"qualifier": "purify air"
+								},
+								"quantity": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							},
+							{
+								"type": "spell_prereq",
+								"has": true,
+								"sub_type": "name",
+								"qualifier": {
+									"compare": "is",
+									"qualifier": "seek air"
+								},
+								"quantity": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							}
+						]
+					},
+					"categories": [
+						"Air"
+					]
+				},
+				{
+					"type": "spell",
+					"version": 1,
+					"id": "3c22419c-679d-49ee-aa27-de4acccea5e9",
+					"based_on_id": "6890d210-8431-4fc2-b4c0-88b1e08b3cd5",
+					"based_on_hash": "m1X0jKthEA43vI63X2q/uvUo8N7PJ7LJjFmbBl3OYDI",
+					"name": "Body of Air",
+					"reference": "M24",
+					"difficulty": "IQ/H",
+					"college": "Air",
+					"power_source": "Arcane",
+					"spell_class": "Regular/R-HT",
+					"casting_cost": "4",
+					"maintenance_cost": "1",
+					"casting_time": "5 sec",
+					"duration": "1 min",
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "spell_prereq",
+								"has": true,
+								"sub_type": "name",
+								"qualifier": {
+									"compare": "is",
+									"qualifier": "shape air"
+								},
+								"quantity": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							}
+						]
+					},
+					"categories": [
+						"Air"
+					]
+				},
+				{
+					"type": "spell",
+					"version": 1,
+					"id": "47ef94f9-1721-4f74-a26a-5333f4e09a12",
+					"based_on_id": "351f8ef5-c4a5-4490-8296-b1c3f6eb1bd7",
+					"based_on_hash": "Ka8ESzF6QEvpyFL789Mae5BFESdBVzd6sLFFgNYNRLU",
+					"name": "Lightning",
+					"reference": "M196",
+					"difficulty": "IQ/H",
+					"college": "Air/Weather",
+					"power_source": "Arcane",
+					"spell_class": "Missile",
+					"casting_cost": "1-Magery",
+					"maintenance_cost": "-",
+					"casting_time": "1-3 sec",
+					"duration": "Instant",
+					"weapons": [
+						{
+							"type": "ranged_weapon",
+							"damage": {
+								"type": "burn/point",
+								"base": "1d-1"
+							},
+							"accuracy": "3",
+							"range": "50/100",
+							"defaults": [
+								{
+									"type": "DX",
+									"modifier": -4
+								},
+								{
+									"type": "Skill",
+									"name": "Innate Attack",
+									"specialization": "Beam"
+								}
+							]
+						}
+					],
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "prereq_list",
+								"all": false,
+								"prereqs": [
+									{
+										"type": "advantage_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "magery"
+										},
+										"level": {
+											"compare": "at_least",
+											"qualifier": 1
+										},
+										"notes": {
+											"compare": "contains",
+											"qualifier": "one college (weather)"
+										}
+									},
+									{
+										"type": "advantage_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "magery"
+										},
+										"level": {
+											"compare": "at_least",
+											"qualifier": 1
+										},
+										"notes": {
+											"compare": "does_not_contain",
+											"qualifier": "one college"
+										}
+									}
+								]
+							},
+							{
+								"type": "spell_prereq",
+								"has": true,
+								"sub_type": "college",
+								"qualifier": {
+									"compare": "contains",
+									"qualifier": "Air"
+								},
+								"quantity": {
+									"compare": "at_least",
+									"qualifier": 6
+								}
+							}
+						]
+					},
+					"categories": [
+						"Air",
+						"Weather"
+					]
+				},
+				{
+					"type": "spell",
+					"version": 1,
+					"id": "7b6ea9bb-abf6-4e83-94eb-bfc0f2371a45",
+					"based_on_id": "a0b096e2-c60e-4a34-9ad7-bd54d9c27088",
+					"based_on_hash": "Kb0SEZktP9ZQy/cg0iOAFTOFjcoEsIAynsPKhCo0Yjo",
+					"name": "Wall of Wind",
+					"reference": "M25",
+					"difficulty": "IQ/H",
+					"college": "Air",
+					"power_source": "Arcane",
+					"spell_class": "Area",
+					"casting_cost": "2",
+					"maintenance_cost": "Half",
+					"casting_time": "Instant",
+					"duration": "1 min",
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "spell_prereq",
+								"has": true,
+								"sub_type": "name",
+								"qualifier": {
+									"compare": "is",
+									"qualifier": "shape air"
+								},
+								"quantity": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							}
+						]
+					},
+					"categories": [
+						"Air"
+					]
+				},
+				{
+					"type": "spell",
+					"version": 1,
+					"id": "c1085078-74e5-4b75-973f-3dbf3fcaa59d",
+					"based_on_id": "ea06c82f-f326-4035-bff6-4157a00ed38d",
+					"based_on_hash": "RfqzuIxzyCc+P/nM46vVrWR7CThOOVt+5A/IO2DpLv0",
+					"name": "Shape Air",
+					"reference": "M24",
+					"difficulty": "IQ/H",
+					"college": "Air",
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "1-10",
+					"maintenance_cost": "-",
+					"casting_time": "1 sec",
+					"duration": "1 min",
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "spell_prereq",
+								"has": true,
+								"sub_type": "name",
+								"qualifier": {
+									"compare": "is",
+									"qualifier": "create air"
+								},
+								"quantity": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							}
+						]
+					},
+					"categories": [
+						"Air"
+					]
+				}
+			]
+		},
+		{
+			"type": "spell_container",
+			"version": 1,
+			"id": "81531dbc-6442-4e5c-bda7-af84961c6abd",
+			"name": "Meta",
+			"open": true,
+			"children": [
+				{
+					"type": "spell",
+					"version": 1,
+					"id": "9858e2f7-369e-42e1-8a9c-5cb3a2ec6c0a",
+					"based_on_id": "2e436e76-28eb-4279-8ee8-11b28eed9d74",
+					"based_on_hash": "lkADpOIMSNVdFdXvU+Ektf1bdHa5rAcwN0pxFketeps",
+					"name": "Conceal Magic",
+					"reference": "M122",
+					"difficulty": "IQ/H",
+					"college": "Meta",
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "1-5",
+					"maintenance_cost": "Same",
+					"casting_time": "3 sec",
+					"duration": "10 hrs",
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "spell_prereq",
+								"has": true,
+								"sub_type": "name",
+								"qualifier": {
+									"compare": "is",
+									"qualifier": "detect magic"
+								},
+								"quantity": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							},
+							{
+								"type": "prereq_list",
+								"all": false,
+								"prereqs": [
+									{
+										"type": "advantage_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "magery"
+										},
+										"level": {
+											"compare": "at_least",
+											"qualifier": 1
+										},
+										"notes": {
+											"compare": "contains",
+											"qualifier": "one college (meta)"
+										}
+									},
+									{
+										"type": "advantage_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "magery"
+										},
+										"level": {
+											"compare": "at_least",
+											"qualifier": 1
+										},
+										"notes": {
+											"compare": "does_not_contain",
+											"qualifier": "one college"
+										}
+									}
+								]
+							}
+						]
+					},
+					"categories": [
+						"Meta"
+					]
+				},
+				{
+					"type": "spell",
+					"version": 1,
+					"id": "11ced1cc-5580-4927-8623-1b41f49278be",
+					"based_on_id": "517ee2a7-6dfb-4d76-b08e-6800256dd2d2",
+					"based_on_hash": "+kw0KSlFjKLvcK7mvz571D8OcNsS02CRB3mabmz5rwg",
+					"name": "Ward",
+					"reference": "M122",
+					"difficulty": "IQ/H",
+					"college": "Meta",
+					"power_source": "Arcane",
+					"spell_class": "Blocking",
+					"casting_cost": "2 or 3",
+					"maintenance_cost": "-",
+					"casting_time": "1 sec",
+					"duration": "Instant",
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "magery"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 1
+								},
+								"notes": {
+									"compare": "contains",
+									"qualifier": "one college (meta)"
+								}
+							},
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "magery"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							}
+						]
+					},
+					"categories": [
+						"Meta"
+					]
+				}
+			]
+		},
+		{
+			"type": "spell_container",
+			"version": 1,
+			"id": "f57d9d2b-bb45-4e61-b195-fcd0a32a2c17",
+			"name": "Movement",
+			"open": false,
+			"children": [
+				{
+					"type": "spell",
+					"version": 1,
+					"id": "091ed1bf-17cd-4604-ad1e-b80e50780d1a",
+					"based_on_id": "97950e56-8e10-49b1-90bf-22a00c7e084d",
+					"based_on_hash": "0Kf9dPNyMWf7x9PX67fzZvD2xw2qWtnMg2dhI/LQ5DM",
+					"name": "Manipulate",
+					"reference": "M145",
+					"difficulty": "IQ/H",
+					"college": "Movement",
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "4",
+					"maintenance_cost": "3",
+					"casting_time": "3 sec",
+					"duration": "1 min",
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "spell_prereq",
+								"has": true,
+								"sub_type": "name",
+								"qualifier": {
+									"compare": "is",
+									"qualifier": "locksmith"
+								},
+								"quantity": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							}
+						]
+					},
+					"categories": [
+						"Movement"
+					]
+				},
+				{
+					"type": "spell",
+					"version": 1,
+					"id": "7be17c0a-6514-4043-a84e-472c1d566fe3",
+					"based_on_id": "2a8be093-d257-4b4b-9dac-862bb4d3540a",
+					"based_on_hash": "ahqUeLqpUSFoEAlK30xq4Rjw4MAEu+HQtoqDM3mbz5U",
+					"name": "Locksmith",
+					"reference": "M143",
+					"difficulty": "IQ/H",
+					"college": "Movement",
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "2",
+					"maintenance_cost": "2",
+					"casting_time": "1 sec",
+					"duration": "1 min",
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "spell_prereq",
+								"has": true,
+								"sub_type": "name",
+								"qualifier": {
+									"compare": "is",
+									"qualifier": "apportation"
+								},
+								"quantity": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							}
+						]
+					},
+					"categories": [
+						"Movement"
+					]
+				},
+				{
+					"type": "spell",
+					"version": 1,
+					"id": "b59679cc-83c6-44f5-b99c-4988dc060982",
+					"based_on_id": "3fe33132-a300-4326-bc7d-e5d4690aedb7",
+					"based_on_hash": "FyfERXf6ahAcOFoZZRom+V6heDh9MdldqcsRIPFO0EA",
+					"name": "Apportation",
+					"reference": "M142",
+					"difficulty": "IQ/H",
+					"college": "Movement",
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "Varies",
+					"casting_time": "1 sec",
+					"duration": "1 min",
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "prereq_list",
+								"all": false,
+								"prereqs": [
+									{
+										"type": "advantage_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "magery"
+										},
+										"level": {
+											"compare": "at_least",
+											"qualifier": 1
+										},
+										"notes": {
+											"compare": "contains",
+											"qualifier": "one college (movement)"
+										}
+									},
+									{
+										"type": "advantage_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "magery"
+										},
+										"level": {
+											"compare": "at_least",
+											"qualifier": 1
+										},
+										"notes": {
+											"compare": "does_not_contain",
+											"qualifier": "one college"
+										}
+									}
+								]
+							}
+						]
+					},
+					"categories": [
+						"Movement"
+					]
+				}
+			]
+		},
+		{
+			"type": "spell_container",
+			"version": 1,
+			"id": "1e30fba2-2105-43a3-a8ef-0568c1e00447",
+			"name": "knowledge",
+			"open": true,
+			"children": [
+				{
+					"type": "spell",
+					"version": 1,
+					"id": "8aa33afe-953c-4fe7-91cc-690dd784b32d",
+					"based_on_id": "6d2d93e3-109c-46ed-86a3-a46cdc8cdfa1",
+					"based_on_hash": "GLi+IhRox/DHEcj+qJooxczcVAIu18mXrw+kCzF+JPM",
+					"name": "Detect Magic",
+					"reference": "M101",
+					"difficulty": "IQ/H",
+					"college": "Knowledge",
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "2",
+					"maintenance_cost": "-",
+					"casting_time": "5 sec",
+					"duration": "Instant",
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "magery"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 1
+								},
+								"notes": {
+									"compare": "contains",
+									"qualifier": "one college (knowledge)"
+								}
+							},
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "magery"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							}
+						]
+					},
+					"categories": [
+						"Knowledge"
+					]
+				},
+				{
+					"type": "spell",
+					"version": 1,
+					"id": "a970fc8a-4714-4557-a615-da5bc9c761d1",
+					"based_on_id": "0bb49a6f-8029-4782-883e-373ab85ea45d",
+					"based_on_hash": "oDX1pTv8cnDe1SSPUqOEZ8HHseoIAdW9aIROwRBAPto",
+					"name": "Wizard Hand",
+					"reference": "M104",
+					"difficulty": "IQ/H",
+					"college": "Knowledge/Movement",
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "Varies",
+					"maintenance_cost": "Varies",
+					"casting_time": "3 sec",
+					"duration": "1 min",
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "spell_prereq",
+								"has": true,
+								"sub_type": "name",
+								"qualifier": {
+									"compare": "is",
+									"qualifier": "manipulate"
+								},
+								"quantity": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							},
+							{
+								"type": "spell_prereq",
+								"has": true,
+								"sub_type": "name",
+								"qualifier": {
+									"compare": "is",
+									"qualifier": "far-feeling"
+								},
+								"quantity": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							}
+						]
+					},
+					"categories": [
+						"Knowledge",
+						"Movement"
+					]
+				},
+				{
+					"type": "spell",
+					"version": 1,
+					"id": "2bcbac63-2f86-49a9-a767-c4b808e95ed0",
+					"based_on_id": "45f57b27-4216-43b9-96a9-b786ff01e57d",
+					"based_on_hash": "BgGFUGo/Iq4IOVeHGTHze6ZmDPL7lhVz5AGalKBeV0s",
+					"name": "Far-Feeling",
+					"reference": "M100",
+					"difficulty": "IQ/H",
+					"college": "Knowledge",
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "3",
+					"maintenance_cost": "1",
+					"casting_time": "3 sec",
+					"duration": "1 min",
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "magery"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 1
+								},
+								"notes": {
+									"compare": "contains",
+									"qualifier": "one college (knowledge)"
+								}
+							},
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "magery"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							}
+						]
+					},
+					"categories": [
+						"Knowledge"
+					]
+				},
+				{
+					"type": "spell",
+					"version": 1,
+					"id": "6ca2ef1d-b89a-4672-a512-be05e15148a6",
+					"based_on_id": "1969b169-4314-4430-9d3e-99a1716ebddb",
+					"based_on_hash": "7HM9byUdK64MASKLJEU4gC+RjLhKggeUJ1Qaqsu4CcM",
+					"name": "Wizard Eye",
+					"reference": "M104",
+					"difficulty": "IQ/H",
+					"college": "Knowledge",
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "4",
+					"maintenance_cost": "2",
+					"casting_time": "2 sec",
+					"duration": "1 min",
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "spell_prereq",
+								"has": true,
+								"sub_type": "name",
+								"qualifier": {
+									"compare": "is",
+									"qualifier": "apportation"
+								},
+								"quantity": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							},
+							{
+								"type": "spell_prereq",
+								"has": true,
+								"sub_type": "name",
+								"qualifier": {
+									"compare": "is",
+									"qualifier": "keen vision"
+								},
+								"quantity": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							}
+						]
+					},
+					"categories": [
+						"Knowledge"
+					]
+				}
+			]
+		},
+		{
+			"type": "spell_container",
+			"version": 1,
+			"id": "088f2e7c-cd96-4f4e-b173-cfa0e5fd408d",
+			"name": "Mind Control",
+			"open": true,
+			"children": [
+				{
+					"type": "spell",
+					"version": 1,
+					"id": "9195277c-cc0e-41de-ad7f-e945766e307a",
+					"based_on_id": "83124f26-437f-49fc-b354-ceefb8a678ab",
+					"based_on_hash": "JI17ptiYFdjas80+HfVnkyRnCTS0Uo58Grq9MQZ7Aoo",
+					"name": "Keen Vision",
+					"reference": "M133",
+					"difficulty": "IQ/H",
+					"college": "Mind Control",
+					"power_source": "Arcane",
+					"spell_class": "Regular",
+					"casting_cost": "1/pt increase",
+					"maintenance_cost": "Half",
+					"casting_time": "1 sec",
+					"duration": "30 min",
+					"categories": [
+						"Mind Control"
+					]
+				}
+			]
+		}
+	],
+	"notes": [
+		{
+			"type": "note_container",
+			"version": 1,
+			"id": "74a2f8fb-2107-4625-88e2-d55887710da0",
+			"text": "Depending on medium, a different artistry skill is used\ne.g. parchment = calligraphy | wood = woodworking\nThaum pg 172/173\n\nThe lowest of [artist, $symbol, Symbol Drawing] is used for each symbol roll\n\nCan carry up to (symbol drawing - IQ) active parchments at any given time (min 1)\nThe user must know what the parchment does\nthe creator knows this automatically\nothers must take 10 minutes per symbol(n) and roll (Symbol Drawing - (n-1))\n\nActivation of symbols takes (n) seconds\n\nParchments take (Per symbol):\nEasy - 1 hour\nAverage - 3 hours\nHard - 6 hours\nVery Hard - 12 hours\n\nFinger Tracing takes (Per symbol):\nEasy - 2 Seconds\nAverage - 6 seconds\nHard - 12 Seconds\nVery Hard - 30 Seconds\n\nOne off Enchantments take (Per symbol) (all skills -2) (energy cost x2):\nEasy - 1 Minutes\nAverage - 3 Minutes\nHard - 6 Minutes\nVery Hard - 12 Minutes\n\nCost is calculated based on either:\nexisting spells - close to intended effect\nor\n\nverb cost + Noun cost, with duplicate symbols being counted each time\nthe exception being \"Control\" (Nauthiz)\nin this case, double the cost of the nouns effected by \"control\" (Nauthiz)\n\n",
+			"open": false
+		}
+	],
+	"print_settings": {
+		"printer": "Microsoft Print to PDF",
+		"units": "in",
+		"orientation": "portrait",
+		"width": 8.267716,
+		"height": 11.692913,
+		"top_margin": 0.25,
+		"left_margin": 0.25,
+		"bottom_margin": 0.249999,
+		"right_margin": 0.249999,
+		"ink_chromaticity": "monochrome",
+		"sides": "single",
+		"quality": "normal"
+	}
+}

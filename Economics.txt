@@ -1,0 +1,135 @@
+Jobs
+====
+
+Jobs wages are dictated by Wealth level.
+
+Starting Wealth at TL8: £20k, with a settled lifestyle that's £4k
+cost of living at TL8 and Status 0: £600/mo
+A Wealthy job pays £13000/mo, ~£600/day
+A Comfortable wealth job pays £5200/mo, ~£240/day
+An Average wealth job pays £2600/mo, ~£120/day
+A Struggling job pays £1300/mo, ~£60/day
+A Poor job pays £520/mo, ~£25/day
+
+Teaching economics
+==================
+
+A teacher might accept a student for a variety of reasons. Typically, most teachers will accept proof you're doing Good Deeds.
+More mercenary teachers may require £200 per spell.
+Necromancy teachers don't necessarily require good deeds or money, but you must submit a blood sample that'll be used to track you if you don't check in regularly.
+
+Paut Economics
+==============
+
+Rough recommendation for Thaumatology is 1/30th of starting wealth, making it £666.66 per dose. This isn't economical for enchanting, or much of anything else, really.
+Fwush are selling it at £10 per dose, somehow.
+Generally, hoard powerstones and cast Lend Energy if you need a top-up mid-adventure.
+
+
+Energy Donor economics
+======================
+
+An energy donor can produce up to 48 energy per working day, and makes a daily wage of £1300/22=£59.09. That's £1.23 per energy.
+
+Enchanting economics
+====================
+
+* A master enchanter (20 in Enchant and the spell they're enchanting, and 15 in Recover Energy) has a Comfortable wage
+* A journeyman enchanter (15 in Enchant, the spell, and Recover Energy) has an Average wage
+* Assume a 22 workday month (excludes weekends)
+* Enchanting succeeds at least 95.47% of the time, and the cost of failures must be accounted for.
+
+Slow and Sure
+-------------
+
+Slow and Sure doesn't benefit from a master enchanter. normally it will have groups of 2 or 3 journeyman enchanters with skil 16 or 17.
+The number of enchanters makes projects more feasible in length, but doesn't affect the cost per unit.
+Labour cost per energy point is £2600 / 0.9547 / 22 = £123.79/energy
+
+Quick and Dirty
+---------------
+
+tl;dr £1.25 per point of energy
+
+An enchanting circle is 1 master and 5 assistants. The master is an Enchanting specialist, and the assistants are natural Technomancers.
+Each enchanter is worth a Comfortable wealth level. They are all assisted by Struggling energy donors (though typically supplemented by volunteers.
+
+The circle's work is worth 5200*6+1300*6=£39'000 per month. Daily labour costs are £1772.72.
+The assistants draw 30 energy from Mains each, guaranteeing an energy limit of 210, though power stones may extend this in exceptional circumstances.
+The cost of Mains is assumed to be small enough to be absorbed by rounding up.
+Eight cycles of 210 energy per day is 1680 per day, meaning £1.054 per energy. Rounding up to a handy number is £1.25 per point of energy.
+
+An enchantment that requires more energy can be supplemented with powerstones. Since one point of powerstone energy costs 1/1000 of the powerstone that has enough capacity (i.e. to reach 300 energy enchantments, an extra 90 energy needs to be supplied, 15 per enchanter, at £4.125 per point, for a total enchantment cost of £633.75, might as well round it to £650).
+400 enchantment is £4113.50+262.50 = £4376
+
+Industrial Enchanting
+---------------------
+
+A magical production line has a large initial outlay, but subsequently increases productivity to 10 energy per mage-day. that brings costs down to £12.38. Round it to £12.50 because that's easier.
+
+Industrial enchanting is more cost-effective when 12.50 * N <= 262.5 + (N-210)*P(N-210/6), i.e. 415+ energy for the enchantment.
+
+Ensorcelment
+------------
+
+Ensorcelment has a listed cost of 200 per point, but easily discounts to 20 per point for something easily broken.
+Wisdom 1: 4*20*1.25=£100
+Wisdom 2: 8*20*1.25=£200
+Wisdom 3: 12*20=240, 210*1.25 + Powerstone(5)*30/1000 = 262.50+18.6=£281.10
+Wisdom 4: 16*20=320, 262.50 + Powerstone(19)*110/1000 = 262.50 + 6695*110/1000 = £998.95
+Wisdom 5: 20*20=400, 262.50 + Powerstone(32)*190/1000 = £4377.90
+
+Powerstone economics
+====================
+
+The cost of buying a powerstone differs from GURPS Magic, since it's £1.25 per point of energy. the enchanting costs £25 instead of $20, so take the listed costs at Magic p.20, and add £5 per capacity.
+One point of powerstone energy costs 1/1000 of the powerstone that has enough capacity. A "standard" 15-point powerstone costs £4.125 per point.
+
+Enchanted Item Rental
+=====================
+
+Fwush offers magic item rental, too. 5-year terms at 20% interest, paid monthly. N/60*1.2, or N/50.
+a £10k item can be rented for £200 a month for 5 years.
+
+Scroll economics
+================
+
+**REVISIT THIS**: Are scrolls too expensive?
+
+Two tiers, an actual standard skill of 15 is an Average job paying £2600/mo.
+Sub-standard scrolls are still useful for anything without a resistance roll, but pay for a Struggling job at £1300/mo.
+Assuring skill 15 is £123.79 per point of energy that the spell costs to cast.
+Sub-standard is £60 (£59.09 precisely) per point of energy, but at a skill level of 1d+9 where required.
+
+Grimoire economics
+==================
+
+Thaumatology lists the cost of grimoires at 2% of campaign starting wealth per spell, assuming it must list all prerequisites. That's £400 per spell, mind you.
+This doesn't help define how much text is involved in a spell, how that affects weight, etc. So I'd be better off using Dungeon Fantasy and modifying it for modern tech.
+A DF spellbook is a primer costing $100 per spell and weighing 3lbs, but giving no indication for how much text is involved. Try Technomancer?
+Technomancer's basic magic list is the Berkeley Grimoire (AKA Basic Textbook of Magical Formulae). 8 volumes.
+They also have the Working Handbook of Applied Thaumaturgy (collection of all known spells). 22 volumes.
+Supposedly, it takes 20'000 words to fully describe a spell.
+A grimoire needs countermeasures to stop it being accessed by Mundanes. Dunno what, since Encrypt is *expensive*! If at all feasible, it's a state subsidy.
+
+The Basic Grimoire
+------------------
+10 Air
+9 Body
+5 comm
+8 Earth
+7 Enchantment
+11 Fire
+7 Healing
+6 Knowledge
+4 Light
+2 Meta
+7 Mind
+6 Move
+3 Prot
+7 Water
+92 spells, 1.84M words, 21 energy to encrypt, 2100 energy to encrypt in one go £260k of enchantment alone is *not* feasible!
+£36800 for the grimoire at standard rates is also not acceptable.
+Assuming utf-8 and an average of 6 characters per word, how big is the basic grimoire in data? 11.4MB, trivial!
+at 275 words per page, a spell is 80 pages to fully describe.
+The Basic Grimoire is split into separate books per college, and written in Faerie, a secret language which not even most makes read.

@@ -1,0 +1,29 @@
+Character Advancement
+=====================
+
+Restrictions
+------------
+New non-magical advantages and skills may be bought freely with points. (e.g. you may learn brawling, raise your Attractiveness and Wealth freely)
+You may increase your skill in already-learned magical skills, spells and abilities freely with points. (e.g. if you have Thaumatology or Lend Energy at 12, you can spend points to raise it to 13 or higher without a teacher).
+
+New magical spells or skills require a grimoire, teacher or to be independently discovered in a research project.
+
+Magical abilities may be bought with points provided you or a teacher knows a spell that is similar.
+If there is no similar spell, then it will take a number of days (GM discretion) of downtime to develop the ability.
+
+Learning by basic grimoire
+--------------------------
+There will be a "Basic Grimoire" which teaches Thaumatology and every spell in Basic Set, except for Gate spells (nobody believes other worlds exist) and Necromancy spells (which are more strictly regulated). Basic Grimoires will be sold anywhere that sells real magical supplies. i.e. with a Basic Grimoire, you may put points into Lend Energy even if you don't already know it.
+
+Learning by teacher
+-------------------
+There will be teachers for each college, who might teach you out of obligation, for a fee, or in exchange for a favour. So long as you are in good standing with them, you may put points in new spells of their college. (e.g. Blaze Pascal, Master of Fire owes you a favour, so you can buy Phantom Flame so long as you know its prerequisites - Shape Fire or Simple Illusion)
+
+Learning by College grimoire
+----------------------------
+Grimoires that contain every spell in a college probably exist, but access to them will be restricted.
+
+Learning without a grimoire
+---------------------------
+
+To learn a spell without grimoire or teacher, use the rules in Player-Created Spells (GURPS Magic p15).

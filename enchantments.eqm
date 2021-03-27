@@ -1,0 +1,142 @@
+{
+	"type": "eqp_modifier_list",
+	"version": 1,
+	"id": "bf3b2f2b-72e6-4cf0-9e7d-7f978060f5e0",
+	"rows": [
+		{
+			"type": "eqp_modifier_container",
+			"version": 1,
+			"id": "cd51b9b4-2a55-4ced-ad4c-535199e32951",
+			"disabled": true,
+			"name": "Fortify",
+			"open": true,
+			"children": [
+				{
+					"type": "eqp_modifier",
+					"version": 1,
+					"id": "099367a4-2cfe-4f03-af5e-78d6d16b94b8",
+					"name": "Fortify 1, full suit",
+					"cost_type": "to_original_cost",
+					"cost": "+62.5",
+					"features": [
+						{
+							"type": "dr_bonus",
+							"amount": 1,
+							"location": "full_body_except_eyes"
+						}
+					]
+				},
+				{
+					"type": "eqp_modifier",
+					"version": 1,
+					"id": "e50969bd-6e53-4e2b-967b-3d1f613560f2",
+					"based_on_id": "099367a4-2cfe-4f03-af5e-78d6d16b94b8",
+					"based_on_hash": "ZuaR5pCsNdm/GVnO5ZfkC8PpBaLhtHqGp9NXQJPub10",
+					"name": "Fortify 2, full suit",
+					"cost_type": "to_original_cost",
+					"cost": "+250",
+					"features": [
+						{
+							"type": "dr_bonus",
+							"amount": 2,
+							"location": "full_body_except_eyes"
+						}
+					]
+				},
+				{
+					"type": "eqp_modifier",
+					"version": 1,
+					"id": "cea26967-54a6-46cc-b025-502eac211d71",
+					"based_on_id": "099367a4-2cfe-4f03-af5e-78d6d16b94b8",
+					"based_on_hash": "DnafV/BGuDx/+OsSffxmnoyay2+h8fk9AjSbgcZDhFw",
+					"name": "Fortify 1, Torso",
+					"cost_type": "to_original_cost",
+					"cost": "+31.25",
+					"features": [
+						{
+							"type": "dr_bonus",
+							"amount": 1,
+							"location": "torso"
+						}
+					]
+				},
+				{
+					"type": "eqp_modifier",
+					"version": 1,
+					"id": "f427e3d9-d6b5-4fa7-8f53-181de63800ca",
+					"based_on_id": "e50969bd-6e53-4e2b-967b-3d1f613560f2",
+					"based_on_hash": "vnBOOXqh6RyubOOpT0Gk0TIHgIsy5QqE6h2mdJ3NON4",
+					"name": "Fortify 2, Torso",
+					"cost_type": "to_original_cost",
+					"cost": "+125",
+					"features": [
+						{
+							"type": "dr_bonus",
+							"amount": 2,
+							"location": "torso"
+						}
+					]
+				},
+				{
+					"type": "eqp_modifier",
+					"version": 1,
+					"id": "c536a434-61c0-4a9d-870e-6c1a8e50fa25",
+					"based_on_id": "f427e3d9-d6b5-4fa7-8f53-181de63800ca",
+					"based_on_hash": "sln8v5IthZcWpt1AZ71mewTCxpZB+Ai+WwfiQLjvVvE",
+					"name": "Fortify 4, Skull",
+					"cost_type": "to_original_cost",
+					"cost": "+187.5",
+					"features": [
+						{
+							"type": "dr_bonus",
+							"amount": 4,
+							"location": "skull"
+						}
+					]
+				},
+				{
+					"type": "eqp_modifier",
+					"version": 1,
+					"id": "e070c75f-0af4-42e8-8913-ad2cb4831f84",
+					"based_on_id": "c536a434-61c0-4a9d-870e-6c1a8e50fa25",
+					"based_on_hash": "kNja/HcJ3xPQIfKxBXYyByJbtPdTTkAgYxC6TO7Ncuo",
+					"name": "Fortify 4, Hands",
+					"cost_type": "to_original_cost",
+					"cost": "+187.5",
+					"features": [
+						{
+							"type": "dr_bonus",
+							"amount": 4,
+							"location": "hands"
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "eqp_modifier_container",
+			"version": 1,
+			"id": "1321ace0-657f-4fb5-8e72-4ca395e85e16",
+			"disabled": true,
+			"name": "Puissance",
+			"open": true,
+			"children": [
+				{
+					"type": "eqp_modifier",
+					"version": 1,
+					"id": "92d1cd3a-16c1-43d6-b45a-dfa52e64fd0a",
+					"name": "Puissance 1",
+					"cost_type": "to_original_cost",
+					"cost": "+312.5",
+					"features": [
+						{
+							"type": "weapon_bonus",
+							"amount": 1,
+							"selection_type": "this_weapon"
+						}
+					]
+				}
+			]
+		}
+	]
+}

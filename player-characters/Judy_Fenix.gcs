@@ -1,0 +1,1359 @@
+{
+	"type": "character",
+	"version": 1,
+	"id": "33a6062b-979b-43f2-8c96-0866b2629d00",
+	"settings": {
+		"version": 1,
+		"default_length_units": "ft_in",
+		"default_weight_units": "lb",
+		"user_description_display": "tooltip",
+		"modifiers_display": "inline",
+		"notes_display": "inline",
+		"base_will_and_per_on_10": false,
+		"use_multiplicative_modifiers": false,
+		"use_modifying_dice_plus_adds": false,
+		"use_know_your_own_strength": false,
+		"use_reduced_swing": false,
+		"use_thrust_equals_swing_minus_2": false,
+		"use_simple_metric_conversions": true,
+		"show_college_in_sheet_spells": false,
+		"use_title_in_footer": false,
+		"block_layout": [
+			"reactions",
+			"melee",
+			"ranged",
+			"advantages skills",
+			"spells",
+			"equipment",
+			"other_equipment",
+			"notes"
+		]
+	},
+	"created_date": "Mar 1, 2021, 3:36 PM",
+	"modified_date": "Mar 7, 2021, 6:22 PM",
+	"profile": {
+		"player_name": "Jordan",
+		"name": "Judy Fenix ",
+		"title": "History Teacher",
+		"age": 25,
+		"birthday": "August 11",
+		"eyes": "Brown",
+		"hair": "Black, Straight, Long",
+		"skin": "Tan",
+		"handedness": "Right",
+		"height": "5' 8\"",
+		"weight": "151 lb",
+		"gender": "Female",
+		"body_type": "humanoid",
+		"tech_level": "3"
+	},
+	"total_points": 75,
+	"ST": 10,
+	"DX": 10,
+	"IQ": 10,
+	"HT": 10,
+	"advantages": [
+		{
+			"type": "advantage",
+			"version": 1,
+			"id": "03aa71ca-e922-4c87-b2ed-3bd0a4d9a26e",
+			"name": "Natural Attacks",
+			"physical": true,
+			"weapons": [
+				{
+					"type": "melee_weapon",
+					"damage": {
+						"type": "cr",
+						"st": "thr",
+						"base": "-1"
+					},
+					"usage": "Bite",
+					"reach": "C",
+					"parry": "No",
+					"block": "No",
+					"defaults": [
+						{
+							"type": "DX"
+						},
+						{
+							"type": "Skill",
+							"name": "Brawling"
+						}
+					]
+				},
+				{
+					"type": "melee_weapon",
+					"damage": {
+						"type": "cr",
+						"st": "thr",
+						"base": "-1"
+					},
+					"usage": "Punch",
+					"reach": "C",
+					"parry": "0",
+					"defaults": [
+						{
+							"type": "DX"
+						},
+						{
+							"type": "Skill",
+							"name": "Boxing"
+						},
+						{
+							"type": "Skill",
+							"name": "Brawling"
+						},
+						{
+							"type": "Skill",
+							"name": "Karate"
+						}
+					]
+				},
+				{
+					"type": "melee_weapon",
+					"damage": {
+						"type": "cr",
+						"st": "thr"
+					},
+					"usage": "Kick",
+					"reach": "C,1",
+					"parry": "No",
+					"defaults": [
+						{
+							"type": "DX",
+							"modifier": -2
+						},
+						{
+							"type": "Skill",
+							"name": "Brawling",
+							"modifier": -2
+						},
+						{
+							"type": "Skill",
+							"name": "Karate",
+							"modifier": -2
+						}
+					]
+				}
+			],
+			"reference": "B271"
+		},
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"id": "a9eaf91f-ae8a-42b4-bb36-1663c302483b",
+			"based_on_id": "fbcf28eb-47d8-45ee-9836-d3fa4eb69357",
+			"based_on_hash": "kfnhUnrkhKzv6cBCV2f9uvN7yBkZKYMlz1wXacnz9PI",
+			"name": "Disadvantage",
+			"open": false,
+			"children": [
+				{
+					"type": "advantage",
+					"version": 1,
+					"id": "a9f51678-01ac-4931-8570-6da3678f6280",
+					"based_on_id": "0f958a25-3c23-4cb4-bc4b-f5ff6537a01d",
+					"based_on_hash": "3XVw140leO0/3VemPutv9AT571uQngleBFhTB1dJJhc",
+					"name": "Pacifism: Cannot Harm Innocents",
+					"mental": true,
+					"base_points": -10,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "b41db5f6-9344-40ac-9b9f-bd1923df7572",
+							"based_on_id": "47e04117-877e-4315-b19f-f1e9fb59431c",
+							"based_on_hash": "+zuMfk/yyav94WRMvlme2v1cIP9FMovwl/gqGyevy2s",
+							"disabled": true,
+							"name": "Species-Specific",
+							"reference": "UT32",
+							"cost_type": "percentage",
+							"cost": -80,
+							"affects": "total"
+						}
+					],
+					"reference": "B148",
+					"categories": [
+						"Disadvantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"id": "55913eb7-185c-4fb6-b4f0-2fdebb44a165",
+					"based_on_id": "26822d68-34e5-47ac-932a-4c301215da07",
+					"based_on_hash": "LdlZeFXfPGJgvvnejqfdBu7yATBMtsPvSbHzT45d4Xo",
+					"name": "Mild Shyness",
+					"mental": true,
+					"base_points": -5,
+					"reference": "B154",
+					"features": [
+						{
+							"type": "skill_bonus",
+							"amount": -1,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Acting"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": -1,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Carousing"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": -1,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Diplomacy"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": -1,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Fast-Talk"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": -1,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Intimidation"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": -1,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Leadership"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": -1,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Merchant"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": -1,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Panhandling"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": -1,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Performance"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": -1,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Politics"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": -1,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Public Speaking"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": -1,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Savoir-Faire"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": -1,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Sex Appeal"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": -1,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Streetwise"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": -1,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Teaching"
+							}
+						}
+					],
+					"categories": [
+						"Disadvantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"id": "f3e48863-c0c3-4d31-b937-6a36046f64bf",
+					"based_on_id": "9adcf0af-c7bb-4e72-81b6-5d0163e891f6",
+					"based_on_hash": "5ggOR081lO+mjdo7XLhMznp/sIxxP6vf1VGzZquYaMg",
+					"name": "Curious",
+					"mental": true,
+					"base_points": -5,
+					"cr": 12,
+					"reference": "B129",
+					"categories": [
+						"Disadvantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"id": "1f2c3f61-e4bc-4f9f-bc0b-a59a769ba803",
+					"based_on_id": "5b9b6a1d-88ee-4142-ab06-3a7389682626",
+					"based_on_hash": "e9rxJMpAYq/wt4b65fKkFAqSsLnsDfX8Zl8b1DbBiAQ",
+					"name": "Code of Honor (Professional)",
+					"mental": true,
+					"base_points": -5,
+					"reference": "B127",
+					"categories": [
+						"Disadvantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"id": "a6b9fc15-960a-4105-921e-8a725c45cf79",
+					"based_on_id": "c5f93dc2-f120-4b05-9275-1d8ace22e1e2",
+					"based_on_hash": "kLmPduQ9ptzu40lUtwgJSRwSY7qhGp0zXgSfnzpihIA",
+					"name": "Charitable",
+					"mental": true,
+					"base_points": -15,
+					"cr": 12,
+					"reference": "B125",
+					"categories": [
+						"Disadvantage"
+					]
+				}
+			]
+		},
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"id": "fa811bde-e522-446b-aa61-3fdfb0a1811e",
+			"name": "Traits",
+			"open": true,
+			"children": [
+				{
+					"type": "advantage",
+					"version": 1,
+					"id": "3027cae2-c0d9-4dd3-8e81-5d0816623aed",
+					"based_on_id": "900f1880-1858-4ba0-a911-5a12a89fe235",
+					"based_on_hash": "OfLpc8hnf72DVujqDl2r+xSPd7wIM2eU0GD3oZVzvCs",
+					"name": "Humble",
+					"mental": true,
+					"base_points": -1,
+					"reference": "B164",
+					"categories": [
+						"Quirk"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"id": "96a11afb-0093-456a-878d-de36e82f4832",
+					"based_on_id": "5e288a33-ed73-4805-bd91-bbbcbc7ea058",
+					"based_on_hash": "p/gEEqDQHFU3IBLHThRkhATIrf+O81nh0+7AbqbnCIw",
+					"name": "Luck",
+					"mental": true,
+					"base_points": 15,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "cbfdd430-784c-49e1-b552-828a0f7fc041",
+							"based_on_id": "4c0ff893-f5f2-47f9-a01f-e6ec90641723",
+							"based_on_hash": "y9Jj9nBM2tWZD0LRSGcmABvICEdy8wTs8YrvGAy0rtM",
+							"disabled": true,
+							"name": "Active",
+							"reference": "B66",
+							"cost_type": "percentage",
+							"cost": -40,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "39dd0d38-28e0-46bb-8724-c60054f4514d",
+							"based_on_id": "cbba71ae-0a25-4e74-a122-3dfda1783be4",
+							"based_on_hash": "X4YL0WYMdnQbmU54u5jfDT5LR8y8ezF5p3oShEIBXvI",
+							"disabled": true,
+							"name": "Aspected",
+							"reference": "B66",
+							"cost_type": "percentage",
+							"cost": -20,
+							"affects": "total",
+							"notes": "@Aspect@"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "8be5d616-280a-45d8-a632-a85aa70791c2",
+							"based_on_id": "3847fbb4-42d2-46c9-b49b-4b8cebabb4a4",
+							"based_on_hash": "oHlKRa88Dz4ojgIPoXiKaGVKLuG7mhIUEYPvkss+yRY",
+							"disabled": true,
+							"name": "Defensive",
+							"reference": "B66",
+							"cost_type": "percentage",
+							"cost": -20,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "205c6024-5b7b-41a5-abd7-eb84b4078911",
+							"based_on_id": "fa897d77-5699-47e0-9da1-fa160b887c20",
+							"based_on_hash": "q54h9LiCRsWpUJy7Ur5SS6sdSTyYjLKsbrBCF+fzt1E",
+							"disabled": true,
+							"name": "Wishing",
+							"reference": "P59",
+							"cost_type": "percentage",
+							"cost": 100,
+							"affects": "total"
+						}
+					],
+					"reference": "B66",
+					"notes": "Usable once per hour of play",
+					"categories": [
+						"Advantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"id": "55f50950-d9e0-418b-b4ac-215e819c32f0",
+					"based_on_id": "85da1c15-c4d6-4d43-b157-27e42cd262ba",
+					"based_on_hash": "405qRFJYdkclqvPNo15YU0F83cgENB4qloiDoJFymmY",
+					"name": "Eidetic Memory",
+					"mental": true,
+					"base_points": 5,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "4ef8c5c0-3c21-42c7-a910-1c14c604af72",
+							"based_on_id": "e631bd19-4748-4e53-84d5-406760441155",
+							"based_on_hash": "Hb0Vv+3OsvwWsWTwnC0Uewin98AMJPtjZ9oFd8SjWvE",
+							"name": "Photographic",
+							"reference": "B51",
+							"cost_type": "points",
+							"cost": 5,
+							"affects": "total"
+						}
+					],
+					"reference": "B51",
+					"categories": [
+						"Advantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"id": "47fe74bc-377f-4e2d-8009-5a3f8bed24aa",
+					"based_on_id": "9014fdc9-c2ea-4e73-8ddb-b0a0a119043c",
+					"based_on_hash": "sUpaNiikPY1iGo57EOx+4aL6dmYNy0ect7YB886t8wY",
+					"name": "Talent (Academic)",
+					"mental": true,
+					"levels": "4",
+					"points_per_level": 5,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "76779954-9ba9-4cc8-8c03-b3e3c53db174",
+							"based_on_id": "0a7791b5-c774-4e61-b033-ff81637503dd",
+							"based_on_hash": "Jf1jneKxkxZpNfjD+DyePdKpY6ackxgobuRwsWmfOes",
+							"disabled": true,
+							"name": "Reaction Bonus",
+							"cost_type": "percentage",
+							"cost": 0,
+							"affects": "total",
+							"notes": "Students and teachers"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "ff3b66ec-135f-4038-bb8d-dd27a18813ef",
+							"based_on_id": "ce43247d-4d7e-4cfa-a05f-83c807c389f6",
+							"based_on_hash": "k5Lc7IYZ2EbY13fqrAKGMgd62lN1OuhfxDFsxbTudkE",
+							"name": "Alternate Benefit",
+							"cost_type": "percentage",
+							"cost": 0,
+							"affects": "total",
+							"notes": "+1/Level to any roll that benefits from Eidetic Memory"
+						}
+					],
+					"reference": "PU3:6",
+					"features": [
+						{
+							"type": "skill_bonus",
+							"amount": 1,
+							"per_level": true,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Public Speaking"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": 1,
+							"per_level": true,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Research"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": 1,
+							"per_level": true,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Speed-Reading"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": 1,
+							"per_level": true,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Teaching"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": 1,
+							"per_level": true,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Writing"
+							}
+						}
+					],
+					"categories": [
+						"Advantage",
+						"Talent"
+					]
+				}
+			]
+		},
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"id": "d8aef747-086f-48a8-971d-4e53ff9d50b1",
+			"name": "Attributes",
+			"open": true,
+			"children": [
+				{
+					"type": "advantage",
+					"version": 1,
+					"id": "6523f990-94d6-4e1e-9ec4-b08a155582b1",
+					"based_on_id": "6baa4d64-4c4d-437a-a79f-002c7d812404",
+					"based_on_hash": "AqvaAqmYYkwENm9V4saIQEsgIfUS1k8mhoEXjYcycdc",
+					"name": "Increased Intelligence",
+					"mental": true,
+					"levels": "1",
+					"points_per_level": 20,
+					"reference": "B15",
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"amount": 1,
+							"per_level": true,
+							"attribute": "iq"
+						}
+					],
+					"categories": [
+						"Advantage",
+						"Attribute"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"id": "3b08a1dd-3d8b-4530-9b1d-a80633216728",
+					"based_on_id": "600f63e0-0182-4e98-a239-a82959617e8e",
+					"based_on_hash": "aamsPgMHK3YrunCO1leu7bWlQNvupMtTMGHMyTrR1rM",
+					"name": "Decreased Strength",
+					"physical": true,
+					"levels": "1",
+					"points_per_level": -10,
+					"reference": "B14",
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"amount": -1,
+							"per_level": true,
+							"attribute": "st"
+						}
+					],
+					"categories": [
+						"Attribute",
+						"Disadvantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"id": "e1c9d9b6-408c-4e8a-a282-a325e3d1a499",
+					"based_on_id": "081afe9f-16a3-40da-9a58-ed857d5f935e",
+					"based_on_hash": "vT21ifgu/KWKY8rgdo/1i5TbA8asKQO5O/LhSrZCn/U",
+					"name": "Increased Perception",
+					"mental": true,
+					"physical": true,
+					"levels": "1",
+					"points_per_level": 5,
+					"reference": "B16",
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"amount": 1,
+							"per_level": true,
+							"attribute": "perception"
+						}
+					],
+					"categories": [
+						"Advantage",
+						"Attribute"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"id": "a21e5b77-9c01-401d-b95a-630be5e26bba",
+					"based_on_id": "98486ece-d0a2-4f03-a944-72a3a87618de",
+					"based_on_hash": "t/Xv/EBAMOYoELizp1eCmWlAQgeYcp6okQRSuhgYOhA",
+					"name": "Increased Will",
+					"mental": true,
+					"levels": "2",
+					"points_per_level": 5,
+					"reference": "B16",
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"amount": 1,
+							"per_level": true,
+							"attribute": "will"
+						}
+					],
+					"categories": [
+						"Advantage",
+						"Attribute"
+					]
+				}
+			]
+		},
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"id": "15ce48ed-962b-43b2-8a4e-154fb34c79d1",
+			"name": "Magical things",
+			"open": true,
+			"children": [
+				{
+					"type": "advantage",
+					"version": 1,
+					"id": "b17e9466-4005-4ac8-9e50-ae6b56d3df55",
+					"based_on_id": "0152cf86-01cf-4fa0-abb1-5aca33c70175",
+					"based_on_hash": "gQ1Ymn6cqFKbcZVZScPCyaG7TBoD9GHzsvYxE6+hBHY",
+					"name": "Magery",
+					"mental": true,
+					"supernatural": true,
+					"levels": "1",
+					"base_points": 5,
+					"points_per_level": 10,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "fa988819-4f68-48eb-9fd9-b593a6bc8a73",
+							"based_on_id": "d8d938de-3f71-442c-a744-11b29d465d8b",
+							"based_on_hash": "o5WsmZ+onTysKkE5whlDTCBAllQw29EEIZwk1MChTZY",
+							"disabled": true,
+							"name": "Dance",
+							"cost_type": "percentage",
+							"cost": -40,
+							"affects": "levels_only"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "336ae5b3-4939-4612-b17a-0c9cf88543f3",
+							"based_on_id": "f9f019c1-bee2-4c05-bcf1-067558c22889",
+							"based_on_hash": "vSrCIpNEYQtvTgbzToo59nqKIzjV/8wWDrBIyONsNV4",
+							"disabled": true,
+							"name": "Dark-Aspected",
+							"cost_type": "percentage",
+							"cost": -50,
+							"affects": "levels_only"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "1a28b7a3-1fe0-4ebc-9548-ec59ce16f2f0",
+							"based_on_id": "dc2ba61c-d16b-44bc-8ecb-f512db0f6883",
+							"based_on_hash": "dRMeP7LGKkaVBNtyiiaSYYGKEGT84ez9vb0wFoowu20",
+							"disabled": true,
+							"name": "Day-Aspected",
+							"cost_type": "percentage",
+							"cost": -40,
+							"affects": "levels_only"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "ff1039bc-15f3-4a09-b74c-1a036f82721d",
+							"based_on_id": "3e74fa02-5fa3-4de0-9d24-052503036cda",
+							"based_on_hash": "e708mju4ao/+f3o80fKM7s46AK994Oj8z4P1cGviT9E",
+							"disabled": true,
+							"name": "Musical",
+							"cost_type": "percentage",
+							"cost": -50,
+							"affects": "levels_only"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "40d00c5d-de1a-42b6-a6a7-2322563dfbbc",
+							"based_on_id": "f10a7690-2bdc-42d1-817e-1e992c807d50",
+							"based_on_hash": "xmMC0bXE9HpCQJp+JB47tl+gHhpgYD6HUScaQ2mqez4",
+							"disabled": true,
+							"name": "Night-Aspected",
+							"cost_type": "percentage",
+							"cost": -40,
+							"affects": "levels_only"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "8779eb00-f215-45d9-bc01-e7d1e9f0a44b",
+							"based_on_id": "fb84af54-9e3d-4dd2-8237-a1630d07cea0",
+							"based_on_hash": "TjK1ckczDufKzFwRBehl9oZHbrWANTOCkfB+FbwvFqU",
+							"disabled": true,
+							"name": "One College",
+							"cost_type": "percentage",
+							"cost": -40,
+							"affects": "levels_only",
+							"notes": "@College@"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "830132f9-0504-4de6-84c9-8efdf3f19a7a",
+							"based_on_id": "a101886d-5efc-44c1-9579-9fef06dddf8d",
+							"based_on_hash": "zUk3b8yvRmWsQeahwEKCTp1sDoZHo0xjiW0s4tCokj8",
+							"disabled": true,
+							"name": "Solitary",
+							"cost_type": "percentage",
+							"cost": -40,
+							"affects": "levels_only"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "05e75baf-a5a7-47ff-903c-91801d72c0b9",
+							"based_on_id": "6bee19c9-4067-4077-b10d-986963922c98",
+							"based_on_hash": "kbSK53OiURUmTxQvBu8OwwQCz0YvS9Y16oFab2uOCNk",
+							"disabled": true,
+							"name": "Song",
+							"cost_type": "percentage",
+							"cost": -40,
+							"affects": "levels_only"
+						}
+					],
+					"reference": "B66",
+					"features": [
+						{
+							"type": "spell_bonus",
+							"amount": 1,
+							"per_level": true,
+							"match": "all_colleges"
+						},
+						{
+							"type": "skill_bonus",
+							"amount": 1,
+							"per_level": true,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "thaumatology"
+							}
+						}
+					],
+					"categories": [
+						"Advantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"id": "ab34e50a-e394-4f16-8f84-203ff3ebce2a",
+					"based_on_id": "0152cf86-01cf-4fa0-abb1-5aca33c70175",
+					"based_on_hash": "gQ1Ymn6cqFKbcZVZScPCyaG7TBoD9GHzsvYxE6+hBHY",
+					"name": "Magery",
+					"mental": true,
+					"supernatural": true,
+					"levels": "2",
+					"base_points": 5,
+					"points_per_level": 10,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "fafd9138-f441-43e6-b8a9-662161f8d7e7",
+							"based_on_id": "d8d938de-3f71-442c-a744-11b29d465d8b",
+							"based_on_hash": "o5WsmZ+onTysKkE5whlDTCBAllQw29EEIZwk1MChTZY",
+							"disabled": true,
+							"name": "Dance",
+							"cost_type": "percentage",
+							"cost": -40,
+							"affects": "levels_only"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "e970085f-6de6-4cde-a6dd-b19962b85d9a",
+							"based_on_id": "f9f019c1-bee2-4c05-bcf1-067558c22889",
+							"based_on_hash": "vSrCIpNEYQtvTgbzToo59nqKIzjV/8wWDrBIyONsNV4",
+							"disabled": true,
+							"name": "Dark-Aspected",
+							"cost_type": "percentage",
+							"cost": -50,
+							"affects": "levels_only"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "98b866b6-c7a4-4117-9737-e240513b1a48",
+							"based_on_id": "dc2ba61c-d16b-44bc-8ecb-f512db0f6883",
+							"based_on_hash": "dRMeP7LGKkaVBNtyiiaSYYGKEGT84ez9vb0wFoowu20",
+							"disabled": true,
+							"name": "Day-Aspected",
+							"cost_type": "percentage",
+							"cost": -40,
+							"affects": "levels_only"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "b1ecb2cd-ff0e-4104-83c5-dbd897eb3214",
+							"based_on_id": "3e74fa02-5fa3-4de0-9d24-052503036cda",
+							"based_on_hash": "e708mju4ao/+f3o80fKM7s46AK994Oj8z4P1cGviT9E",
+							"disabled": true,
+							"name": "Musical",
+							"cost_type": "percentage",
+							"cost": -50,
+							"affects": "levels_only"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "a97bc680-1a08-4a82-b019-6def9829755f",
+							"based_on_id": "f10a7690-2bdc-42d1-817e-1e992c807d50",
+							"based_on_hash": "xmMC0bXE9HpCQJp+JB47tl+gHhpgYD6HUScaQ2mqez4",
+							"disabled": true,
+							"name": "Night-Aspected",
+							"cost_type": "percentage",
+							"cost": -40,
+							"affects": "levels_only"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "1cc1ad94-24a4-42f9-bff9-1cf4a8c6e561",
+							"based_on_id": "fb84af54-9e3d-4dd2-8237-a1630d07cea0",
+							"based_on_hash": "TjK1ckczDufKzFwRBehl9oZHbrWANTOCkfB+FbwvFqU",
+							"name": "One College",
+							"cost_type": "percentage",
+							"cost": -40,
+							"affects": "levels_only",
+							"notes": "Illusion"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "1bc198ef-5f5e-4adb-9de3-3032aa2c16ef",
+							"based_on_id": "a101886d-5efc-44c1-9579-9fef06dddf8d",
+							"based_on_hash": "zUk3b8yvRmWsQeahwEKCTp1sDoZHo0xjiW0s4tCokj8",
+							"disabled": true,
+							"name": "Solitary",
+							"cost_type": "percentage",
+							"cost": -40,
+							"affects": "levels_only"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "e5761d55-3faf-4f1f-ad53-16f28f665d61",
+							"based_on_id": "6bee19c9-4067-4077-b10d-986963922c98",
+							"based_on_hash": "kbSK53OiURUmTxQvBu8OwwQCz0YvS9Y16oFab2uOCNk",
+							"disabled": true,
+							"name": "Song",
+							"cost_type": "percentage",
+							"cost": -40,
+							"affects": "levels_only"
+						}
+					],
+					"reference": "B66",
+					"features": [
+						{
+							"type": "spell_bonus",
+							"amount": 1,
+							"per_level": true,
+							"match": "all_colleges"
+						},
+						{
+							"type": "skill_bonus",
+							"amount": 1,
+							"per_level": true,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "thaumatology"
+							}
+						}
+					],
+					"categories": [
+						"Advantage"
+					]
+				}
+			]
+		}
+	],
+	"skills": [
+		{
+			"type": "skill_container",
+			"version": 1,
+			"id": "cc825fb6-3640-4589-9702-f0aa7aefebee",
+			"name": "Teacher",
+			"open": true,
+			"children": [
+				{
+					"type": "skill",
+					"version": 1,
+					"id": "1bdfdffa-21c1-45b7-b4bb-f17b27249b81",
+					"based_on_id": "2ca9012b-148e-49a2-a630-9532653dc44d",
+					"based_on_hash": "0l2xWy5N4oBpn/8QNs4ywv7slax3RXB7Hk7HtvK0IOU",
+					"name": "Research",
+					"reference": "B217",
+					"tech_level": "3",
+					"difficulty": "IQ/A",
+					"points": 1,
+					"defaulted_from": {
+						"type": "Skill",
+						"name": "Writing",
+						"modifier": -3,
+						"level": 7,
+						"adjusted_level": 7,
+						"points": -7
+					},
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "prereq_list",
+								"all": true,
+								"when_tl": {
+									"compare": "at_least",
+									"qualifier": 8
+								},
+								"prereqs": [
+									{
+										"type": "skill_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "Computer Operation"
+										}
+									}
+								]
+							}
+						]
+					},
+					"defaults": [
+						{
+							"type": "IQ",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Writing",
+							"modifier": -3
+						}
+					],
+					"categories": [
+						"Scholarly",
+						"Spy"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"id": "c13b89cb-8541-41d0-bcc1-7a3d6b4a2392",
+					"based_on_id": "a5c64284-f19c-4fe0-8ab6-d3bbdc1a5da4",
+					"based_on_hash": "4sqb945fqa7BlPQyhf8OoamIOg0Zh9RWVpi+yf+EjWY",
+					"name": "Speed-Reading",
+					"reference": "B222",
+					"difficulty": "IQ/A",
+					"points": 1,
+					"categories": [
+						"Scholarly"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"id": "c97a2383-a11c-45cc-b8d5-b3cb0fd074aa",
+					"based_on_id": "2f67d77a-bf71-487f-934e-5e0639e4cbd2",
+					"based_on_hash": "/umas2htgBj6EO2gn4ZaLeNT48gkBiIj8usTxFgyBNM",
+					"name": "Computer Operation",
+					"reference": "B184",
+					"tech_level": "3",
+					"difficulty": "IQ/E",
+					"points": 4,
+					"defaulted_from": {
+						"type": "IQ",
+						"modifier": -4,
+						"level": 7,
+						"adjusted_level": 7,
+						"points": -7
+					},
+					"defaults": [
+						{
+							"type": "IQ",
+							"modifier": -4
+						}
+					],
+					"categories": [
+						"Everyman",
+						"Scholarly",
+						"Technical"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"id": "6967dfa5-fa90-4379-867b-21526954ac00",
+					"based_on_id": "7e2c7bab-4386-4c09-a97d-75cee5f0079b",
+					"based_on_hash": "IGH+MgsD6ChM6VgZesSMLHA8RPErPXLaiShwaXp4KLw",
+					"name": "Accounting",
+					"reference": "B174",
+					"difficulty": "IQ/H",
+					"points": 2,
+					"defaulted_from": {
+						"type": "IQ",
+						"modifier": -6,
+						"level": 5,
+						"adjusted_level": 5,
+						"points": -5
+					},
+					"defaults": [
+						{
+							"type": "IQ",
+							"modifier": -6
+						},
+						{
+							"type": "Skill",
+							"name": "Finance",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Mathematics",
+							"specialization": "Statistics",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Merchant",
+							"modifier": -5
+						}
+					],
+					"categories": [
+						"Business"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"id": "d3b10927-2a76-4c5b-b103-d072ce8e3a24",
+					"based_on_id": "15866829-138c-4faa-a84f-afc512d14ecb",
+					"based_on_hash": "0VGqHOE1xsyZcjZlSuPRFLJ2wjzQ6icIBcrC8qaSZSQ",
+					"name": "Writing",
+					"reference": "B228",
+					"difficulty": "IQ/A",
+					"points": 1,
+					"defaulted_from": {
+						"type": "IQ",
+						"modifier": -5,
+						"level": 6,
+						"adjusted_level": 6,
+						"points": -6
+					},
+					"defaults": [
+						{
+							"type": "IQ",
+							"modifier": -5
+						}
+					],
+					"categories": [
+						"Arts/Entertainment",
+						"Scholarly"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"id": "88d86c03-9e30-4c70-abbc-70598d3d7e91",
+					"based_on_id": "bfd702a8-99b0-446c-9719-143264cef09e",
+					"based_on_hash": "9P6mxtjJQbKAp9zt7frD46JPIvmfkV8H1q8M3yoaMKU",
+					"name": "Acting",
+					"reference": "B174",
+					"difficulty": "IQ/A",
+					"points": 1,
+					"defaulted_from": {
+						"type": "IQ",
+						"modifier": -5,
+						"level": 6,
+						"adjusted_level": 6,
+						"points": -6
+					},
+					"defaults": [
+						{
+							"type": "IQ",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Performance",
+							"modifier": -2
+						},
+						{
+							"type": "Skill",
+							"name": "Public Speaking",
+							"modifier": -5
+						}
+					],
+					"categories": [
+						"Social",
+						"Spy"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"id": "4ceeb063-7e2d-44d6-87c3-e68403b79c81",
+					"based_on_id": "2d4326c5-616f-43f4-9d30-dea514286620",
+					"based_on_hash": "F0xOFJASRBIZ2LojKmTs170TuS5DUzqemYqtF7aYt6A",
+					"name": "Fast-Talk",
+					"reference": "B195",
+					"difficulty": "IQ/A",
+					"points": 1,
+					"defaulted_from": {
+						"type": "IQ",
+						"modifier": -5,
+						"level": 6,
+						"adjusted_level": 6,
+						"points": -6
+					},
+					"defaults": [
+						{
+							"type": "IQ",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Acting",
+							"modifier": -5
+						}
+					],
+					"categories": [
+						"Criminal/Street",
+						"Social",
+						"Spy"
+					]
+				}
+			]
+		},
+		{
+			"type": "skill_container",
+			"version": 1,
+			"id": "5d1b7970-2b17-4d08-b338-966b3d41f017",
+			"name": "Magic Stuff",
+			"open": false
+		}
+	],
+	"spells": [
+		{
+			"type": "spell",
+			"version": 1,
+			"id": "eadd62b6-56a5-44ad-97e7-a35c6071fa35",
+			"based_on_id": "383134c0-4617-4f91-8b2d-f0726dac9af1",
+			"based_on_hash": "yjBY3URnVPKq39kUoGJq+EMPYxgXXHjDZOkGYj6Gnn4",
+			"name": "Illusion Disguise",
+			"reference": "M96",
+			"difficulty": "IQ/H",
+			"college": "Illusion & Creation",
+			"power_source": "Arcane",
+			"spell_class": "Regular",
+			"casting_cost": "3",
+			"maintenance_cost": "-",
+			"casting_time": "1 sec",
+			"duration": "Until illusion ends",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "spell_prereq",
+						"has": true,
+						"sub_type": "name",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": "simple illusion"
+						},
+						"quantity": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"categories": [
+				"Illusion & Creation"
+			]
+		},
+		{
+			"type": "spell",
+			"version": 1,
+			"id": "88cb0a40-eaa2-4283-aff6-2c571f9eb593",
+			"based_on_id": "bff7a46b-8623-425f-a5c8-c7b860e99e0f",
+			"based_on_hash": "cjzUtC2zy2VkbuQuaTL2GngnMVhmXzaYxDnNdJhyjB0",
+			"name": "Simple Illusion",
+			"reference": "M95",
+			"difficulty": "IQ/H",
+			"college": "Illusion & Creation",
+			"power_source": "Arcane",
+			"spell_class": "Area",
+			"casting_cost": "1",
+			"maintenance_cost": "Half",
+			"casting_time": "1 sec",
+			"duration": "1 min",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "advantage_prereq",
+						"has": false,
+						"name": {
+							"compare": "starts_with",
+							"qualifier": "blind"
+						}
+					},
+					{
+						"type": "attribute_prereq",
+						"has": true,
+						"which": "iq",
+						"qualifier": {
+							"compare": "at_least",
+							"qualifier": 11
+						}
+					}
+				]
+			},
+			"categories": [
+				"Illusion & Creation"
+			]
+		}
+	],
+	"equipment": [
+		{
+			"type": "equipment",
+			"version": 1,
+			"id": "a437378a-82f1-49e1-b570-b00a9f03c972",
+			"based_on_id": "5562b965-9e5c-46b7-a762-004b482ba77a",
+			"based_on_hash": "p4TLAB+rMM//9emUZvA/o7tgeMMiAyr1TIwLkcTbSt4",
+			"equipped": true,
+			"quantity": 2400,
+			"description": "Spare cash"
+		}
+	],
+	"notes": [
+		{
+			"type": "note",
+			"version": 1,
+			"id": "1093b99b-3e2c-49ae-b3d1-dc0b2ff259d7",
+			"based_on_id": "84d9dd56-486b-476a-b015-b6bdc357adb5",
+			"based_on_hash": "wnPahL/U2kJnQL7EdHHFmOVBXTUJGhIfOfmST/8gHoM",
+			"text": "Judy is a young teacher with a belife that she could genuinely improve the lives of her students like her history teacher did helping helping to find purpose in their lives. \n\nJudy was cleaning up after a workshop to help her students improve themseves over summer when she heard a loud crash from the office next door. Upon investigating she found  a triangular hole in thin air with a field of bright stars behind it."
+		}
+	],
+	"print_settings": {
+		"printer": "OneNote for Windows 10",
+		"units": "in",
+		"orientation": "portrait",
+		"width": 8.5,
+		"height": 11,
+		"top_margin": 0.25,
+		"left_margin": 0.25,
+		"bottom_margin": 0.25,
+		"right_margin": 0.25,
+		"ink_chromaticity": "monochrome",
+		"sides": "single",
+		"quality": "normal"
+	}
+}
