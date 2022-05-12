@@ -1,11 +1,39 @@
 {
 	"type": "eqp_modifier_list",
-	"version": 1,
+	"version": 2,
 	"id": "bf3b2f2b-72e6-4cf0-9e7d-7f978060f5e0",
 	"rows": [
 		{
 			"type": "eqp_modifier_container",
-			"version": 1,
+			"id": "e3cb8181-8403-4cb7-a04a-a9cf4eb73bd5",
+			"disabled": true,
+			"name": "Hideaway",
+			"open": true,
+			"children": [
+				{
+					"type": "eqp_modifier",
+					"id": "0ad3ed83-0385-4df7-adc1-f8bc8f561680",
+					"name": "Hideaway 6, no weight reduction",
+					"cost_type": "to_original_cost",
+					"cost": "+375"
+				},
+				{
+					"type": "eqp_modifier",
+					"id": "46b204e6-21c0-44f0-bf7d-4b71fdc49cc4",
+					"name": "Hideaway 3, weightless",
+					"cost_type": "to_original_cost",
+					"cost": "+375",
+					"features": [
+						{
+							"type": "contained_weight_reduction",
+							"reduction": "3 lb"
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "eqp_modifier_container",
 			"id": "cd51b9b4-2a55-4ced-ad4c-535199e32951",
 			"disabled": true,
 			"name": "Fortify",
@@ -13,7 +41,6 @@
 			"children": [
 				{
 					"type": "eqp_modifier",
-					"version": 1,
 					"id": "099367a4-2cfe-4f03-af5e-78d6d16b94b8",
 					"name": "Fortify 1, full suit",
 					"cost_type": "to_original_cost",
@@ -22,16 +49,78 @@
 						{
 							"type": "dr_bonus",
 							"amount": 1,
-							"location": "full_body_except_eyes"
+							"location": "skull"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 1,
+							"location": "face"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 1,
+							"location": "neck"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 1,
+							"location": "torso"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 1,
+							"location": "vitals"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 1,
+							"location": "groin"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 1,
+							"location": "arm"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 1,
+							"location": "hand"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 1,
+							"location": "leg"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 1,
+							"location": "foot"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 1,
+							"location": "tail"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 1,
+							"location": "wing"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 1,
+							"location": "fin"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 1,
+							"location": "brain"
 						}
 					]
 				},
 				{
 					"type": "eqp_modifier",
-					"version": 1,
 					"id": "e50969bd-6e53-4e2b-967b-3d1f613560f2",
-					"based_on_id": "099367a4-2cfe-4f03-af5e-78d6d16b94b8",
-					"based_on_hash": "ZuaR5pCsNdm/GVnO5ZfkC8PpBaLhtHqGp9NXQJPub10",
 					"name": "Fortify 2, full suit",
 					"cost_type": "to_original_cost",
 					"cost": "+250",
@@ -39,16 +128,78 @@
 						{
 							"type": "dr_bonus",
 							"amount": 2,
-							"location": "full_body_except_eyes"
+							"location": "skull"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 2,
+							"location": "face"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 2,
+							"location": "neck"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 2,
+							"location": "torso"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 2,
+							"location": "vitals"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 2,
+							"location": "groin"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 2,
+							"location": "arm"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 2,
+							"location": "hand"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 2,
+							"location": "leg"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 2,
+							"location": "foot"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 2,
+							"location": "tail"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 2,
+							"location": "wing"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 2,
+							"location": "fin"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 2,
+							"location": "brain"
 						}
 					]
 				},
 				{
 					"type": "eqp_modifier",
-					"version": 1,
 					"id": "cea26967-54a6-46cc-b025-502eac211d71",
-					"based_on_id": "099367a4-2cfe-4f03-af5e-78d6d16b94b8",
-					"based_on_hash": "DnafV/BGuDx/+OsSffxmnoyay2+h8fk9AjSbgcZDhFw",
 					"name": "Fortify 1, Torso",
 					"cost_type": "to_original_cost",
 					"cost": "+31.25",
@@ -57,15 +208,17 @@
 							"type": "dr_bonus",
 							"amount": 1,
 							"location": "torso"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 1,
+							"location": "vitals"
 						}
 					]
 				},
 				{
 					"type": "eqp_modifier",
-					"version": 1,
 					"id": "f427e3d9-d6b5-4fa7-8f53-181de63800ca",
-					"based_on_id": "e50969bd-6e53-4e2b-967b-3d1f613560f2",
-					"based_on_hash": "vnBOOXqh6RyubOOpT0Gk0TIHgIsy5QqE6h2mdJ3NON4",
 					"name": "Fortify 2, Torso",
 					"cost_type": "to_original_cost",
 					"cost": "+125",
@@ -74,15 +227,36 @@
 							"type": "dr_bonus",
 							"amount": 2,
 							"location": "torso"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 2,
+							"location": "vitals"
 						}
 					]
 				},
 				{
 					"type": "eqp_modifier",
-					"version": 1,
+					"id": "74556a0f-d86b-4794-aee7-445e11ec40bb",
+					"name": "Fortify 3, Torso",
+					"cost_type": "to_original_cost",
+					"cost": "+4376",
+					"features": [
+						{
+							"type": "dr_bonus",
+							"amount": 3,
+							"location": "torso"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 3,
+							"location": "vitals"
+						}
+					]
+				},
+				{
+					"type": "eqp_modifier",
 					"id": "c536a434-61c0-4a9d-870e-6c1a8e50fa25",
-					"based_on_id": "f427e3d9-d6b5-4fa7-8f53-181de63800ca",
-					"based_on_hash": "sln8v5IthZcWpt1AZ71mewTCxpZB+Ai+WwfiQLjvVvE",
 					"name": "Fortify 4, Skull",
 					"cost_type": "to_original_cost",
 					"cost": "+187.5",
@@ -96,10 +270,7 @@
 				},
 				{
 					"type": "eqp_modifier",
-					"version": 1,
 					"id": "e070c75f-0af4-42e8-8913-ad2cb4831f84",
-					"based_on_id": "c536a434-61c0-4a9d-870e-6c1a8e50fa25",
-					"based_on_hash": "kNja/HcJ3xPQIfKxBXYyByJbtPdTTkAgYxC6TO7Ncuo",
 					"name": "Fortify 4, Hands",
 					"cost_type": "to_original_cost",
 					"cost": "+187.5",
@@ -107,7 +278,35 @@
 						{
 							"type": "dr_bonus",
 							"amount": 4,
-							"location": "hands"
+							"location": "hand"
+						}
+					]
+				},
+				{
+					"type": "eqp_modifier",
+					"id": "4e0cb499-2875-49d6-8bb9-e5d1172fe504",
+					"name": "Fortify 3, Legs",
+					"cost_type": "to_original_cost",
+					"cost": "+300",
+					"features": [
+						{
+							"type": "dr_bonus",
+							"amount": 3,
+							"location": "leg"
+						}
+					]
+				},
+				{
+					"type": "eqp_modifier",
+					"id": "72fec2d7-0aff-4e3b-a56e-6c3109878e58",
+					"name": "Fortify 3, Arms",
+					"cost_type": "to_original_cost",
+					"cost": "+150",
+					"features": [
+						{
+							"type": "dr_bonus",
+							"amount": 3,
+							"location": "arm"
 						}
 					]
 				}
@@ -115,7 +314,6 @@
 		},
 		{
 			"type": "eqp_modifier_container",
-			"version": 1,
 			"id": "1321ace0-657f-4fb5-8e72-4ca395e85e16",
 			"disabled": true,
 			"name": "Puissance",
@@ -123,7 +321,6 @@
 			"children": [
 				{
 					"type": "eqp_modifier",
-					"version": 1,
 					"id": "92d1cd3a-16c1-43d6-b45a-dfa52e64fd0a",
 					"name": "Puissance 1",
 					"cost_type": "to_original_cost",
@@ -131,6 +328,29 @@
 					"features": [
 						{
 							"type": "weapon_bonus",
+							"amount": 1,
+							"selection_type": "this_weapon"
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "eqp_modifier_container",
+			"id": "eafa111d-1ee3-4973-8e3c-0e0deb618528",
+			"disabled": true,
+			"name": "Accuracy",
+			"open": true,
+			"children": [
+				{
+					"type": "eqp_modifier",
+					"id": "bcc2c0c4-d363-4bd4-9a8c-22dac88b314a",
+					"name": "Accuracy 1",
+					"cost_type": "to_original_cost",
+					"cost": "+270",
+					"features": [
+						{
+							"type": "skill_bonus",
 							"amount": 1,
 							"selection_type": "this_weapon"
 						}

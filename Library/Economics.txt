@@ -48,7 +48,7 @@ Labour cost per energy point is £2600 / 0.9547 / 22 = £123.79/energy
 
 Quick and Dirty
 ---------------
-
+Add
 tl;dr £1.25 per point of energy
 
 An enchanting circle is 1 master and 5 assistants. The master is an Enchanting specialist, and the assistants are natural Technomancers.
@@ -61,6 +61,7 @@ Eight cycles of 210 energy per day is 1680 per day, meaning £1.054 per energy. 
 
 An enchantment that requires more energy can be supplemented with powerstones. Since one point of powerstone energy costs 1/1000 of the powerstone that has enough capacity (i.e. to reach 300 energy enchantments, an extra 90 energy needs to be supplied, 15 per enchanter, at £4.125 per point, for a total enchantment cost of £633.75, might as well round it to £650).
 400 enchantment is £4113.50+262.50 = £4376
+250 enchantment is £262.50 + £1035*6/1000 = ~£270
 
 Industrial Enchanting
 ---------------------
@@ -70,7 +71,7 @@ A magical production line has a large initial outlay, but subsequently increases
 Industrial enchanting is more cost-effective when 12.50 * N <= 262.5 + (N-210)*P(N-210/6), i.e. 415+ energy for the enchantment.
 
 Ensorcelment
-------------
+============
 
 Ensorcelment has a listed cost of 200 per point, but easily discounts to 20 per point for something easily broken.
 Wisdom 1: 4*20*1.25=£100
@@ -133,3 +134,85 @@ The Basic Grimoire
 Assuming utf-8 and an average of 6 characters per word, how big is the basic grimoire in data? 11.4MB, trivial!
 at 275 words per page, a spell is 80 pages to fully describe.
 The Basic Grimoire is split into separate books per college, and written in Faerie, a secret language which not even most makes read.
+
+Alchemy Economics
+=================
+
+The cost of an alchemical elixir is the raw materials cost + labour costs.
+Each elixir defines its materials cost and the brewing time.
+tl;dr, an elixir costs £(raw materials) + £32.4 * brewing time (days).
+Wisdom(+1 IQ (except spellcasting) for 1 hour, £600, 5 weeks) = £1735
+Health(cures disease, +2 HP; £200, 4 weeks) = £1107
+Healing(heals 1d HP or 1d FP not spent on spellcasting; $50, 1 week) = £277
+Battle(adds 1d DX for 1 hour, also affected by Bravery m.134; $150, 2 weeks) = £604
+Invulnerability(+3 DR for 1d+1 hours; $1000, 6 weeks) = £2361
+Strength(+1d ST (not HP) for 1 hour; $100, 2 weeks) = £554
+
+Industrial Alchemy is not widely available, so the best they can manage is a state-of-the-art alchemical laboratory, giving a TL/4 bonus (+4).
+An Alchemy skill at 12 guarantees an Average income. 14 for Comfortable, 16 for Wealthy.
+An Alchemist does not have to be a mage of any kind, but they must be a trusted member of the magical community.
+Each elixir has its own technique, for which alchemists are assumed to be trained in, eliminating the penalty.
+
+Optimal batch size: success chance * batch size
+Optimal staffing: Highest optimal batch size possible / (1 if Average, 2 if Comfortable, 5 if Wealthy)
+
+Average (x1)
+------------
+1 at 16, 1*0.9815 = 0.9815
+2 at 15, 2*0.9537 = 1.9074
+3 at 14, 3*0.9074 = 2.7222
+4 at 13, 4*0.8380 = 3.352
+5 at 12, 5*0.7407 = 3.7035 <- best
+6 at 11, 6*0.6250 = 3.75
+7 at 10, 7*0.5 = 3.5
+8 at 9, 8*0.3750 = 3
+
+Comfortable (x2)
+----------------
+
+3 at 16 = 2.9445
+4 at 15 = 3.8148
+5 at 14 = 4.537
+6 at 13 = 5.028
+7 at 12 = 5.1849 <- best
+8 at 11 = 5
+
+Wealthy (x5)
+------------
+
+5 at 16 = 4.9075
+6 at 15 = 5.7222
+7 at 14 = 6.3518
+8 at 13 = 6.704 <- best
+9 at 12 = 6.6663
+10 at 11 = 6.25
+
+---
+
+Conclusion: an Average wage attracting alchemists who on average produce 3.7035 elixirs per batch.
+
+Labour cost is £120/day * brew time (days) / average batch size
+e.g. paut takes 10 days to brew, so that's £120 * 10 / 3.7035 = £324.01..., rounds to £325
+The fact that it costs £200 in raw materials means Fwüsh is doing one hell of a bargain.
+
+Industrial Alchemy
+---
+
+Industrial Alchemy lets you make a batch of 1000 for a -4 penalty, but can't be used in conjunction with the TL/2 bonus.
+
+Average (x1) at 8, success 0.2593*1000 = 259 average batch size, 259 adjusting for wages
+Comfortable (x2) at 10, success 0.5*1000 = 500 average batch size, 250 adjusting for wages
+Wealthy (x5) at 12, success 0.625*1000 = 625 average batch size, 125 adjusting for wages
+
+Low pay wins out again! At least that's not true for Struggling wages...
+Paut's wage bill is £120*10 / 259 = £4.633
+
+Resurrection
+============
+
+Resurrection costs 300 energy and takes 2 hours. Unfortunately, since it's not an enchantment, the ceremonial casting takes 10x the listed time. Mages working together ceremonially is 20 hours, an absolutely gruelling ceremony. lmao at doing it with a single powerstone, though.
+£1.25*250, minimum mundane value $10*P*P + $40*P, £635000. the enchantment energy is negligible for the power stone. £635 per energy. £635*250=£158'750
+
+Necromancers capable of Resurrection are Wealthy. £600 per mage-day, 4 workings per day is £150 labour.
+Or, 6 necromancers on gruelling shifts, £600*2.5*6=£9000 labour, +371.25
+Call is £9500 for a resurrection.

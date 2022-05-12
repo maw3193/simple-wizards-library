@@ -1,0 +1,2548 @@
+{
+	"type": "character",
+	"version": 1,
+	"id": "e59a9c3b-4117-4540-8b85-5ae1f7330ce7",
+	"settings": {
+		"version": 1,
+		"default_length_units": "ft_in",
+		"default_weight_units": "lb",
+		"user_description_display": "tooltip",
+		"modifiers_display": "inline",
+		"notes_display": "inline",
+		"base_will_on_10": false,
+		"base_per_on_10": false,
+		"use_multiplicative_modifiers": false,
+		"use_modifying_dice_plus_adds": false,
+		"use_know_your_own_strength": false,
+		"use_reduced_swing": false,
+		"use_thrust_equals_swing_minus_2": false,
+		"use_simple_metric_conversions": true,
+		"show_college_in_sheet_spells": false,
+		"show_difficulty": false,
+		"show_advantage_modifier_adj": false,
+		"show_equipment_modifier_adj": false,
+		"show_spell_adj": true,
+		"use_title_in_footer": false,
+		"extra_space_around_encumbrance": false,
+		"block_layout": [
+			"reactions conditional_modifiers",
+			"melee",
+			"ranged",
+			"advantages skills",
+			"spells",
+			"equipment",
+			"other_equipment",
+			"notes"
+		]
+	},
+	"created_date": "Sep 12, 2021, 4:53 PM",
+	"modified_date": "Sep 12, 2021, 5:42 PM",
+	"profile": {
+		"player_name": "jonathan",
+		"name": "Newly-Created Tulpa",
+		"height": "5' 6\"",
+		"body_type": "humanoid",
+		"tech_level": "8"
+	},
+	"total_points": 41,
+	"ST": 10,
+	"DX": 10,
+	"IQ": 10,
+	"HT": 10,
+	"advantages": [
+		{
+			"type": "advantage",
+			"version": 1,
+			"id": "69f9a918-b69a-4430-a156-dd572815f067",
+			"name": "Natural Attacks",
+			"physical": true,
+			"weapons": [
+				{
+					"type": "melee_weapon",
+					"damage": {
+						"type": "cr",
+						"st": "thr",
+						"base": "-1"
+					},
+					"usage": "Bite",
+					"reach": "C",
+					"parry": "No",
+					"block": "No",
+					"defaults": [
+						{
+							"type": "DX"
+						},
+						{
+							"type": "Skill",
+							"name": "Brawling"
+						}
+					]
+				},
+				{
+					"type": "melee_weapon",
+					"damage": {
+						"type": "cr",
+						"st": "thr",
+						"base": "-1"
+					},
+					"usage": "Punch",
+					"reach": "C",
+					"parry": "0",
+					"defaults": [
+						{
+							"type": "DX"
+						},
+						{
+							"type": "Skill",
+							"name": "Boxing"
+						},
+						{
+							"type": "Skill",
+							"name": "Brawling"
+						},
+						{
+							"type": "Skill",
+							"name": "Karate"
+						}
+					]
+				},
+				{
+					"type": "melee_weapon",
+					"damage": {
+						"type": "cr",
+						"st": "thr"
+					},
+					"usage": "Kick",
+					"reach": "C,1",
+					"parry": "No",
+					"defaults": [
+						{
+							"type": "DX",
+							"modifier": -2
+						},
+						{
+							"type": "Skill",
+							"name": "Brawling",
+							"modifier": -2
+						},
+						{
+							"type": "Skill",
+							"name": "Karate",
+							"modifier": -2
+						}
+					]
+				}
+			],
+			"reference": "B271"
+		},
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"id": "fd5e43ec-ae19-45b4-87f6-162cc51b06e7",
+			"container_type": "meta_trait",
+			"name": "Newly-created Tulpa",
+			"open": true,
+			"children": [
+				{
+					"type": "advantage_container",
+					"version": 1,
+					"id": "05e649da-1b34-4497-a0e6-5350bd5aa8e2",
+					"container_type": "meta_trait",
+					"name": "Phantasm",
+					"open": true,
+					"children": [
+						{
+							"type": "advantage_container",
+							"version": 1,
+							"id": "cf184eb6-f2d5-49a7-b0c7-a85bdbfb3a5c",
+							"container_type": "meta_trait",
+							"name": "Apparition",
+							"open": true,
+							"children": [
+								{
+									"type": "advantage",
+									"version": 1,
+									"id": "856c7051-826b-4e00-983f-2a9040834617",
+									"based_on_id": "0270b797-f1bb-4a7c-a7fe-a60b8c31b322",
+									"based_on_hash": "wSjXmIE9zEpYf3pB8JM1LjvYpgRXUYr8I0LV7AAoO8U",
+									"name": "Decreased Intelligence",
+									"mental": true,
+									"levels": "4",
+									"points_per_level": -20,
+									"reference": "B15",
+									"features": [
+										{
+											"type": "attribute_bonus",
+											"amount": -1,
+											"per_level": true,
+											"attribute": "iq"
+										}
+									],
+									"categories": [
+										"Attribute",
+										"Disadvantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"id": "78dd3304-081c-4bc7-91a3-44784705832c",
+									"based_on_id": "0f874718-e1a7-4d4f-8855-c067c4e57917",
+									"based_on_hash": "EN01ibjn/YUqSP7AXYY9yNeYFmNFsPk02qAxyGLa0Zw",
+									"name": "Increased Will",
+									"mental": true,
+									"levels": "4",
+									"points_per_level": 5,
+									"reference": "B16",
+									"features": [
+										{
+											"type": "attribute_bonus",
+											"amount": 1,
+											"per_level": true,
+											"attribute": "will"
+										}
+									],
+									"categories": [
+										"Advantage",
+										"Attribute"
+									]
+								},
+								{
+									"type": "advantage_container",
+									"version": 1,
+									"id": "d69aa4a0-e07e-4f94-bc55-378f2251dbe8",
+									"based_on_id": "73e2dece-b073-405e-9c0e-a84bc8febe93",
+									"based_on_hash": "SpFfCQaU1G4uGXQLycyVo2mB/HWyVCeT0CIohLiF9kU",
+									"container_type": "meta_trait",
+									"name": "Meta-Trait: Automaton",
+									"reference": "B263",
+									"open": true,
+									"children": [
+										{
+											"type": "advantage",
+											"version": 1,
+											"id": "591957af-cbee-46be-a0f8-8f49429b11a3",
+											"based_on_id": "47cfa2b9-76b8-4864-9608-3eddc823b223",
+											"based_on_hash": "EGQyvoKDIFHMUHw5w9ND1bngJh8xwj26HLLnhiiphag",
+											"name": "Hidebound",
+											"mental": true,
+											"base_points": -5,
+											"reference": "B138",
+											"notes": "-2 penalty on any task that requires creativity or invention, including most rolls against Artist skill, all Engineer rolls for new inventions, and all skill rolls made to use the Gadgeteer advantage.",
+											"categories": [
+												"Disadvantage"
+											]
+										},
+										{
+											"type": "advantage",
+											"version": 1,
+											"id": "ee0db3c6-2a0a-4637-b0ee-1f547c2f48cb",
+											"based_on_id": "b2107696-0956-4585-bb94-4071bf926b4e",
+											"based_on_hash": "P84CmBILfpjrDWOZyS3m8ynvkbCKWcX7idHLXAII4CQ",
+											"name": "Incurious",
+											"mental": true,
+											"base_points": -5,
+											"cr": 6,
+											"reference": "B140",
+											"features": [
+												{
+													"type": "reaction_bonus",
+													"amount": -1,
+													"situation": "to new things"
+												}
+											],
+											"notes": "Make a self-control roll when confronted with something strange. If you fail, you ignore it!",
+											"categories": [
+												"Disadvantage"
+											]
+										},
+										{
+											"type": "advantage",
+											"version": 1,
+											"id": "951f6a9e-8c86-48c5-a8de-1c90e9e119de",
+											"based_on_id": "62626e15-c935-472f-ba36-758449a76bef",
+											"based_on_hash": "2EHYXDpu1PqZN1ugyYEdrJN3deb3JuMCYTMdW3lXCaY",
+											"name": "Low Empathy",
+											"mental": true,
+											"base_points": -20,
+											"reference": "B142",
+											"prereqs": {
+												"type": "prereq_list",
+												"all": true,
+												"prereqs": [
+													{
+														"type": "advantage_prereq",
+														"has": false,
+														"name": {
+															"compare": "is",
+															"qualifier": "oblivious"
+														}
+													},
+													{
+														"type": "advantage_prereq",
+														"has": false,
+														"name": {
+															"compare": "is",
+															"qualifier": "callous"
+														}
+													},
+													{
+														"type": "advantage_prereq",
+														"has": false,
+														"name": {
+															"compare": "is",
+															"qualifier": "empathy"
+														}
+													}
+												]
+											},
+											"features": [
+												{
+													"type": "skill_bonus",
+													"amount": -3,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "is",
+														"qualifier": "acting"
+													}
+												},
+												{
+													"type": "skill_bonus",
+													"amount": -3,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "is",
+														"qualifier": "carousing"
+													}
+												},
+												{
+													"type": "skill_bonus",
+													"amount": -3,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "is",
+														"qualifier": "criminology"
+													}
+												},
+												{
+													"type": "skill_bonus",
+													"amount": -3,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "is",
+														"qualifier": "detect lies"
+													}
+												},
+												{
+													"type": "skill_bonus",
+													"amount": -3,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "is",
+														"qualifier": "diplomacy"
+													}
+												},
+												{
+													"type": "skill_bonus",
+													"amount": -3,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "is",
+														"qualifier": "enthrallment"
+													}
+												},
+												{
+													"type": "skill_bonus",
+													"amount": -3,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "is",
+														"qualifier": "fast-talk"
+													}
+												},
+												{
+													"type": "skill_bonus",
+													"amount": -3,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "is",
+														"qualifier": "interrogation"
+													}
+												},
+												{
+													"type": "skill_bonus",
+													"amount": -3,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "is",
+														"qualifier": "leadership"
+													}
+												},
+												{
+													"type": "skill_bonus",
+													"amount": -3,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "is",
+														"qualifier": "merchant"
+													}
+												},
+												{
+													"type": "skill_bonus",
+													"amount": -3,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "is",
+														"qualifier": "politics"
+													}
+												},
+												{
+													"type": "skill_bonus",
+													"amount": -3,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "contains",
+														"qualifier": "psychology"
+													}
+												},
+												{
+													"type": "skill_bonus",
+													"amount": -3,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "contains",
+														"qualifier": "savoir-faire"
+													}
+												},
+												{
+													"type": "skill_bonus",
+													"amount": -3,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "is",
+														"qualifier": "sex appeal"
+													}
+												},
+												{
+													"type": "skill_bonus",
+													"amount": -3,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "is",
+														"qualifier": "sociology"
+													}
+												},
+												{
+													"type": "skill_bonus",
+													"amount": -3,
+													"selection_type": "skills_with_name",
+													"name": {
+														"compare": "is",
+														"qualifier": "streetwise"
+													}
+												}
+											],
+											"categories": [
+												"Disadvantage"
+											]
+										},
+										{
+											"type": "advantage",
+											"version": 1,
+											"id": "b47e0464-7ea4-4bec-bc6d-0add7148aa0a",
+											"based_on_id": "dc08fa3b-bf8f-4249-bbc4-d3a87d9d2dbb",
+											"based_on_hash": "r9JlJ4d59FKlHpSfLqBpBc+s1uorXp3YuV1JB4Amssc",
+											"name": "No Sense of Humor",
+											"physical": true,
+											"base_points": -10,
+											"reference": "B146",
+											"features": [
+												{
+													"type": "reaction_bonus",
+													"amount": -2,
+													"situation": "from others in any situation where No Sense of Humor becomes evident"
+												}
+											],
+											"categories": [
+												"Disadvantage"
+											]
+										},
+										{
+											"type": "advantage",
+											"version": 1,
+											"id": "41639984-2997-4682-bdf4-1e579a811ffc",
+											"based_on_id": "a8cf26f3-5699-4825-a71f-3b2641291fbc",
+											"based_on_hash": "hTJPUkHfAh1kWcw2eqxGUiPl+pMoJv1j6RJyZGFEoF0",
+											"name": "Slave Mentality",
+											"physical": true,
+											"base_points": -40,
+											"reference": "B154",
+											"categories": [
+												"Disadvantage"
+											]
+										}
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"id": "2e0806d1-f032-4803-acd4-aac2004d587d",
+									"based_on_id": "280069c1-ac2d-42bb-a933-0f9cdee48ad8",
+									"based_on_hash": "Wl2SphpEgbuiSPKGxcWPEDa+zuEiIvKxCyLe0Ry+AUE",
+									"round_down": true,
+									"name": "Resistant",
+									"physical": true,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"id": "812b1877-c2f8-4f0e-a965-743a982a1697",
+											"based_on_id": "67a26bb4-d44b-4078-bdd1-3de5d4e7fe37",
+											"based_on_hash": "YpVj19GJivP4zBgEqUwkQ+y38lfrTVq/YvMrb2gyJ/g",
+											"name": "Mind Control",
+											"reference": "B80",
+											"cost_type": "points",
+											"cost": 30,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"id": "452213bf-a508-43f8-832a-763d0c04a6c2",
+											"based_on_id": "9d0a156e-6a47-450a-a695-59920f642b44",
+											"based_on_hash": "kp8fsh5zdD9mTEfFSW5LzjSRqVuGoUoUTYeuj15OJTk",
+											"disabled": true,
+											"name": "@Common: Poison, Sickness, etc.@",
+											"reference": "B81",
+											"cost_type": "points",
+											"cost": 15,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"id": "a85f0e50-cb29-4cf3-84cb-a46a0cbea61a",
+											"based_on_id": "df4e4548-5978-43a5-ba38-1acbaead9779",
+											"based_on_hash": "caSrFQFyTmwoiHFM6cI1UkiZAVVQDiinltm9p5kvNmM",
+											"disabled": true,
+											"name": "@Occasional: Disease, Ingested Poison, etc.@",
+											"reference": "B81",
+											"cost_type": "points",
+											"cost": 10,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"id": "c7089c7a-15a0-4964-a324-9408baedf158",
+											"based_on_id": "95a83382-1840-4824-b116-e378c6f814b8",
+											"based_on_hash": "/WPRq25RUZM2sHHlqCiVdM+ZoxTS4Suv2cxvx0ugNno",
+											"disabled": true,
+											"name": "@Rare: Acceleration, Altitude Sickness, Bends, Seasickness, Space Sickness, Nanomachines, etc.@",
+											"reference": "B81",
+											"cost_type": "points",
+											"cost": 5,
+											"affects": "total"
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"id": "d21c67d0-a2e0-4686-88f8-a4b78ba9bce8",
+											"based_on_id": "568d217b-f340-4966-a69f-b4813e9cac82",
+											"based_on_hash": "X12Qyw2msAszjOltKGjv/RiNTZ/ZV6uDRWjDB04V4/k",
+											"name": "Immunity",
+											"reference": "B81",
+											"cost_type": "multiplier",
+											"cost": 1
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"id": "db3c2ede-0ad9-4a31-98e2-5fb41fca9386",
+											"based_on_id": "0ce07da1-0712-4465-98c5-fb7e9975d462",
+											"based_on_hash": "tN/4Kf3lZyK5oWDDwsDwy2Y3KAankbI93r4Ho+VCLeg",
+											"disabled": true,
+											"name": "+8 to all HT rolls to resist",
+											"reference": "B81",
+											"cost_type": "multiplier",
+											"cost": 0.5
+										},
+										{
+											"type": "modifier",
+											"version": 1,
+											"id": "7e8d8af3-52b8-4f03-bb39-e955a2f66083",
+											"based_on_id": "b7b5b83b-6225-4feb-83ee-52cb72533224",
+											"based_on_hash": "soU+u+ZTZR9akrRBim0yDZPDraQZe9e+CiO9p2i9npw",
+											"disabled": true,
+											"name": "+3 to all HT rolls to resist",
+											"reference": "B81",
+											"cost_type": "multiplier",
+											"cost": 0.33
+										}
+									],
+									"reference": "B81",
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"id": "33f7400e-fec5-4054-bb13-95cd4adc97ed",
+									"based_on_id": "6e4cb440-84a4-481a-ae1a-467743192710",
+									"based_on_hash": "7VLmpOiERF/s/0vl96aN284ZkC16nF++yl0z0bYMbPg",
+									"name": "Single-Minded",
+									"mental": true,
+									"base_points": 5,
+									"reference": "B85",
+									"notes": "+3 to rolls for any lengthy mental task you concentrate on to the exclusion of other activities, if the GM feels such focus would be beneficial. You tend to ignore everything else while obsessed and have -5 to all rolls to notice interruptions.",
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"id": "2b3469e9-9599-41fe-9e09-b93e0e4206b2",
+									"based_on_id": "94dc8d8d-b641-4e44-8483-c7a7cb7025d3",
+									"based_on_hash": "T0X1YhCq2NBdAvqwbMvTZhxGgz4OZnmTrdD3xvZIRzU",
+									"name": "Unfazeable",
+									"mental": true,
+									"base_points": 15,
+									"modifiers": [
+										{
+											"type": "modifier",
+											"version": 1,
+											"id": "807450ea-7780-4c0a-a8fd-1e2e3bb8c370",
+											"based_on_id": "afc741f6-01f8-48bc-936d-37d51b5cdd0e",
+											"based_on_hash": "RWvbJDtdpvBiAy0yFEl8pZhoRx3EhjsyACmlStSHqjI",
+											"disabled": true,
+											"name": "Familiar Horrors",
+											"reference": "H20",
+											"cost_type": "percentage",
+											"cost": -50,
+											"affects": "total"
+										}
+									],
+									"reference": "B95",
+									"notes": "Exempt from fright checks. Reaction modifiers do not affect you.",
+									"categories": [
+										"Advantage"
+									]
+								},
+								{
+									"type": "advantage_container",
+									"version": 1,
+									"id": "4348380f-507d-4336-b964-87266e38f2ee",
+									"container_type": "meta_trait",
+									"name": "Ghost",
+									"open": true,
+									"children": [
+										{
+											"type": "advantage",
+											"version": 1,
+											"id": "1b575884-aec7-4b48-9927-95b9cd1b0b0d",
+											"based_on_id": "9fed2a18-92b7-4cf7-bd9b-afd7f9215ff4",
+											"based_on_hash": "5Qusou1YtmOtetUDWlb3uAWnIZkMAo3JLbdlhjn5qMY",
+											"name": "Energy Reserve (Magical)",
+											"physical": true,
+											"exotic": true,
+											"levels": "10",
+											"points_per_level": 3,
+											"modifiers": [
+												{
+													"type": "modifier",
+													"version": 1,
+													"id": "4009b7f7-7371-4024-92c7-a0c873ff6d0f",
+													"based_on_id": "aba8e3e1-c803-4a7e-a859-0a2f9bf14d35",
+													"based_on_hash": "sEN/3slsfvsLnvvVuIUUegqRsTrNaDIixmnGig4b2ww",
+													"disabled": true,
+													"name": "Abilities Only",
+													"reference": "P119",
+													"cost_type": "percentage",
+													"cost": -10,
+													"affects": "total"
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"id": "16da2570-3568-497c-8124-e2abb34884e5",
+													"based_on_id": "d6ae4e3a-1b14-4200-98fc-cbe62488bd43",
+													"based_on_hash": "+LEA+y1mWQW/hbywWH5t0JJjBK0matlgWRKxsfPrcNw",
+													"disabled": true,
+													"name": "One Power",
+													"reference": "P117",
+													"cost_type": "percentage",
+													"cost": -50,
+													"affects": "total"
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"id": "3b0df192-51ee-4fe2-8d07-6a59e39c3c04",
+													"based_on_id": "88670156-fa0c-4784-9cec-98a51923964f",
+													"based_on_hash": "F2mRX8JYxCRCn0J/KxxJsPR9yePVOfIdui1NIOv88mk",
+													"disabled": true,
+													"name": "Slow Recharge",
+													"reference": "P117",
+													"cost_type": "percentage",
+													"cost": -20,
+													"affects": "total",
+													"notes": "1/hour"
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"id": "7383326f-3762-41ec-b442-47e52ab29c60",
+													"based_on_id": "c1e2bb02-a730-4c09-b951-850c7dde1e4d",
+													"based_on_hash": "FRZgJydfu4d/dMvdqKiaX9j0VYgP+F2uBcnNrg4KSJo",
+													"disabled": true,
+													"name": "Slow Recharge",
+													"reference": "P117",
+													"cost_type": "percentage",
+													"cost": -60,
+													"affects": "total",
+													"notes": "1/day"
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"id": "e5915dc4-c4f0-49c7-821a-37b949948ff2",
+													"based_on_id": "07c40c5d-f2ef-443b-a284-7fc3a5b0446c",
+													"based_on_hash": "CgJCcX6EpFs6J0olhtVd3SgAurQqnw5Ht8uoqvP9pgo",
+													"disabled": true,
+													"name": "Special Recharge",
+													"reference": "P117",
+													"cost_type": "percentage",
+													"cost": -70,
+													"affects": "total"
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"id": "049dff5b-ecaa-4b36-98af-2503fc06a9fe",
+													"based_on_id": "72dd7e56-b785-41b7-a5b4-08d58138dbe0",
+													"based_on_hash": "z1zpWYDjIjOWbzCuK8zqMRuPPWPAHLrhqrlD0j1aQbg",
+													"disabled": true,
+													"name": "Special Recharge",
+													"reference": "P117",
+													"cost_type": "percentage",
+													"cost": -80,
+													"affects": "total",
+													"notes": "1/s bleed"
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"id": "f508f477-e547-4815-aadc-848c08bbf9ea",
+													"based_on_id": "057332ad-a6de-40b4-9c56-2f2f75c5accd",
+													"based_on_hash": "ss5z9RM0dP7REvScDCA7rD1PVJhf6r+4347QS8xVxms",
+													"disabled": true,
+													"name": "Stunts Only",
+													"reference": "P117",
+													"cost_type": "percentage",
+													"cost": -10,
+													"affects": "total"
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"id": "7881e10d-3294-4ab6-ab0c-d4c5aa9d06ad",
+													"name": "Only within 1yd of focus",
+													"cost_type": "percentage",
+													"cost": -80,
+													"affects": "total"
+												}
+											],
+											"reference": "P119",
+											"categories": [
+												"Advantage",
+												"Attribute"
+											]
+										},
+										{
+											"type": "advantage_container",
+											"version": 1,
+											"id": "bc7edc01-8048-4a69-bef0-da7659ab2acf",
+											"based_on_id": "a5374d82-7816-4adb-b8d8-86eeb060e61a",
+											"based_on_hash": "sDzuHx7s7e5GcLyNYRZdgVn9BqRXlmyB6ohmbfdTJdQ",
+											"container_type": "meta_trait",
+											"name": "Meta-Trait: Spirit",
+											"reference": "B263",
+											"open": true,
+											"children": [
+												{
+													"type": "advantage",
+													"version": 1,
+													"id": "4620351c-9b4e-4e10-aad0-79ac2cb97676",
+													"based_on_id": "75554114-71d1-43a6-8faa-2e0f0d271a21",
+													"based_on_hash": "2Bb3IJD7mEcrC+vqDfqT8WHmm4b12ukBZoK7Z0v9Bw0",
+													"name": "Doesn't Breathe",
+													"physical": true,
+													"exotic": true,
+													"base_points": 20,
+													"modifiers": [
+														{
+															"type": "modifier",
+															"version": 1,
+															"id": "42e8a7d3-2510-48b2-b5e0-6a114f02556c",
+															"based_on_id": "7910336e-fcc9-4569-a9e7-ade3ef14b7a4",
+															"based_on_hash": "h8wwd0Bs3kHsrJiRLAiJXsaCTkFoXrpsdm9+dNJGUWY",
+															"disabled": true,
+															"name": "Gills",
+															"reference": "B49",
+															"cost_type": "percentage",
+															"cost": -50,
+															"affects": "total"
+														},
+														{
+															"type": "modifier",
+															"version": 1,
+															"id": "73945500-725d-4c0d-9f90-fcb5eac0b0d6",
+															"based_on_id": "51b90998-a8ae-4ec4-98ed-8b447966d672",
+															"based_on_hash": "VE4mY6ZQ0L/2sNQI1WZ967G+HY0vVoEojBZz7uDAGRM",
+															"disabled": true,
+															"name": "Gills",
+															"reference": "B49",
+															"cost_type": "points",
+															"cost": -20,
+															"affects": "total",
+															"notes": "Suffocates in air"
+														},
+														{
+															"type": "modifier",
+															"version": 1,
+															"id": "18504690-bd5d-40f7-a542-e2a6ab33c9e2",
+															"based_on_id": "11033c47-f57b-4568-9e5e-0d08511e3824",
+															"based_on_hash": "yQgyYVtJKTaAqBGDDS/WJEltBCy+v/NO0JI7tPWXdSE",
+															"disabled": true,
+															"name": "Oxygen Absorption",
+															"reference": "B49",
+															"cost_type": "percentage",
+															"cost": -25,
+															"affects": "total"
+														},
+														{
+															"type": "modifier",
+															"version": 1,
+															"id": "117198c8-03bf-4dc2-aa30-006db9440d40",
+															"based_on_id": "b9c01368-be2e-4a26-8ed9-41c20fa1070d",
+															"based_on_hash": "B5j3XZNxtWVbuc8cQHZUZXwp1DibHTvaETs6/2PlzVQ",
+															"disabled": true,
+															"name": "Oxygen Storage",
+															"reference": "B49",
+															"cost_type": "percentage",
+															"cost": -50,
+															"affects": "total",
+															"notes": "Can hold breath 25 times as long as normal"
+														},
+														{
+															"type": "modifier",
+															"version": 1,
+															"id": "7ab0e9c0-d272-4fb3-acb3-f6277b5f091c",
+															"based_on_id": "aa04b367-39d8-4340-9fca-9f0f1fe26d4f",
+															"based_on_hash": "lxDMW4rT01qRcC6iXHIdqiwgFBXlbLTwqCjNANfthZ0",
+															"disabled": true,
+															"name": "Oxygen Storage",
+															"reference": "B49",
+															"cost_type": "percentage",
+															"cost": -40,
+															"affects": "total",
+															"notes": "Can hold breath 50 times as long as normal"
+														},
+														{
+															"type": "modifier",
+															"version": 1,
+															"id": "822cd0f7-cd33-4cc4-9f3e-ffed9dd667a0",
+															"based_on_id": "2c148731-042b-41bf-bf03-e34c67633155",
+															"based_on_hash": "Ss0eZQIjznqlUpLPkBm30qJTX9kUtHc1ySgbTG7ci5o",
+															"disabled": true,
+															"name": "Oxygen Storage",
+															"reference": "B49",
+															"cost_type": "percentage",
+															"cost": -30,
+															"affects": "total",
+															"notes": "Can hold breath 100 times as long as normal"
+														},
+														{
+															"type": "modifier",
+															"version": 1,
+															"id": "b6a3bcb0-017c-4d0e-a178-490b5d4c45f3",
+															"based_on_id": "4c371d58-77a0-4ace-a5f6-111ff3c846fd",
+															"based_on_hash": "xpxHyqWv0JJc+b7WYG3c+DZmFhefpYWvjBVdaA9Rok8",
+															"disabled": true,
+															"name": "Oxygen Storage",
+															"reference": "B49",
+															"cost_type": "percentage",
+															"cost": -20,
+															"affects": "total",
+															"notes": "Can hold breath 200 times as long as normal"
+														},
+														{
+															"type": "modifier",
+															"version": 1,
+															"id": "912fcc74-4ead-49c1-bec2-f8e0a0c05426",
+															"based_on_id": "9d98373b-dbc2-46cc-adda-bb828be2a634",
+															"based_on_hash": "UqFGlmf4XOapt89yQQrH/vcSpnoHFO+AkOJ/O7ueRO0",
+															"disabled": true,
+															"name": "Oxygen Storage",
+															"reference": "B49",
+															"cost_type": "percentage",
+															"cost": -10,
+															"affects": "total",
+															"notes": "Can hold breath 300 times as long as normal"
+														},
+														{
+															"type": "modifier",
+															"version": 1,
+															"id": "b3ce8c86-dfdb-4da0-9e61-c40745c0546e",
+															"based_on_id": "b4dbcdc2-2b39-4260-962d-42e9077ff033",
+															"based_on_hash": "URK5UlEhe++s253y6gbA60toL+5nai3aB5T3pt5PrBw",
+															"disabled": true,
+															"name": "Oxygen Combustion",
+															"reference": "B49",
+															"cost_type": "percentage",
+															"cost": -50,
+															"affects": "total"
+														}
+													],
+													"reference": "B49",
+													"categories": [
+														"Advantage"
+													]
+												},
+												{
+													"type": "advantage",
+													"version": 1,
+													"id": "cba26c92-b4d7-4dec-95ad-38ce3d65140d",
+													"based_on_id": "67dd67f6-4f2f-44cf-974a-411279797bd4",
+													"based_on_hash": "P48BPRXMgngXhY+GKv5TAu5iyw4rIIrgPaCxYtCLBIk",
+													"name": "Doesn't Eat or Drink",
+													"physical": true,
+													"exotic": true,
+													"base_points": 10,
+													"reference": "B50",
+													"categories": [
+														"Advantage"
+													]
+												},
+												{
+													"type": "advantage",
+													"version": 1,
+													"id": "50601ab7-4a1f-4b7a-b3d2-673a86ecc32b",
+													"based_on_id": "67424224-f71c-4e9d-9d15-529cee2c182a",
+													"based_on_hash": "O9W3LdrqPJcFhyH3C/ZkSkuf1HaQOKpg5ZY5FtShHjA",
+													"name": "Doesn't Sleep",
+													"physical": true,
+													"exotic": true,
+													"base_points": 20,
+													"reference": "B50",
+													"categories": [
+														"Advantage"
+													]
+												},
+												{
+													"type": "advantage",
+													"version": 1,
+													"id": "784feb3c-c377-4f90-b5b5-02ca13c2b4f3",
+													"based_on_id": "eb1b134d-2f07-497b-bba1-9ad82d72298d",
+													"based_on_hash": "1/AOgUV/4ss7zH1leg0gOKnE0bbb6J1YrzId1UVUc9o",
+													"name": "Insubstantiality",
+													"mental": true,
+													"physical": true,
+													"exotic": true,
+													"base_points": 80,
+													"modifiers": [
+														{
+															"type": "modifier",
+															"version": 1,
+															"id": "a5784d21-f61a-4b71-a8dd-77fdba6c8c3a",
+															"based_on_id": "4f22071a-7749-4f32-8c7a-427ddd30e788",
+															"based_on_hash": "NXcg43Xs3VXztGzv5WiCrTqToUVYpMJek17QtH+Xhv8",
+															"name": "Affect Substantial",
+															"reference": "B63",
+															"cost_type": "percentage",
+															"cost": 100,
+															"affects": "total"
+														},
+														{
+															"type": "modifier",
+															"version": 1,
+															"id": "cb31a6fb-e82d-4bc4-8690-ea764cd9162d",
+															"based_on_id": "1351d47e-d027-4f92-b1fd-176ca13caf41",
+															"based_on_hash": "WjONOfkGNoDpehIPm4AfnqTrhj862ibbHQiMmTaj4vw",
+															"disabled": true,
+															"name": "Can Carry Objects",
+															"reference": "B63",
+															"cost_type": "percentage",
+															"cost": 10,
+															"affects": "total",
+															"notes": "Up to No Encumbrance"
+														},
+														{
+															"type": "modifier",
+															"version": 1,
+															"id": "d11a373f-0843-439a-a42c-623b38669a8e",
+															"based_on_id": "d243e71d-0d8a-42c2-8caa-1d930c5080cf",
+															"based_on_hash": "ldfIK1Yf2hubmTMhGM/RB0Buhydb595mvFBwL2PcHuk",
+															"disabled": true,
+															"name": "Can Carry Objects",
+															"reference": "B63",
+															"cost_type": "percentage",
+															"cost": 20,
+															"affects": "total",
+															"notes": "Up to Light Encumbrance"
+														},
+														{
+															"type": "modifier",
+															"version": 1,
+															"id": "7ef72bc2-1e25-4193-8de3-0a1a837c2555",
+															"based_on_id": "efdeff4d-a829-43db-a9af-152a40063e3c",
+															"based_on_hash": "RKK0uecmmyE6fOXjygmvWWflsFMblZUgZbBYt3BGnM4",
+															"disabled": true,
+															"name": "Can Carry Objects",
+															"reference": "B63",
+															"cost_type": "percentage",
+															"cost": 50,
+															"affects": "total",
+															"notes": "Up to Medium Encumbrance"
+														},
+														{
+															"type": "modifier",
+															"version": 1,
+															"id": "23ede1b6-dafb-412c-bfc9-41693c70dc65",
+															"based_on_id": "d1197e96-9dac-458c-9434-264883ec478a",
+															"based_on_hash": "VdY3mnKwF6Sv7lFzsjN9sqJhtE/p6TMeWtR+qskR1rw",
+															"disabled": true,
+															"name": "Can Carry Objects",
+															"reference": "B63",
+															"cost_type": "percentage",
+															"cost": 100,
+															"affects": "total",
+															"notes": "Up to Heavy Encumbrance"
+														},
+														{
+															"type": "modifier",
+															"version": 1,
+															"id": "ae2611ad-53c2-49d2-bdf0-08ff5de31c67",
+															"based_on_id": "a996b0f6-dd52-46ba-b418-91758868e1d3",
+															"based_on_hash": "PL9zXeLzZRCVHhehKvIiDwOP7/MSD9Mk1g/CgGJkfvk",
+															"disabled": true,
+															"name": "Partial Change",
+															"reference": "B63",
+															"cost_type": "percentage",
+															"cost": 20,
+															"affects": "total"
+														},
+														{
+															"type": "modifier",
+															"version": 1,
+															"id": "fb705b9d-3dda-4851-b68c-27783d9c2641",
+															"based_on_id": "2b174cdf-28fb-462b-a128-8c725b80408d",
+															"based_on_hash": "aw2MeYgWdNkLUlG9iW3GiGvJRlDJ497Q5hsj7NIDz1Q",
+															"disabled": true,
+															"name": "Partial Change",
+															"reference": "B63",
+															"cost_type": "percentage",
+															"cost": 100,
+															"affects": "total",
+															"notes": "Can turn an item you are carrying substantial without dropping it"
+														},
+														{
+															"type": "modifier",
+															"version": 1,
+															"id": "798853af-7961-4e2c-86e2-8384278ce102",
+															"based_on_id": "92f39595-8f8f-4e80-91df-412e422aba16",
+															"based_on_hash": "uvBZsitNEQxg+dcOc/rOoYM6Ff98drbRc/KmfAUhICg",
+															"disabled": true,
+															"name": "Always On",
+															"reference": "B63",
+															"cost_type": "percentage",
+															"cost": -50,
+															"affects": "total"
+														},
+														{
+															"type": "modifier",
+															"version": 1,
+															"id": "fe3be9d0-346a-43dd-a20a-bd81bc288498",
+															"based_on_id": "bf3d350b-a887-4035-ad11-06ec2c75b3b4",
+															"based_on_hash": "7aoZ00cToXG9DP7RSD90U4EpHnJwAk3yXazJgj6qThA",
+															"name": "Usually On",
+															"reference": "B63",
+															"cost_type": "percentage",
+															"cost": -40,
+															"affects": "total",
+															"notes": "Materialization costs 1 FP per second"
+														},
+														{
+															"type": "modifier",
+															"version": 1,
+															"id": "659d7f6a-847a-4d16-be71-f0e7a796c2b4",
+															"based_on_id": "04e73417-46da-41ba-b3a4-efac02d9032c",
+															"based_on_hash": "kvtQjVW7CjRg/yNKNGAZjy8F36AcqpMh0x5FM+t+MHE",
+															"disabled": true,
+															"name": "No Vertical Move",
+															"reference": "P56",
+															"cost_type": "percentage",
+															"cost": -10,
+															"affects": "total"
+														},
+														{
+															"type": "modifier",
+															"version": 1,
+															"id": "4e51198a-0c67-411e-85ab-bae16ac71e0d",
+															"based_on_id": "b34e7479-7907-423c-95e0-563f297a67b2",
+															"based_on_hash": "OSGclsrWULjgn7XfdqDt/osOekyLW3H1pBo1kOm54/8",
+															"disabled": true,
+															"name": "Noisy",
+															"reference": "P56",
+															"cost_type": "percentage",
+															"cost": -5,
+															"affects": "total"
+														},
+														{
+															"type": "modifier",
+															"version": 1,
+															"id": "effd5a6c-c199-4798-bc7d-373fd119603b",
+															"based_on_id": "6ca5b2b0-5ff7-42da-a61a-4a590b5cdeef",
+															"based_on_hash": "Jlz+Lx6mQNnr4Zh55+Arfo/Ia6lCGqyXFNpcl3aZwrg",
+															"disabled": true,
+															"name": "Projection",
+															"reference": "P56",
+															"cost_type": "percentage",
+															"cost": -50,
+															"affects": "total"
+														},
+														{
+															"type": "modifier",
+															"version": 1,
+															"id": "8ecef4cc-b8b5-4033-a2b6-caa6fdd5d3eb",
+															"based_on_id": "6de3a7db-dd9f-4afe-8d0e-f4f27f24907c",
+															"based_on_hash": "gLEpbuDbrmss/yXS8ixqEpN7xJ8Tdhb5PWylgcPITjU",
+															"disabled": true,
+															"name": "Reversion",
+															"reference": "H16",
+															"cost_type": "percentage",
+															"cost": 60,
+															"affects": "total"
+														},
+														{
+															"type": "modifier",
+															"version": 1,
+															"id": "2139f524-ca31-4e30-9317-789bed250039",
+															"based_on_id": "5065e481-4d4e-4fa5-bd9e-2c518f812d44",
+															"based_on_hash": "JMuVq+pBz+e7fUjuIVD9D1+cZVyDtPR5ZwZe/Ppy6dc",
+															"disabled": true,
+															"name": "Touch",
+															"reference": "H16",
+															"cost_type": "percentage",
+															"cost": 0,
+															"affects": "total",
+															"notes": "Always On"
+														},
+														{
+															"type": "modifier",
+															"version": 1,
+															"id": "80678223-3932-4e55-8993-1bc23e5b54ef",
+															"based_on_id": "69aae61c-505d-4751-bc33-3e05e54be0b5",
+															"based_on_hash": "q0wAVrD/L632/5a0K8EudgWv9EV438FCs50oSbkZSV0",
+															"disabled": true,
+															"name": "Touch",
+															"reference": "H16",
+															"cost_type": "percentage",
+															"cost": 5,
+															"affects": "total",
+															"notes": "Switchable"
+														},
+														{
+															"type": "modifier",
+															"version": 1,
+															"id": "a32857c2-20b0-41ea-a6d5-ecfd1024d5b7",
+															"based_on_id": "17faa589-4190-4310-b43a-7409c1d6944a",
+															"based_on_hash": "PsRqYJgbnYTWVwbxI0MXi/vNoETzOzDu91Os/28bgPg",
+															"disabled": true,
+															"name": "Difficult Materialization",
+															"reference": "H16",
+															"cost_type": "percentage",
+															"cost": -20,
+															"affects": "total",
+															"notes": "Mutually exclusive with Usually On."
+														},
+														{
+															"type": "modifier",
+															"version": 1,
+															"id": "5342705e-68cf-4621-b977-e211350204be",
+															"based_on_id": "f4a17a78-c218-4253-8387-5ba23f576872",
+															"based_on_hash": "yH4a5sPys5M7M/7mzShNOjQgrq6q/J4fzZ2O1cX5f3U",
+															"disabled": true,
+															"name": "Ectoplasmic Materialization",
+															"reference": "H16",
+															"cost_type": "percentage",
+															"cost": -35,
+															"affects": "total"
+														},
+														{
+															"type": "modifier",
+															"version": 1,
+															"id": "0e0f0297-5396-4def-bb21-4f67305a1565",
+															"based_on_id": "cb2f871d-fbfa-496a-bb0a-3a09461c5672",
+															"based_on_hash": "sraU9QYbxbpChU6ZhTAVFJk4O0qUnFxERf7KSJR5yTw",
+															"disabled": true,
+															"name": "Ghost Air",
+															"reference": "PSI14",
+															"cost_type": "percentage",
+															"cost": 10,
+															"affects": "total"
+														},
+														{
+															"type": "modifier",
+															"version": 1,
+															"id": "b07eaf9a-db53-4681-827a-6956df73fe3f",
+															"based_on_id": "5c5d8a42-b05f-452a-9384-9b10e53e49e2",
+															"based_on_hash": "uaM6Ad24Mrqmi7nzGiVGs7yqLijHhyLvS4tNJxPiknE",
+															"disabled": true,
+															"name": "Substantial Communication",
+															"reference": "PSI14",
+															"cost_type": "percentage",
+															"cost": 40,
+															"affects": "total"
+														}
+													],
+													"reference": "B62",
+													"categories": [
+														"Advantage"
+													]
+												},
+												{
+													"type": "advantage",
+													"version": 1,
+													"id": "a41645f2-a049-4108-81fd-00d2f2ee144b",
+													"based_on_id": "4b25c77e-4c45-4a95-bf61-9138735dac35",
+													"based_on_hash": "Zrm23idU1+BIFSbranFR2EfubzsBRZGdHBLIrukUq74",
+													"name": "Invisibility",
+													"mental": true,
+													"physical": true,
+													"exotic": true,
+													"base_points": 40,
+													"modifiers": [
+														{
+															"type": "modifier",
+															"version": 1,
+															"id": "b1a6e586-c808-45cb-b2b6-fe01acaabefc",
+															"based_on_id": "d9644677-8cdf-4b12-9f6a-beed5a751c5b",
+															"based_on_hash": "tDWMN/iLSKGgv5+EJ7CkBb8+mJymr/mDYLc3W6ZeIH0",
+															"disabled": true,
+															"name": "Affects Machines",
+															"reference": "B63",
+															"cost_type": "percentage",
+															"cost": 50,
+															"affects": "total"
+														},
+														{
+															"type": "modifier",
+															"version": 1,
+															"id": "bfdfd9bd-8b0c-4d35-8fb4-09d214ad18b1",
+															"based_on_id": "7736551d-2d14-48ab-90b5-8057d252b50b",
+															"based_on_hash": "EgORKIDRcMEtnrfJWMRQYtKh+JFulCDIqhf/pAX5rhg",
+															"disabled": true,
+															"name": "Can Carry Objects",
+															"reference": "B63",
+															"cost_type": "percentage",
+															"cost": 10,
+															"affects": "total",
+															"notes": "Up to No Encumbrance"
+														},
+														{
+															"type": "modifier",
+															"version": 1,
+															"id": "8968ca1d-6147-4922-87d9-ceeeb8c85c83",
+															"based_on_id": "57556ae1-3f9a-42f9-adb3-2d2152a7beb1",
+															"based_on_hash": "WxOEEoH7HKMoR03fqS01NDnehk9jCVeCnvm0ijv9SF0",
+															"disabled": true,
+															"name": "Can Carry Objects",
+															"reference": "B63",
+															"cost_type": "percentage",
+															"cost": 20,
+															"affects": "total",
+															"notes": "Up to Light Encumbrance"
+														},
+														{
+															"type": "modifier",
+															"version": 1,
+															"id": "44521ecf-75b8-42fa-b210-900afa9767c4",
+															"based_on_id": "e54fb888-4730-4c9d-8184-590d73acbfc8",
+															"based_on_hash": "BWmw1Qkz4C4zE/svJ3XCYa8d5jF2UglbfWaZ2gv1Qy8",
+															"disabled": true,
+															"name": "Can Carry Objects",
+															"reference": "B63",
+															"cost_type": "percentage",
+															"cost": 50,
+															"affects": "total",
+															"notes": "Up to Medium Encumbrance"
+														},
+														{
+															"type": "modifier",
+															"version": 1,
+															"id": "555038c6-acd8-4eec-8efc-1d511ef2f906",
+															"based_on_id": "b78b5ae7-d73e-445e-8584-c279cca5d0c1",
+															"based_on_hash": "I7sDFvY/WSYrMJhug8K0XW8wXkLYs6aiqpxw+ZD0S4I",
+															"disabled": true,
+															"name": "Can Carry Objects",
+															"reference": "B63",
+															"cost_type": "percentage",
+															"cost": 100,
+															"affects": "total",
+															"notes": "Up to Heavy Encumbrance"
+														},
+														{
+															"type": "modifier",
+															"version": 1,
+															"id": "8e464766-08a4-447d-b650-97b09e97a835",
+															"based_on_id": "f7ee4647-b98e-403a-9a65-928d1feda596",
+															"based_on_hash": "WhzfhCW/PmD40Iy9p13xg2ohT+wWZIoU26OSOfvqhSc",
+															"disabled": true,
+															"name": "Extended",
+															"reference": "B63",
+															"cost_type": "percentage",
+															"cost": 20,
+															"affects": "total",
+															"notes": "@Type@"
+														},
+														{
+															"type": "modifier",
+															"version": 1,
+															"id": "51aae2bf-6073-43e6-b6b3-b71469e41429",
+															"based_on_id": "dafcbaf4-1bc4-4703-bd12-0d37b27a01a7",
+															"based_on_hash": "HuhlnxP2dHyQABHWsJSJn3aGSsbMtR31rCvQ2F2m3us",
+															"disabled": true,
+															"name": "Switchable",
+															"reference": "B63",
+															"cost_type": "percentage",
+															"cost": 10,
+															"affects": "total"
+														},
+														{
+															"type": "modifier",
+															"version": 1,
+															"id": "26576262-b920-4105-b810-c8dfa5ad745c",
+															"based_on_id": "b054bb57-d429-4765-bea5-f6c11c887404",
+															"based_on_hash": "ZcAu71VSweX2YNIStaWeRlChuOxPrVJaxqLiJRJpSdE",
+															"name": "Usually On",
+															"reference": "B63",
+															"cost_type": "percentage",
+															"cost": 5,
+															"affects": "total",
+															"notes": "Turning visible costs 1 FP per second"
+														},
+														{
+															"type": "modifier",
+															"version": 1,
+															"id": "7f787bdd-4f40-4d76-b23d-75222c7619d9",
+															"based_on_id": "a75e104f-2a65-4920-aa6c-cdd3718626b8",
+															"based_on_hash": "hPF84Xqf0fDFZSM/KemtCqLcrJBcti/u/DGHzHu+IOs",
+															"disabled": true,
+															"name": "Machines Only",
+															"reference": "B63",
+															"cost_type": "percentage",
+															"cost": -50,
+															"affects": "total"
+														},
+														{
+															"type": "modifier",
+															"version": 1,
+															"id": "f0536980-ef55-4ae7-a614-879dd6901bff",
+															"based_on_id": "b58f3755-4fc9-4274-830f-a7d385aaa936",
+															"based_on_hash": "0xja5es5tvmyPLwrc0gJhjrFBFun1ztOU9QE4I9jA8c",
+															"name": "Substantial Only",
+															"reference": "B63",
+															"cost_type": "percentage",
+															"cost": -10,
+															"affects": "total"
+														},
+														{
+															"type": "modifier",
+															"version": 1,
+															"id": "20b3af4d-50b2-4cf0-8de1-39f8b0763f2e",
+															"based_on_id": "a57a9cd4-d98b-4833-848e-09284896548a",
+															"based_on_hash": "1uw+9w06b+XJw9ZzW0z3vtnMSubi/OE3c6aSBNEckt0",
+															"disabled": true,
+															"name": "Visible Reflection",
+															"reference": "B63",
+															"cost_type": "percentage",
+															"cost": -10,
+															"affects": "total"
+														},
+														{
+															"type": "modifier",
+															"version": 1,
+															"id": "a2014a9f-e099-4947-951d-953cf3d64302",
+															"based_on_id": "06e10bdb-4e1e-4428-89f3-3a7f15c88deb",
+															"based_on_hash": "hX3yGqySNB4WqjnKOGnuuvrsaJjroiHNbQJ8NRmx944",
+															"disabled": true,
+															"name": "Visible Shadow",
+															"reference": "B63",
+															"cost_type": "percentage",
+															"cost": -10,
+															"affects": "total"
+														},
+														{
+															"type": "modifier",
+															"version": 1,
+															"id": "ee7a62a9-4bf7-4739-a2c6-50cf88d31b0d",
+															"based_on_id": "c363b2b6-9936-49cf-bd62-d3d8b18c9ba7",
+															"based_on_hash": "enf/0cJ0FsWt0W2q9PtLNVE0s3n6I8UE4k2sBkO3xCg",
+															"disabled": true,
+															"name": "Fringe",
+															"reference": "P56",
+															"cost_type": "percentage",
+															"cost": -10,
+															"affects": "total"
+														}
+													],
+													"reference": "B63",
+													"categories": [
+														"Advantage"
+													]
+												},
+												{
+													"type": "advantage",
+													"version": 1,
+													"id": "47eb0b21-a959-4c3f-8c65-b430b577db2f",
+													"based_on_id": "43c47c70-e15d-42c2-8ee3-0c5a3d6ef010",
+													"based_on_hash": "uzXESrMx3AOUWNOgMIXg86zOoBFRFyOqG5c1yg6GtSM",
+													"round_down": true,
+													"name": "Resistant",
+													"physical": true,
+													"modifiers": [
+														{
+															"type": "modifier",
+															"version": 1,
+															"id": "92d15a06-8e32-4486-858f-2cdfbf3588ce",
+															"based_on_id": "de4ffe48-d3ab-4f47-a8f8-b2983b517fc8",
+															"based_on_hash": "uiSPHxvGZBKOz1xCtLsKDalS/S10nfrY9ZsAml9WM6c",
+															"name": "Metabolic Hazards",
+															"reference": "B80",
+															"cost_type": "points",
+															"cost": 30,
+															"affects": "total"
+														},
+														{
+															"type": "modifier",
+															"version": 1,
+															"id": "26a122c8-5cf0-412d-8d6b-9580c7d6f875",
+															"based_on_id": "fd1b04b6-5bfd-4f28-945a-76515dd806c4",
+															"based_on_hash": "TgYwIoLCap0Vw+mb0RVwXSTEyByYFvWAjtRPDZBd1i8",
+															"disabled": true,
+															"name": "@Common: Poison, Sickness, etc.@",
+															"reference": "B81",
+															"cost_type": "points",
+															"cost": 15,
+															"affects": "total"
+														},
+														{
+															"type": "modifier",
+															"version": 1,
+															"id": "b3f07db9-18d1-4471-9fb0-c7c4a870d1f1",
+															"based_on_id": "91e47da3-4c7c-412b-9e43-131356d77202",
+															"based_on_hash": "cIgsozr/6rAi2SkKLQHGZAS2P+6/OinSiZNs9Djn6Wc",
+															"disabled": true,
+															"name": "@Occasional: Disease, Ingested Poison, etc.@",
+															"reference": "B81",
+															"cost_type": "points",
+															"cost": 10,
+															"affects": "total"
+														},
+														{
+															"type": "modifier",
+															"version": 1,
+															"id": "7cca2fa3-3488-46a9-aacb-ef6f729f87e7",
+															"based_on_id": "2f1cbf2a-12a5-4934-9df6-60984d663c36",
+															"based_on_hash": "YoGo+WI4bGgMPh0nQ4T91ztbCeNU8sdjrGZOG3i/1ds",
+															"disabled": true,
+															"name": "@Rare: Acceleration, Altitude Sickness, Bends, Seasickness, Space Sickness, Nanomachines, etc.@",
+															"reference": "B81",
+															"cost_type": "points",
+															"cost": 5,
+															"affects": "total"
+														},
+														{
+															"type": "modifier",
+															"version": 1,
+															"id": "1ac6fde9-a8dd-4d71-87b4-aaad64963d88",
+															"based_on_id": "a58dddee-bbd1-48ed-98eb-a2b7cb7e2c3a",
+															"based_on_hash": "B9saydIOeJsA81phlsc/AR/T7irBlRLOtONgZiAwGsk",
+															"name": "Immunity",
+															"reference": "B81",
+															"cost_type": "multiplier",
+															"cost": 1
+														},
+														{
+															"type": "modifier",
+															"version": 1,
+															"id": "a31e04d1-5010-4028-aa13-897bd2bd0ad0",
+															"based_on_id": "d131c231-6594-4b12-910f-1472006243c2",
+															"based_on_hash": "klrs/Oq0oXUf3qqUpS/jEDi+HF+GHzPLXsU1CQ3FGYM",
+															"disabled": true,
+															"name": "+8 to all HT rolls to resist",
+															"reference": "B81",
+															"cost_type": "multiplier",
+															"cost": 0.5
+														},
+														{
+															"type": "modifier",
+															"version": 1,
+															"id": "34204f44-b184-4fc5-b4fa-94d96b5cd4d6",
+															"based_on_id": "75f3c400-22ab-4f1f-8fc1-63cac46df5f7",
+															"based_on_hash": "3B2Xnu7juCRCig1NP/7vnvm2g1/WpRXpNMszZTnPFZc",
+															"disabled": true,
+															"name": "+3 to all HT rolls to resist",
+															"reference": "B81",
+															"cost_type": "multiplier",
+															"cost": 0.33
+														}
+													],
+													"reference": "B81",
+													"categories": [
+														"Advantage"
+													]
+												},
+												{
+													"type": "advantage",
+													"version": 1,
+													"id": "e397355f-7336-4e1c-8990-f994e6a1693c",
+													"based_on_id": "9c7953b7-1f53-4bf2-a6cd-637a0de47076",
+													"based_on_hash": "izrMKidU5rHoIDIQSQ0xNsUAnOmO/7G2bWOe81wFkKo",
+													"name": "Unaging",
+													"physical": true,
+													"exotic": true,
+													"base_points": 15,
+													"modifiers": [
+														{
+															"type": "modifier",
+															"version": 1,
+															"id": "23dde353-a305-40da-8c53-8f1b118b9314",
+															"based_on_id": "fdf9fe76-9643-4e05-84fb-bd18a465a3a3",
+															"based_on_hash": "UPHjHzk32tLvhFeFUGsrulIHXuNZ15OA+YklL4kMkoo",
+															"disabled": true,
+															"name": "Age Control",
+															"reference": "B95",
+															"cost_type": "percentage",
+															"cost": 20,
+															"affects": "total"
+														},
+														{
+															"type": "modifier",
+															"version": 1,
+															"id": "176098fa-9ae9-4023-818d-1a0de8b808ea",
+															"based_on_id": "c1ca6873-fa0e-4594-a275-7c45ed79635c",
+															"based_on_hash": "lllrEzed/NtkXnTyxn2EGMzRU9YjQemONO/eYHzZglA",
+															"disabled": true,
+															"name": "IQ Only",
+															"reference": "RSWL24",
+															"cost_type": "percentage",
+															"cost": -75,
+															"affects": "total"
+														},
+														{
+															"type": "modifier",
+															"version": 1,
+															"id": "4bdfaee6-9c3e-4b7b-becf-7423b7866e4e",
+															"based_on_id": "738bcdf7-f6eb-4621-b768-4e010340ea39",
+															"based_on_hash": "fAY8ejHDYMoL/M08Q1VYJ9c3D1IN/OjbnviifnsDQXs",
+															"disabled": true,
+															"name": "Halt Aging, Weekly",
+															"reference": "PSI18",
+															"cost_type": "percentage",
+															"cost": 80,
+															"affects": "total"
+														},
+														{
+															"type": "modifier",
+															"version": 1,
+															"id": "e912ad2c-702c-403d-8832-9be35b0f3aa4",
+															"based_on_id": "8475fe9d-3436-4475-8704-91daaae2da26",
+															"based_on_hash": "yBzEvgZgpDG4SyzXEUQza0TmoG//P5+63cccrISP0Sk",
+															"disabled": true,
+															"name": "Halt Aging, Monthly",
+															"reference": "PSI18",
+															"cost_type": "percentage",
+															"cost": 100,
+															"affects": "total"
+														},
+														{
+															"type": "modifier",
+															"version": 1,
+															"id": "97f807b1-a990-4a22-bbfc-3a7560fad1bc",
+															"based_on_id": "65c889b7-95bf-46a5-967e-9d4f9f6207db",
+															"based_on_hash": "kLUmwh6fkaIjQS/wmCDFcmoPZrpTKT4Iiy9I+CGeUYo",
+															"disabled": true,
+															"name": "Halt Aging, Yearly",
+															"reference": "PSI18",
+															"cost_type": "percentage",
+															"cost": 130,
+															"affects": "total"
+														},
+														{
+															"type": "modifier",
+															"version": 1,
+															"id": "b657724f-aefb-4622-bd49-0860230c02d4",
+															"based_on_id": "7eed3ff2-40f9-4279-9dc0-e1f5f391c9e6",
+															"based_on_hash": "xEszMriOVqUVuqueJK7zkSczo/t4Yn8eQ9Fv51sRP8I",
+															"disabled": true,
+															"name": "Life Extension",
+															"reference": "PSI18",
+															"cost_type": "percentage",
+															"cost": -30,
+															"affects": "total"
+														}
+													],
+													"reference": "B95",
+													"categories": [
+														"Advantage"
+													]
+												}
+											]
+										},
+										{
+											"type": "advantage",
+											"version": 1,
+											"id": "e3b6f4cd-ed64-488f-99b0-136e3394d11e",
+											"based_on_id": "4afd2227-a32b-4793-9d52-d663b9e6c9f9",
+											"based_on_hash": "DqkFNV6HqVhTJXlVtsUhVbq+8Dba8dqL9cCS8qiZPTk",
+											"name": "Telekinesis",
+											"mental": true,
+											"physical": true,
+											"exotic": true,
+											"levels": "1",
+											"points_per_level": 5,
+											"modifiers": [
+												{
+													"type": "modifier",
+													"version": 1,
+													"id": "18bfc4b1-e510-4ca1-bd65-93747a10d5fa",
+													"based_on_id": "6d281c1f-ca56-43dd-9734-591b48f08744",
+													"based_on_hash": "GEeg7NH2IHOw9sZ1fCg7pSJVFXZHP6eAwdH349JurPc",
+													"disabled": true,
+													"name": "Magnetic",
+													"reference": "B92",
+													"cost_type": "percentage",
+													"cost": -50,
+													"affects": "total"
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"id": "11a2d675-8b43-46a5-baaf-ca2d1c6216a5",
+													"based_on_id": "97474c63-06d8-4717-b179-2bd107758824",
+													"based_on_hash": "S0YKYSSDXahewcqrIbhLpypR+zLWsbffcMqJZ3PZp04",
+													"disabled": true,
+													"name": "Visible",
+													"reference": "B92",
+													"cost_type": "percentage",
+													"cost": -20,
+													"affects": "total"
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"id": "db4e23ab-e36a-4564-87d8-22172ea24073",
+													"based_on_id": "11a7bba7-baf8-4835-a67d-46c392316fb5",
+													"based_on_hash": "kmTvMBKD7I5hH01LqtQFSUz+9x6EGVpuH5nD4jl3Lqk",
+													"disabled": true,
+													"name": "Super-Effort",
+													"reference": "P83",
+													"cost_type": "percentage",
+													"cost": 400,
+													"affects": "total"
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"id": "3c0f18bb-2255-46b3-a12c-b20ea2574396",
+													"based_on_id": "e6805eca-433e-4408-9b51-13aace6a88b3",
+													"based_on_hash": "xYSCwkrP0KTqKdptsK1e0CEZmedI051BWBVEpkVPn4s",
+													"disabled": true,
+													"name": "Animation",
+													"reference": "P83",
+													"cost_type": "percentage",
+													"cost": -20,
+													"affects": "total"
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"id": "f5bc8db0-b385-4803-8f82-7fc2eef2d8bf",
+													"based_on_id": "a417a683-b402-4058-a78d-b434346e1822",
+													"based_on_hash": "dfGGH25/fkRNVVBgP+jpcoU/cNb0axHU+taahd0nQts",
+													"disabled": true,
+													"name": "Animation",
+													"reference": "P83",
+													"cost_type": "percentage",
+													"cost": -30,
+													"affects": "total",
+													"notes": "No Flight"
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"id": "95f9e2cd-59df-40a3-a6ab-8613a99ee38b",
+													"based_on_id": "39b817b4-ca56-497c-be33-cc73174bf2f4",
+													"based_on_hash": "UDgY9g/pPYOhyvKQnE1WOd3Uf3YipT2nmRTRj9XvzpQ",
+													"disabled": true,
+													"name": "Attraction",
+													"reference": "P83",
+													"cost_type": "percentage",
+													"cost": -60,
+													"affects": "total"
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"id": "4348af39-cc59-4a44-b6e4-47842bb365f2",
+													"based_on_id": "0ae6636c-b2e0-4f23-9feb-1b5b1370c92b",
+													"based_on_hash": "XJbFhEcE80cg5lSqi03jX2JY23rIIQdgStTtUt6CWoQ",
+													"disabled": true,
+													"name": "Repulsion",
+													"reference": "P83",
+													"cost_type": "percentage",
+													"cost": -60,
+													"affects": "total"
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"id": "1ef2ac96-0ed7-4055-aead-8a1ec9203107",
+													"based_on_id": "e756748b-56eb-47ce-8e52-eb0481a9fd4a",
+													"based_on_hash": "zFrJ6xx5obYTM0NK9i3YcbujmZLCY/UQ0TFNmjg4dYI",
+													"disabled": true,
+													"name": "Attraction/Repulsion",
+													"reference": "P83",
+													"cost_type": "percentage",
+													"cost": -30,
+													"affects": "total"
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"id": "482edc81-4527-49c2-9592-47ba1b3b9b35",
+													"based_on_id": "c5a8559a-bbc3-4400-a536-011c46901f60",
+													"based_on_hash": "mgJRXZwpUCXIm18R9P/U6rydRvlXH+JDBMFOzmMQbMI",
+													"disabled": true,
+													"name": "Lift Only",
+													"reference": "P83",
+													"cost_type": "percentage",
+													"cost": -20,
+													"affects": "total"
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"id": "8fbf3f87-1a22-4feb-a1c0-576931492680",
+													"based_on_id": "ab83527b-20aa-4225-b1fa-47309e2db47b",
+													"based_on_hash": "4K8hUzjkNHy1vMyCeWF/GaSmFGCFdsQ4f/9DZW40Syo",
+													"disabled": true,
+													"name": "Move Only",
+													"reference": "P83",
+													"cost_type": "percentage",
+													"cost": -40,
+													"affects": "total"
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"id": "be712a9c-4dda-4520-bafb-adb003f1ec0b",
+													"based_on_id": "254bf84d-9a87-41ed-84ab-56b8c0da8ab3",
+													"based_on_hash": "gVQ1wruRRhndyNjX5oRgzbgIhr66XoEKBjNurJQuac0",
+													"disabled": true,
+													"name": "Animate Life-forms",
+													"reference": "SU28",
+													"cost_type": "percentage",
+													"cost": 100,
+													"affects": "total"
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"id": "b2e22f7c-09d4-4aba-bf35-534618840835",
+													"based_on_id": "1b43e53d-8a27-482a-90c6-12f2136e3a49",
+													"based_on_hash": "H0ipghI+HO2i/kqMWCb35kCVuZ84X+9cZCScQ5olI+Y",
+													"disabled": true,
+													"name": "Animate Life-forms",
+													"reference": "SU28",
+													"cost_type": "percentage",
+													"cost": 20,
+													"affects": "total",
+													"notes": "Partial"
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"id": "4ef98a9d-45ea-4031-96ac-ff4d43f848d7",
+													"based_on_id": "bb3d931c-8313-4cd1-a088-13152b251365",
+													"based_on_hash": "i7lW8iGSKBYlhB63Q/t7oAs10JrbxwFVBRovmHfrF2U",
+													"disabled": true,
+													"name": "Super-Damage",
+													"reference": "SU29",
+													"cost_type": "percentage",
+													"cost": 900,
+													"affects": "total"
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"id": "b9145f80-7a8b-470c-b14f-b5c683ef0b99",
+													"based_on_id": "0876d021-77e9-4f59-8b92-143d8ba17570",
+													"based_on_hash": "Em7uP7K37NHNYzZgVpPzI3v7D1CXp6cxfXwB+n+bnSU",
+													"disabled": true,
+													"name": "Cannot Affect Self",
+													"reference": "PSI17",
+													"cost_type": "percentage",
+													"cost": -20,
+													"affects": "total"
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"id": "797f76a2-ab33-490b-87de-5aa289a5e3f0",
+													"based_on_id": "98183659-66a0-4aea-a58c-95e748329343",
+													"based_on_hash": "NqkfsGC45gPVcm0cC4nXPbmRsUaUB/BSI9vUFBT7Qw4",
+													"disabled": true,
+													"name": "Cannot Punch",
+													"reference": "PSI17",
+													"cost_type": "percentage",
+													"cost": -10,
+													"affects": "total"
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"id": "74151681-88de-4214-901b-b07d49e1bc12",
+													"based_on_id": "34ca2d7f-6ce0-4dcd-aa87-de6f31199832",
+													"based_on_hash": "+oGrNHOTIihr1x3wRKgWF0ZzwIs4OYHEHArgSy2LvTI",
+													"disabled": true,
+													"name": "Enveloping",
+													"reference": "MATG28",
+													"cost_type": "percentage",
+													"cost": 60,
+													"affects": "total"
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"id": "d89a2eda-9851-48f9-b656-6610bc1c775e",
+													"based_on_id": "62805152-63f8-48c1-a84e-2e58953bf6c2",
+													"based_on_hash": "1X1Ntoa50k7CjS7UQZsVNJN825cDhqyiIbPma/hKj6Y",
+													"disabled": true,
+													"name": "Grappling Only",
+													"reference": "MATG28",
+													"cost_type": "percentage",
+													"cost": -30,
+													"affects": "total"
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"id": "00ed3a9f-cf85-489f-90be-3951f630cf4f",
+													"based_on_id": "8b273afc-e46a-446f-aa8f-506575678a8a",
+													"based_on_hash": "IE5evsl+HOVSBO+LCiv5b71oLwBDZGzLbaIBcGIDQoQ",
+													"disabled": true,
+													"name": "Restraint Only",
+													"reference": "MATG28",
+													"cost_type": "percentage",
+													"cost": -45,
+													"affects": "total"
+												}
+											],
+											"reference": "B92",
+											"categories": [
+												"Advantage"
+											]
+										},
+										{
+											"type": "advantage",
+											"version": 1,
+											"id": "c5cea550-c610-464a-9f02-25da20f57757",
+											"name": "Can hear own name spoken anywhere",
+											"physical": true,
+											"base_points": 1
+										},
+										{
+											"type": "advantage",
+											"version": 1,
+											"id": "af6b0596-7e30-4470-a8e4-c3a96ba55a70",
+											"based_on_id": "faf68507-ab47-4bd4-b345-1dc341a8a891",
+											"based_on_hash": "xir+j/mcpIiXxAvgKYhDZSEvjU7T8K7D/LFne83xfLo",
+											"name": "Cannot Speak",
+											"physical": true,
+											"base_points": -15,
+											"modifiers": [
+												{
+													"type": "modifier",
+													"version": 1,
+													"id": "33948a5e-3858-45d2-8e71-e6a3269761f4",
+													"name": "Substantial Only",
+													"cost_type": "percentage",
+													"cost": -10,
+													"affects": "total"
+												}
+											],
+											"reference": "B125",
+											"prereqs": {
+												"type": "prereq_list",
+												"all": true,
+												"prereqs": [
+													{
+														"type": "advantage_prereq",
+														"has": false,
+														"name": {
+															"compare": "is",
+															"qualifier": "stuttering"
+														}
+													}
+												]
+											},
+											"categories": [
+												"Disadvantage"
+											]
+										},
+										{
+											"type": "advantage",
+											"version": 1,
+											"id": "412b0d29-2b10-4b81-b253-e37ef5bc3dda",
+											"name": "Compulsive Behaviour or Obsession (Ghostly Repetition)",
+											"physical": true,
+											"base_points": -15
+										},
+										{
+											"type": "advantage",
+											"version": 1,
+											"id": "40d088e5-1d33-443c-b662-e227be3b0971",
+											"based_on_id": "03fe2b6c-9fe3-4685-b568-cbc2de72c44b",
+											"based_on_hash": "RkmUYdzGGSa8MhuKZTePiCUD+TM7PJKiaKCcfF9EUDc",
+											"name": "Dread",
+											"mental": true,
+											"supernatural": true,
+											"levels": "1",
+											"base_points": -9,
+											"points_per_level": -1,
+											"modifiers": [
+												{
+													"type": "modifier",
+													"version": 1,
+													"id": "0c890174-841d-457e-b8d4-742934cfe57f",
+													"based_on_id": "26a11c89-957c-40e7-8019-ee40fa16ed7a",
+													"based_on_hash": "Fpdui/jnEdTsA33jv05PIPGVG/pLJd4sT6T8diiIsA4",
+													"disabled": true,
+													"name": "Very Common",
+													"reference": "B161",
+													"cost_type": "multiplier",
+													"cost": 3,
+													"notes": "@What@"
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"id": "2ce60d15-eb79-4736-befe-c16fe32d84ef",
+													"based_on_id": "1fd3d231-fb8a-4a7f-bef8-91c2b7bb93cb",
+													"based_on_hash": "W/WINMITm4qZ+0E2L0ANd+t9y7LrlWL14Tvy0y28oA0",
+													"disabled": true,
+													"name": "Common",
+													"reference": "B161",
+													"cost_type": "multiplier",
+													"cost": 2,
+													"notes": "@What@"
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"id": "64b09ccb-4e5e-4c6a-85a4-2411d0f7b9d1",
+													"based_on_id": "3a064e40-65f4-4df8-b61e-011ece7d9954",
+													"based_on_hash": "/VI7r6/zFUG81plvK7anPTS2HBS1mxb16nkPpAnY7Bs",
+													"name": "Occasional",
+													"reference": "B161",
+													"cost_type": "multiplier",
+													"cost": 1,
+													"notes": "Exorcism"
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"id": "7a2c27b3-8060-4a2b-bde3-b6c41469b762",
+													"based_on_id": "954e3d1f-d580-4ca7-944b-d445c24b71ed",
+													"based_on_hash": "EcYTmQUA8S43uuY1/VYVwR4z3ifz6Q0TSpmVxX38J5Y",
+													"disabled": true,
+													"name": "Rare",
+													"reference": "B161",
+													"cost_type": "multiplier",
+													"cost": 0.5,
+													"notes": "@What@"
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"id": "b8d391b1-5840-4f75-b174-a380a192a2f3",
+													"based_on_id": "c7ec97d0-96d7-4c66-94fc-fc7a1d658291",
+													"based_on_hash": "ys4K6d83UTEwvYoB7NPFGccGJ7hCo3jvvjxfDAdCgsw",
+													"disabled": true,
+													"name": "Cannot be trapped",
+													"reference": "B133",
+													"cost_type": "percentage",
+													"cost": -50,
+													"affects": "total"
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"id": "332cf7b6-12ae-4165-b4a0-b73cb530a6db",
+													"based_on_id": "9ab2d451-192b-4849-9e5a-97e08978ca3c",
+													"based_on_hash": "sAKGH5JuEt1ywz1ue2Oo0YIuRCQT9apfQ8+EMM3Ruf0",
+													"disabled": true,
+													"name": "Insensitive",
+													"reference": "H25",
+													"cost_type": "percentage",
+													"cost": -50,
+													"affects": "total"
+												}
+											],
+											"reference": "B132",
+											"notes": "May not come within level yards of Exorcism",
+											"categories": [
+												"Disadvantage"
+											]
+										},
+										{
+											"type": "advantage",
+											"version": 1,
+											"id": "42ea2b3e-542c-4444-8305-d9ef7fe6f054",
+											"based_on_id": "5d569ecb-0a08-4df6-a232-37e184cb9ace",
+											"based_on_hash": "St1NkckCKU9x1iAg+Gg0CE5UE8nXfszrLb4zjIABrPA",
+											"name": "Supernatural Features",
+											"physical": true,
+											"supernatural": true,
+											"modifiers": [
+												{
+													"type": "modifier",
+													"version": 1,
+													"id": "3504eff1-ce2e-45e9-b431-d201ba57f28d",
+													"based_on_id": "24f59a11-7540-4ca3-b1e5-cf070553dd07",
+													"based_on_hash": "kvMEnZ2kHxnXsWmzvWySbG3vlzCGGN6NmPvMzOzO0p8",
+													"disabled": true,
+													"name": "No Body Heat",
+													"reference": "B157",
+													"cost_type": "points",
+													"cost": -5,
+													"affects": "total",
+													"features": [
+														{
+															"type": "reaction_bonus",
+															"amount": -1,
+															"situation": "from those who touch you, shake your hand, kiss you, etc."
+														}
+													],
+													"notes": "Gives +1 on all rolls to deduce your secret"
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"id": "17bfeb6f-8376-484a-ac06-0d38069fefba",
+													"based_on_id": "fe02b717-57e0-48a3-abba-be6c1f8b1220",
+													"based_on_hash": "crh+mO41Nctz6pgfbSf6oeI74V4/3B+5xXVMhEY/620",
+													"disabled": true,
+													"name": "No Body Heat",
+													"reference": "B157",
+													"cost_type": "points",
+													"cost": -1,
+													"affects": "total",
+													"features": [
+														{
+															"type": "reaction_bonus",
+															"amount": -1,
+															"situation": "from those who touch you, shake your hand, kiss you, etc."
+														}
+													],
+													"notes": "Can gain warmth temporarily, such as after feeding for a vampire. Gives +1 on all rolls to deduce your secret"
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"id": "11610f5f-461c-4855-b257-2b10895e3683",
+													"based_on_id": "dcfb5581-524c-436e-83c7-0508dd8d336d",
+													"based_on_hash": "UZnvIXZr/v8vuIMx80UGgeAiI7AGfSjkKYqi8zKAdAM",
+													"disabled": true,
+													"name": "No Reflection",
+													"reference": "B157",
+													"cost_type": "points",
+													"cost": -10,
+													"affects": "total",
+													"features": [
+														{
+															"type": "reaction_bonus",
+															"amount": -2,
+															"situation": "from others who notice you have no reflection"
+														}
+													],
+													"notes": "Gives +2 on all rolls to deduce your secret"
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"id": "4aa89df4-7d2a-418b-9581-cc9b5d8b27a4",
+													"based_on_id": "1e1babfa-fd62-4cff-992b-c1ee64631871",
+													"based_on_hash": "2snMpjX7YkApsN6l0hvXKapn+/Nny4mrXZ3kDDQhVMU",
+													"disabled": true,
+													"name": "No Shadow",
+													"reference": "B157",
+													"cost_type": "points",
+													"cost": -10,
+													"affects": "total",
+													"features": [
+														{
+															"type": "reaction_bonus",
+															"amount": -2,
+															"situation": "from others that notice you have no shadow"
+														}
+													],
+													"notes": "Gives +2 on all rolls to deduce your secret"
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"id": "f3deef0e-a610-47f2-bfa5-60cd91e98924",
+													"based_on_id": "aa472925-ffa0-4be4-bd3a-f6d6d86fc83c",
+													"based_on_hash": "KdyFZSifWVy0BIe4dOsb8+Q+sRZEQrjOJbviSvN+aII",
+													"disabled": true,
+													"name": "Pallor",
+													"reference": "B157",
+													"cost_type": "points",
+													"cost": -10,
+													"affects": "total",
+													"features": [
+														{
+															"type": "reaction_bonus",
+															"amount": -2,
+															"situation": "from others who can see you without makeup in good light"
+														}
+													],
+													"notes": "Gives +2 on all rolls to deduce your secret"
+												},
+												{
+													"type": "modifier",
+													"version": 1,
+													"id": "242ba268-4a56-445c-a3d1-1d4829dddd2c",
+													"based_on_id": "14af251f-8684-4f53-a048-e5be3669938e",
+													"based_on_hash": "PU441g//W8GGLw9m2IKoKjPbDsBQIcKv+UnZuWIAdqs",
+													"name": "Cold Spot",
+													"cost_type": "points",
+													"cost": -5,
+													"affects": "total"
+												}
+											],
+											"reference": "B157",
+											"categories": [
+												"Disadvantage"
+											]
+										},
+										{
+											"type": "advantage",
+											"version": 1,
+											"id": "1c2a202f-0512-4998-bf45-c21d0a26bf13",
+											"name": "Affected by Astral Block, Repel Spirits, Turn Spirit",
+											"physical": true
+										},
+										{
+											"type": "advantage",
+											"version": 1,
+											"id": "74b35d75-4668-44f9-a9ec-4d7f0661585d",
+											"name": "Can be detected by sensitive individuals",
+											"physical": true
+										},
+										{
+											"type": "advantage",
+											"version": 1,
+											"id": "cd121a32-fe01-429f-94b7-e2cd0928c1d8",
+											"name": "Can be turned by True Faith",
+											"physical": true
+										}
+									]
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"id": "06fc2e08-93ca-4d29-8e3f-2368c891d75f",
+									"name": "Compulsion never reduces with age",
+									"physical": true
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"id": "82220a3a-c146-4227-995c-4051830b02cb",
+									"name": "Remove Telekinesis",
+									"physical": true,
+									"base_points": -5
+								},
+								{
+									"type": "advantage",
+									"version": 1,
+									"id": "ddaa8d22-2ec5-485a-99f4-7c5add76a02e",
+									"name": "Insubstantiality is only Always On -50%",
+									"physical": true,
+									"base_points": -88
+								}
+							]
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"id": "3e5a8551-5aea-4c69-b431-4fd89d66e548",
+							"name": "Restore Telekinesis",
+							"physical": true,
+							"base_points": 5
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"id": "7d993ba0-ea74-4e55-9339-c293314b90ce",
+							"name": "Insubstantiality gains Affect Substantial",
+							"physical": true,
+							"base_points": 80
+						}
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"id": "e44957eb-10bb-42d2-a47e-be903f6d822c",
+					"based_on_id": "2be6271c-17e9-4723-8e0d-21294ce60e3d",
+					"based_on_hash": "61iWqyxEPKypuQ0M2mFk+UG0sedUjWv6ihb2CIqukVo",
+					"name": "Dependency (Creator's will or desire)",
+					"physical": true,
+					"exotic": true,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "b44ff40d-7bb3-4516-bb4a-1be4ce85081e",
+							"based_on_id": "4793e870-35c1-498e-8f21-2369f0e86283",
+							"based_on_hash": "49i8xhSVQsb9oTosbwPADgjSifgKk5l63R3txXDBw4c",
+							"disabled": true,
+							"name": "Rarity: Rare",
+							"reference": "B130",
+							"cost_type": "points",
+							"cost": -30,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "fe6204ad-589d-4d91-a319-be2ce55c3801",
+							"based_on_id": "5c4d859a-415c-4a03-a374-0ca3a45a2c9d",
+							"based_on_hash": "y8jgDFCXtiPuqz5BZHqel6QC+F644JGTVOthV8mrOos",
+							"name": "Rarity: Occasional",
+							"reference": "B130",
+							"cost_type": "points",
+							"cost": -20,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "5d767310-2fd8-4edf-a43d-9734eccd59be",
+							"based_on_id": "520935c5-8877-47cd-bd7f-ab3949ba81ab",
+							"based_on_hash": "+TsmNWutUqlMtNJJU/w62lgnKnj+ApyKgHEXgd/3aQg",
+							"disabled": true,
+							"name": "Rarity: Common",
+							"reference": "B130",
+							"cost_type": "points",
+							"cost": -10,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "56644dae-b914-4f5f-aae1-e1e916002985",
+							"based_on_id": "ad3fe009-26bc-45b1-88fc-247e7e201084",
+							"based_on_hash": "uqutel5x9Hulh0ftMh0mRjRUG0EWf//Gh41nIHwPcHw",
+							"disabled": true,
+							"name": "Rarity: Very Common",
+							"reference": "B130",
+							"cost_type": "points",
+							"cost": -5,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "aae2f307-5205-4182-9da4-c35c421814bd",
+							"based_on_id": "402098c4-6f70-42be-9136-66b7b6e15758",
+							"based_on_hash": "DH8KVnmDa5854+l3jql6o1ZW+AonNHXYCb3dbqf8tsA",
+							"disabled": true,
+							"name": "Illegal",
+							"reference": "B130",
+							"cost_type": "points",
+							"cost": -5,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "3a15ea6e-1de8-4fcd-9e1e-df3443233ec0",
+							"based_on_id": "ba8f3e93-e409-478b-99c3-ecfbefa70089",
+							"based_on_hash": "bgqgfdHE7CUKndD6xazD+hpGeD4/1X0j/WsepTNIEzY",
+							"disabled": true,
+							"name": "Frequency: Constantly",
+							"reference": "B130",
+							"cost_type": "multiplier",
+							"cost": 5,
+							"notes": "Lose 1 HP per minute without it"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "93096cfe-43d1-40c9-91e7-c4e214c2f481",
+							"based_on_id": "86310a2f-c8cd-413e-88ae-da012c6edcbb",
+							"based_on_hash": "2yBN/tKjpwWIX7Ldhl8/2pGMKOQRszBXCfExaXrsaE8",
+							"disabled": true,
+							"name": "Frequency: Hourly",
+							"reference": "B130",
+							"cost_type": "multiplier",
+							"cost": 4,
+							"notes": "Lose 1 HP per 10 minutes after missing a hourly dose"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "aa6bd45a-3a51-48fe-80c7-5d4156420abe",
+							"based_on_id": "39c664b4-4398-4b97-8aad-b0bafcfe895e",
+							"based_on_hash": "c0e7VOfMsMPKTNy50vGNoCzQFEz9V7Xlsq233xtXwQY",
+							"disabled": true,
+							"name": "Frequency: Daily",
+							"reference": "B130",
+							"cost_type": "multiplier",
+							"cost": 3,
+							"notes": "Lose 1 HP per hour after missing a daily dose"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "a9304476-6ce0-4b98-bc1d-cc933cad2915",
+							"based_on_id": "ccad68c0-a7fd-4606-9dcd-6ae5b5b3872f",
+							"based_on_hash": "pTbFa7Vn3uHdyvtVpzoISiN57fW974T+nre1O/mdYrg",
+							"name": "Frequency: Weekly",
+							"reference": "B130",
+							"cost_type": "multiplier",
+							"cost": 2,
+							"notes": "Lose 1 HP per six hours after missing a weekly dose"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "375d3bbe-0931-4f86-b8c8-a4bc3d587062",
+							"based_on_id": "61e299a6-7dc0-43fc-8d6a-be932b848ec3",
+							"based_on_hash": "+LKMGpVTYWyR22vlOt/sADfwVcGOG4pFVR2oJuhwpc8",
+							"disabled": true,
+							"name": "Frequency: Monthly",
+							"reference": "B130",
+							"cost_type": "multiplier",
+							"cost": 1,
+							"notes": "Lose 1 HP per day after missing a monthly dose"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "8f94a46e-c5b7-4ccb-8130-4be63df45cf3",
+							"based_on_id": "9a1ae412-539a-438b-9020-45cc3d29d8c3",
+							"based_on_hash": "AwP/HNPOqBJTAAbVzBDovah3n8v+COrmziCyBmOLBME",
+							"disabled": true,
+							"name": "Frequency: Seasonally",
+							"reference": "B130",
+							"cost_type": "multiplier",
+							"cost": 0.33333,
+							"notes": "Lose 1 HP per 3 days after missing a seasonal dose"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "8dce2678-e88a-44ae-a09e-2a2bfc40f7c7",
+							"based_on_id": "746dbfd5-1295-449a-beb6-65adc25b6a88",
+							"based_on_hash": "rNKPlFheSxJ+uqXEsICCjzuxODZ5gNdsaw4S1I8Gqmo",
+							"disabled": true,
+							"name": "Frequency: Yearly",
+							"reference": "B130",
+							"cost_type": "multiplier",
+							"cost": 0.1,
+							"notes": "Lose 1 HP per 2 weeks after missing a yearly dose"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "ba7806c5-3d7f-4ccd-8b71-86c8b03ccffd",
+							"based_on_id": "f9a60134-427e-48be-b97a-7cf8fdf83e86",
+							"based_on_hash": "brLeEG9Yt/BVKlnOpl98Iw8Qz7dw0BG2zQkKP0g0Duo",
+							"disabled": true,
+							"name": "Aging",
+							"reference": "B130",
+							"cost_type": "percentage",
+							"cost": 30,
+							"affects": "total",
+							"notes": "Age 2 years for each HP lost due to this dependency"
+						}
+					],
+					"reference": "B130",
+					"categories": [
+						"Disadvantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"id": "edfc167e-9c32-47bd-b234-4d9b200c26a2",
+					"based_on_id": "8c0a6469-1b7b-49b1-879a-e50aa2bb9494",
+					"based_on_hash": "XKhIuW5O5yXrdPu+T4SMMN+NxDUxJSJFnF/WDDO9HaU",
+					"name": "Vulnerability",
+					"physical": true,
+					"exotic": true,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "4c776095-ef57-42ce-8729-0a2e7d977662",
+							"based_on_id": "da840630-abbc-426e-a9e3-f7cd34ab0956",
+							"based_on_hash": "U3pVkN0hvu5xrAXnFGoRcAEMnnnQx8vZW6Vr2nN5ZkU",
+							"disabled": true,
+							"name": "@Rare attack@",
+							"reference": "B161",
+							"cost_type": "points",
+							"cost": -5,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "73bd6a52-77b1-4517-af6e-8654b9afecdf",
+							"based_on_id": "c4f25bac-aec3-430a-b8e2-c5cc8ca62d3d",
+							"based_on_hash": "P+0skesyGYrcxw74sbv5jAx+guJKXqleHTIC88lhW2k",
+							"name": "Any attack by creator",
+							"reference": "B161",
+							"cost_type": "points",
+							"cost": -10,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "8c08492b-2af2-491c-8feb-ab813731fff6",
+							"based_on_id": "b94356f2-bfcd-4b44-afcf-9491a86b2ff9",
+							"based_on_hash": "pPa+YZNfCVgnQgL1441FwfQo9OddZB5Czc3Zn/WpSYs",
+							"disabled": true,
+							"name": "@Common attack@",
+							"reference": "B161",
+							"cost_type": "points",
+							"cost": -15,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "f71bf9d7-03bd-4671-a013-6fc4d283d855",
+							"based_on_id": "c6e65360-efaf-470b-8f12-7e1ae885cf7e",
+							"based_on_hash": "MbQLo2j6LG6xJq0tt90fJJslPdVo00fSA1rmt/13gPU",
+							"disabled": true,
+							"name": "@Very common attack@",
+							"reference": "B161",
+							"cost_type": "points",
+							"cost": -20,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "e6c91280-af45-47bf-a928-5b31540c7525",
+							"based_on_id": "47f0d0dd-e3de-4212-9348-f73dd42804c6",
+							"based_on_hash": "GH6sknCqfALh4/9lgv395x2boGC0SfwQw++7UZ72u9k",
+							"disabled": true,
+							"name": "Wounding x2",
+							"reference": "B161",
+							"cost_type": "multiplier",
+							"cost": 2
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "6e7c5052-6f2c-44ea-a1da-86a43d21458a",
+							"based_on_id": "7e490fc9-227f-4cab-86b7-6570ed3ec050",
+							"based_on_hash": "Dx1Y8rHRLkxsza2CA9hydzSzisRdCxBx77nRVmv7Lgc",
+							"disabled": true,
+							"name": "Wounding x3",
+							"reference": "B161",
+							"cost_type": "multiplier",
+							"cost": 3
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "46473f7b-92b5-48ca-b7e8-468ca15889d5",
+							"based_on_id": "bcb496da-fb92-4f4a-a8bc-ade01ceacaa0",
+							"based_on_hash": "UadO7mrkXQSl8f3TF0/lxv6Vz0SbgQRnbi+X2xvppok",
+							"name": "Wounding x4",
+							"reference": "B161",
+							"cost_type": "multiplier",
+							"cost": 4
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "e210be09-deab-4883-a187-5d93316765a8",
+							"based_on_id": "bac139dd-b536-4d88-aafa-fa927c454816",
+							"based_on_hash": "AVPdYg4oa7T0lMUEEKTcKjlyuYaibK8Er/d9gbVj7Gc",
+							"disabled": true,
+							"name": "Fatigue Only",
+							"reference": "B161",
+							"cost_type": "percentage",
+							"cost": -50,
+							"affects": "total"
+						}
+					],
+					"reference": "B161",
+					"categories": [
+						"Disadvantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"id": "a9bd6c0d-7a6a-4d4a-825f-88abf6c07652",
+					"name": "Remove Energy Reserve",
+					"physical": true,
+					"base_points": -6
+				}
+			]
+		}
+	],
+	"notes": [
+		{
+			"type": "note",
+			"version": 1,
+			"id": "60e64908-e82f-47e5-a963-b83e5488ebdc",
+			"text": "Always insubstantial, but can affect the substantial with telekinesis where it applies"
+		},
+		{
+			"type": "note",
+			"version": 1,
+			"id": "563c5c3c-34a1-4fd3-9113-7c54baecbad9",
+			"text": "Invisible and inaudible, but can become visible, with effort."
+		}
+	],
+	"print_settings": {
+		"units": "in",
+		"orientation": "portrait",
+		"width": 8.5,
+		"height": 11,
+		"top_margin": 0.25,
+		"left_margin": 0.25,
+		"bottom_margin": 0.25,
+		"right_margin": 0.25,
+		"ink_chromaticity": "monochrome",
+		"sides": "single",
+		"quality": "normal"
+	}
+}

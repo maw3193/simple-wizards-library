@@ -1,0 +1,1273 @@
+{
+	"type": "character",
+	"version": 1,
+	"id": "0f9f7812-1f8a-41f8-9547-908dbce58a6a",
+	"settings": {
+		"version": 1,
+		"default_length_units": "ft_in",
+		"default_weight_units": "lb",
+		"user_description_display": "tooltip",
+		"modifiers_display": "inline",
+		"notes_display": "inline",
+		"base_will_on_10": false,
+		"base_per_on_10": false,
+		"use_multiplicative_modifiers": false,
+		"use_modifying_dice_plus_adds": false,
+		"use_know_your_own_strength": false,
+		"use_reduced_swing": false,
+		"use_thrust_equals_swing_minus_2": false,
+		"use_simple_metric_conversions": true,
+		"show_college_in_sheet_spells": false,
+		"show_difficulty": false,
+		"show_advantage_modifier_adj": false,
+		"show_equipment_modifier_adj": false,
+		"show_spell_adj": true,
+		"use_title_in_footer": false,
+		"extra_space_around_encumbrance": false,
+		"block_layout": [
+			"reactions conditional_modifiers",
+			"melee",
+			"ranged",
+			"advantages skills",
+			"spells",
+			"equipment",
+			"other_equipment",
+			"notes"
+		]
+	},
+	"created_date": "Jul 31, 2021, 10:34 PM",
+	"modified_date": "Jul 31, 2021, 10:48 PM",
+	"profile": {
+		"player_name": "jonathan",
+		"name": "Created Rhinoceros",
+		"age": "22",
+		"birthday": "August 15",
+		"eyes": "Blue",
+		"hair": "Redhead, Curly, Short",
+		"skin": "Pale",
+		"handedness": "Left",
+		"height": "5' 5\"",
+		"weight": "123 lb",
+		"gender": "Female",
+		"body_type": "humanoid",
+		"tech_level": "3"
+	},
+	"total_points": 100,
+	"ST": 34,
+	"DX": 10,
+	"IQ": 4,
+	"HT": 11,
+	"will_adj": 6,
+	"per_adj": 8,
+	"move_adj": 1,
+	"advantages": [
+		{
+			"type": "advantage",
+			"version": 1,
+			"id": "df34bbf1-aef6-43fa-a984-24143fb78d09",
+			"name": "Natural Attacks",
+			"physical": true,
+			"weapons": [
+				{
+					"type": "melee_weapon",
+					"damage": {
+						"type": "cr",
+						"st": "thr",
+						"base": "-1"
+					},
+					"usage": "Bite",
+					"reach": "C",
+					"parry": "No",
+					"block": "No",
+					"defaults": [
+						{
+							"type": "DX"
+						},
+						{
+							"type": "Skill",
+							"name": "Brawling"
+						}
+					]
+				},
+				{
+					"type": "melee_weapon",
+					"damage": {
+						"type": "cr",
+						"st": "thr",
+						"base": "-1"
+					},
+					"usage": "Punch",
+					"reach": "C",
+					"parry": "0",
+					"defaults": [
+						{
+							"type": "DX"
+						},
+						{
+							"type": "Skill",
+							"name": "Boxing"
+						},
+						{
+							"type": "Skill",
+							"name": "Brawling"
+						},
+						{
+							"type": "Skill",
+							"name": "Karate"
+						}
+					]
+				},
+				{
+					"type": "melee_weapon",
+					"damage": {
+						"type": "cr",
+						"st": "thr"
+					},
+					"usage": "Kick",
+					"reach": "C,1",
+					"parry": "No",
+					"defaults": [
+						{
+							"type": "DX",
+							"modifier": -2
+						},
+						{
+							"type": "Skill",
+							"name": "Brawling",
+							"modifier": -2
+						},
+						{
+							"type": "Skill",
+							"name": "Karate",
+							"modifier": -2
+						}
+					]
+				}
+			],
+			"reference": "B271"
+		},
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"id": "0dddedad-7a4f-4c05-8484-e3968e4edfa0",
+			"based_on_id": "964f4df9-93d8-4020-9fa0-74131bbd615c",
+			"based_on_hash": "SE7ZsB965NIUgOjhlM+jC8RH2LsYTICXVXKzwcZkzno",
+			"container_type": "meta_trait",
+			"name": "Meta-Trait: Quadruped",
+			"reference": "B263",
+			"open": true,
+			"children": [
+				{
+					"type": "advantage",
+					"version": 1,
+					"id": "4a36b9c0-2d08-4ade-ae51-9f42e72c0f18",
+					"based_on_id": "c96be8e2-0b1e-4ac0-b965-f6a9b6e995a8",
+					"based_on_hash": "LOJH3NhBf2vXrUIr7iEoMiRCs+pari7cX7MSKcxbSQM",
+					"name": "Extra Legs",
+					"physical": true,
+					"exotic": true,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "1a5d4882-e871-49c3-9b74-45c1341a6e40",
+							"based_on_id": "f42b3c2e-2757-4ddb-926c-6cdc245b3b3b",
+							"based_on_hash": "RXN94W0/cz8xyc2IeawvA/haQXL74sk2l83mtoD+4tA",
+							"name": "4",
+							"reference": "B54",
+							"cost_type": "points",
+							"cost": 5,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "e77a2840-b6b1-4350-8264-0ec5ca2eae48",
+							"based_on_id": "a25756d2-d8e0-447c-9804-53def12e10ce",
+							"based_on_hash": "AUuGgF00gHYuZ0+7sE2WkCKXI4o+XNP0m9x6Oad2HiM",
+							"disabled": true,
+							"name": "@5 or 6@",
+							"reference": "B55",
+							"cost_type": "points",
+							"cost": 10,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "7c337e8c-8f10-4353-9c91-2a9ce082ac0a",
+							"based_on_id": "90fc764d-d1db-47f9-b7e9-fb42e50a9d6a",
+							"based_on_hash": "18XfSlN6sL9bPug/LOCV3larijQymTNk3rLndNbav8I",
+							"disabled": true,
+							"name": "@7+@",
+							"reference": "B55",
+							"cost_type": "points",
+							"cost": 15,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "82e778cc-837e-43ac-ada6-f97c95d97b91",
+							"based_on_id": "9f81d5f1-23ed-46e3-996e-893a801e16af",
+							"based_on_hash": "uGAVLsVjmZ/pwYLyNl6nRx4R6ahWJbPeJAyAKvVic/k",
+							"disabled": true,
+							"name": "Long",
+							"reference": "B55",
+							"cost_type": "percentage",
+							"cost": 100,
+							"affects": "total",
+							"levels": 1
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "1b930752-8994-4072-bbce-acbbe6c68905",
+							"based_on_id": "a2b19ec3-50b0-44c0-b5c0-37c224fd525a",
+							"based_on_hash": "vQYo7gauxfrTDpI1EukQOyN1jRZfsTyzIJde+IAYBrY",
+							"disabled": true,
+							"name": "Cannot Kick",
+							"reference": "B55",
+							"cost_type": "percentage",
+							"cost": -50,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "37a809db-3aa2-49dd-aa5b-bb210ad9e345",
+							"based_on_id": "b50865b2-ceab-40db-a9de-73378fd26255",
+							"based_on_hash": "BouGQITZ4824SVc8osmBu3XrEEjQtX3BUuYh7j3Q6G0",
+							"disabled": true,
+							"name": "Extra Flexible",
+							"reference": "MATG27",
+							"cost_type": "percentage",
+							"cost": 50,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "0863ca00-745d-45a3-9a07-f5c1abaef2db",
+							"based_on_id": "571515c2-18bc-4471-90c8-32249e015ffe",
+							"based_on_hash": "4vRkopUQlBhmrJQ2pGnyYuRewhy31tTKQn62bw7sVKM",
+							"disabled": true,
+							"name": "Prehensile Feet",
+							"reference": "MATG28",
+							"cost_type": "percentage",
+							"cost": 20,
+							"affects": "total"
+						}
+					],
+					"reference": "B54",
+					"categories": [
+						"Advantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"id": "113cbb9f-e59d-4453-a610-77c78a96a4b3",
+					"based_on_id": "79b06ee8-ac4b-44d8-ab19-53150d86fc49",
+					"based_on_hash": "qArcemnwwV6bNWz0g45Wwcg4+p9fHvIrMshh/7kbPJY",
+					"name": "Horizontal",
+					"physical": true,
+					"exotic": true,
+					"base_points": -10,
+					"reference": "B139",
+					"categories": [
+						"Disadvantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"id": "f7ed8c6d-f199-4346-bb41-d2ac25d65787",
+					"based_on_id": "7926cce9-27a1-42b8-b346-d787f5f792da",
+					"based_on_hash": "K1Qbz0qgbl0k+RS7uSzrtJlxKj3PepGGH0717KTOv+E",
+					"name": "No Fine Manipulators",
+					"physical": true,
+					"base_points": -30,
+					"reference": "B145",
+					"features": [
+						{
+							"type": "cost_reduction",
+							"attribute": "st",
+							"percentage": 40
+						},
+						{
+							"type": "cost_reduction",
+							"attribute": "dx",
+							"percentage": 40
+						}
+					],
+					"categories": [
+						"Disadvantage"
+					]
+				}
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"id": "1f5820d3-5729-46ed-917e-0743d5c14685",
+			"based_on_id": "38652476-0c95-4a35-8068-3f96a25d2f09",
+			"based_on_hash": "6RsDbX0tO0vgsjasKc7WWjpwXX5Nuz4AbAbzZVudDVo",
+			"name": "Damage Resistance",
+			"physical": true,
+			"exotic": true,
+			"levels": "4",
+			"points_per_level": 5,
+			"modifiers": [
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "5d2fe155-adce-4886-8e9c-c2add993192d",
+					"based_on_id": "f51def8a-481f-4917-92a6-10b912b75274",
+					"based_on_hash": "f+ZLEAP9PC2zGdxvLb3TstT6pc28RjHs2JZ9qRYm4Zk",
+					"disabled": true,
+					"name": "Force Field",
+					"reference": "B47",
+					"cost_type": "percentage",
+					"cost": 20,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "aa253c35-503a-4855-bb1f-d97628fee693",
+					"based_on_id": "bd8d18a4-8101-4ecf-90e0-03fb5c0c7a08",
+					"based_on_hash": "Nl956tIwZ8IHRrtTb9m1OwxGqu75uta9XJdShKVthBY",
+					"disabled": true,
+					"name": "Hardened",
+					"reference": "B47",
+					"cost_type": "percentage",
+					"cost": 20,
+					"affects": "total",
+					"levels": 1
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "51d594a2-6339-4aeb-b7e9-1a942c3668ba",
+					"based_on_id": "29a42643-d982-473c-8e1f-2243b2c84568",
+					"based_on_hash": "EUonSvcTjCCm53eimnCOjzhey27NQNlfqvWPYKhKjkY",
+					"disabled": true,
+					"name": "Absorption",
+					"reference": "B46",
+					"cost_type": "percentage",
+					"cost": 80,
+					"affects": "total",
+					"notes": "Enhances @Trait@"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "2163db4d-84d0-461d-874e-866e4c4ed382",
+					"based_on_id": "1ac5abe2-b84d-4a63-8b59-fa64781f0dc0",
+					"based_on_hash": "Jwt2vNoySl1LqZAWfqcLKTUBAJpxBUiBsGjqio7JBZg",
+					"disabled": true,
+					"name": "Absorption",
+					"reference": "B46",
+					"cost_type": "percentage",
+					"cost": 80,
+					"affects": "total",
+					"notes": "Healing only"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "9a647b66-858e-452b-b7fe-9057679a3dca",
+					"based_on_id": "0d14c378-ccc6-4c81-bbe7-be7a47b1217e",
+					"based_on_hash": "dgTHS9XD/KNMvwiDrOfosTJcgMaHFZHxyRg8vBTJzaw",
+					"disabled": true,
+					"name": "Absorption",
+					"reference": "B46",
+					"cost_type": "percentage",
+					"cost": 100,
+					"affects": "total",
+					"notes": "Enhances any trait"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "71dc5263-db0e-458c-820f-2c976ccf2bb8",
+					"based_on_id": "dd4b6e5a-2ba2-4ff7-b804-9332143d4f4f",
+					"based_on_hash": "2IwcM2LxZieidW//zdmV2+aWOGzy7RAY/jlfUnssnr0",
+					"disabled": true,
+					"name": "Reflection",
+					"reference": "B47",
+					"cost_type": "percentage",
+					"cost": 100,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "34106180-164e-40ae-b4cc-8e3c5824fd76",
+					"based_on_id": "6613a585-34ae-4af3-8293-32699a08bce4",
+					"based_on_hash": "I5ehvDFsG9DqtP2HHuk6ehpHuNIbJqjpxGCq75w3Ie4",
+					"disabled": true,
+					"name": "Bane",
+					"reference": "H14",
+					"cost_type": "points",
+					"cost": -1,
+					"affects": "total",
+					"notes": "@Rare@"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "19b65d3f-ab1d-466c-a685-067d41882322",
+					"based_on_id": "e79aed0e-c92b-498d-a382-c6f4dca685ae",
+					"based_on_hash": "MJccJMNPo/dge9fsiSkqW9OvXrwqFJUHG8Bof1XDkl0",
+					"disabled": true,
+					"name": "Bane",
+					"reference": "H14",
+					"cost_type": "percentage",
+					"cost": -5,
+					"affects": "total",
+					"notes": "@Occasional@"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "0e990d25-e66d-4e93-aae7-fc50c0c5cf33",
+					"based_on_id": "af66433b-dae8-43d9-9d4e-7b9d6bf4b736",
+					"based_on_hash": "njHxasqbdTdw5R6+P+0UvW0T5nu4ea5uvMURHwKjmJY",
+					"disabled": true,
+					"name": "Bane",
+					"reference": "H14",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "@Common@"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "aae99ca6-a680-4541-a683-0cb8f5627c18",
+					"based_on_id": "9a96eab6-ec08-416a-9d90-75735af381bc",
+					"based_on_hash": "VrYWVjcYR30eP3QMc1cQidbCms9SeRGJiWzs4nrhsdo",
+					"disabled": true,
+					"name": "Bane",
+					"reference": "H14",
+					"cost_type": "percentage",
+					"cost": -15,
+					"affects": "total",
+					"notes": "@Very Common@"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "65dd76a9-3809-4753-956a-f547505a06e1",
+					"based_on_id": "10175465-3f1c-420a-b606-37f18dd446d5",
+					"based_on_hash": "dPMIRaXzqAGj1PMtTCtJ2h7U/QISPIXVAL3M7bj0gyE",
+					"disabled": true,
+					"name": "Directional",
+					"reference": "B47",
+					"cost_type": "percentage",
+					"cost": -20,
+					"affects": "total",
+					"notes": "Front"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "622607d8-a404-47b9-9feb-adc82011344f",
+					"based_on_id": "232ae74a-a82f-4c47-b220-b4d38f543b9e",
+					"based_on_hash": "GvOD9U0PjFqEsAPweNHcNkiiQd44fme4gRyryfNLVLE",
+					"disabled": true,
+					"name": "Flexible",
+					"reference": "B47",
+					"cost_type": "percentage",
+					"cost": -20,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "e53cabf6-7f4f-4c1a-afcf-9ebc94e3d6b2",
+					"based_on_id": "e26b52d9-cca6-4695-8594-5d0d4cc8f7ee",
+					"based_on_hash": "GC93g8yNCghr5TSxlWNtk3H8vA2MFg5IFQJTVapQad4",
+					"disabled": true,
+					"name": "Limited",
+					"reference": "B46",
+					"cost_type": "percentage",
+					"cost": -20,
+					"affects": "total",
+					"notes": "@Very Common Attack Form@"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "4fb3d67b-2f1d-4391-a542-118d62cbdaa8",
+					"based_on_id": "f4eba828-1e15-4475-a011-a7ba17384a73",
+					"based_on_hash": "ZOulOq63BDMAHCh5CKIOzduysgmVQMrshURh6ywrLdQ",
+					"disabled": true,
+					"name": "Semi-Ablative",
+					"reference": "B47",
+					"cost_type": "percentage",
+					"cost": -20,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "df111f46-50e5-497f-b11a-4ffea9727ee7",
+					"based_on_id": "ba1f3f94-11e3-48b2-a36d-cc74c70721ac",
+					"based_on_hash": "KbxzIUwrtj9bPIVSY1MbzcAHqXP41lR+9fdeiUCa66A",
+					"disabled": true,
+					"name": "Can't wear armor",
+					"reference": "B47",
+					"cost_type": "percentage",
+					"cost": -40,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "1889e021-3aec-4417-b597-89f0845f5ac0",
+					"based_on_id": "7b906608-e847-498e-8243-8826f2f0eab8",
+					"based_on_hash": "6UZWaLUOXsjql+U7GWNiGaNgRsGOk+h3dk/09seWB1w",
+					"disabled": true,
+					"name": "Directional",
+					"reference": "B47",
+					"cost_type": "percentage",
+					"cost": -40,
+					"affects": "total",
+					"notes": "@Direction: Back, Right, Left, Top or Underside@"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "4e700337-c8ca-48c6-bb7a-02caeb5d00fc",
+					"based_on_id": "08c8d059-01a7-492d-ba7b-b31237c9820f",
+					"based_on_hash": "3z3IYvPL+hSwrl3cgKT6gcY14q2oMANmb+ffFHln5F0",
+					"disabled": true,
+					"name": "Limited",
+					"reference": "B46",
+					"cost_type": "percentage",
+					"cost": -40,
+					"affects": "total",
+					"notes": "@Common Attack Form@"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "9a43a849-be58-411a-9058-28e68290c225",
+					"based_on_id": "6455521e-7009-49ec-ad48-63ddca30b507",
+					"based_on_hash": "jJsx1ruNZPdLYxsF9IGKzxcs1V+sjTcsrp5bXpzV2ag",
+					"name": "Tough Skin",
+					"cost_type": "percentage",
+					"cost": -40,
+					"affects": "total",
+					"notes": "Effects that just require skin contact or a scratch ignore this DR"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "88157e26-fcf5-4d13-9e8c-501255f75762",
+					"based_on_id": "1824bcf0-377c-4007-bbc8-c2c1cf086a67",
+					"based_on_hash": "sr97ebU+WBk3ssaPRG+SvUbSWhNfm7cnJ/VsoHkJ8lw",
+					"disabled": true,
+					"name": "Limited",
+					"reference": "B46",
+					"cost_type": "percentage",
+					"cost": -60,
+					"affects": "total",
+					"notes": "@Occasional Attack Form@"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "d4a86f9a-919e-4679-bef4-0277aa775081",
+					"based_on_id": "dd6f3a0a-937f-4e6f-9cec-0614ab90e6b7",
+					"based_on_hash": "wlS3WrNGp8Dq930xWznTJVK0AvJwO9/dtS7OMy+oUM4",
+					"disabled": true,
+					"name": "Ablative",
+					"reference": "B47",
+					"cost_type": "percentage",
+					"cost": -80,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "0f060e99-f8c6-4ada-a711-78df9498e234",
+					"based_on_id": "36dd5919-aa1d-4d61-8b30-544325cb0579",
+					"based_on_hash": "szjREfwKkqQxF3RmsHWEGnovCptKqLtfUuuupWiNRZs",
+					"disabled": true,
+					"name": "Limited",
+					"reference": "B46",
+					"cost_type": "percentage",
+					"cost": -80,
+					"affects": "total",
+					"notes": "@Rare Attack Form@"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "ef564bb5-e0ff-4f8b-b084-50afeca3dad8",
+					"based_on_id": "4850221a-579c-4e8a-8120-a0c9bf02a75e",
+					"based_on_hash": "WwdIkImF2HFer47l+TNgRH3PoqP6+X73nj3AUNXiEy0",
+					"disabled": true,
+					"name": "Laminate",
+					"reference": "RSWL18",
+					"cost_type": "percentage",
+					"cost": 10,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "daa28ab7-474a-41e7-bb12-f508b84083f8",
+					"based_on_id": "39fe2cf0-bca5-43fa-8140-b66b9cd74500",
+					"based_on_hash": "ibe55Izdkam5d2lG2iW38VjlLEdPmr7Y0oiGEeRR1fY",
+					"disabled": true,
+					"name": "Malediction-Proof",
+					"reference": "PSI14",
+					"cost_type": "percentage",
+					"cost": 50,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "5a885b80-e5bb-4c28-9ddd-26a37668fd8b",
+					"based_on_id": "5032a84d-94cf-4400-9f29-f2616116d204",
+					"based_on_hash": "oeKQ2HvrCccKmoNbmq6uMIJJTXKGyqw+92sufnJLNt4",
+					"disabled": true,
+					"name": "Maledictions Only",
+					"reference": "PSI14",
+					"cost_type": "percentage",
+					"cost": 0,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "86576619-7607-4254-b292-878980c04766",
+					"based_on_id": "faa85e7a-6e75-4ffe-b4bb-a6d04e0c93aa",
+					"based_on_hash": "lYafUlUea3B0fWG/N3My/uVlz5130WXvNtZ2QL7TAtw",
+					"disabled": true,
+					"name": "Partial (@Location, 1 level per -1 Per Hit Modifier, Torso is -10% thus level 1@)",
+					"reference": "B47",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total"
+				}
+			],
+			"reference": "B47",
+			"features": [
+				{
+					"type": "dr_bonus",
+					"amount": 1,
+					"per_level": true,
+					"location": "full_body_except_eyes"
+				}
+			],
+			"categories": [
+				"Advantage"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"id": "5624a69c-a699-4111-a5cd-4f7e602c8baa",
+			"based_on_id": "2295ec18-75d8-4f4c-9274-c0164d2f6773",
+			"based_on_hash": "fAilplf90StIU6chISuj7uOhpP+CAv2PocVqRC6bIbA",
+			"name": "Acute Taste & Smell",
+			"physical": true,
+			"levels": "2",
+			"points_per_level": 2,
+			"reference": "B35",
+			"features": [
+				{
+					"type": "attribute_bonus",
+					"amount": 1,
+					"per_level": true,
+					"attribute": "taste_smell"
+				}
+			],
+			"categories": [
+				"Advantage"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"id": "c8635a10-dd7d-4ef6-9238-531473037267",
+			"based_on_id": "96458c8f-9018-4324-9661-b7e6b10966c0",
+			"based_on_hash": "87GC3Lh64WAF81Myf9PkdbDviaanKQ6b8A+gf8UVGoM",
+			"name": "Discriminatory Smell",
+			"physical": true,
+			"exotic": true,
+			"base_points": 15,
+			"modifiers": [
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "d24fceeb-9e58-4e35-9d4b-763011a096ca",
+					"based_on_id": "17ab7dd3-7774-4c6f-b4b8-f4e209866f47",
+					"based_on_hash": "g0hmvJjitC2fiOvJZ7+c+0t3NjaI1Iu8ST/vBeQvgkc",
+					"disabled": true,
+					"name": "Emotion Sense",
+					"reference": "B49",
+					"cost_type": "percentage",
+					"cost": 50,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "c8f66c65-5112-4ca8-adf2-fde1aa461905",
+					"based_on_id": "5b99c3b7-6e6e-44a5-b0e5-e7738f4a1ede",
+					"based_on_hash": "R3KBH1ODtkdI/GyPTcWvHisEdG0beKIWdAgAq+M1Qf0",
+					"disabled": true,
+					"name": "Profiling",
+					"reference": "P47",
+					"cost_type": "percentage",
+					"cost": 50,
+					"affects": "total"
+				}
+			],
+			"reference": "B49",
+			"categories": [
+				"Advantage"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"id": "b35457c4-9746-486a-9c8c-6c250d2b9004",
+			"based_on_id": "bdd03b24-27af-406c-9d91-1a6354ca2489",
+			"based_on_hash": "7hIRNi4pjGNWB+mLhDbVOqzAHUPcbP4xWEsKy1LIG8E",
+			"allow_half_levels": true,
+			"name": "Enhanced Move (Ground)",
+			"physical": true,
+			"exotic": true,
+			"levels": "1",
+			"points_per_level": 20,
+			"modifiers": [
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "a116e275-69fd-439b-a066-5c38820a7c95",
+					"based_on_id": "79398643-ba30-4f08-9b12-3405312a3683",
+					"based_on_hash": "vnxHInpsIdeAnvFU+SPcjr8D32jzuWTeFLlOEFKAkw0",
+					"disabled": true,
+					"name": "Handling Bonus",
+					"reference": "B52",
+					"cost_type": "percentage",
+					"cost": 5,
+					"affects": "total",
+					"levels": 1
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "0c741f66-5433-48b0-8bd0-8a2463b30900",
+					"based_on_id": "dabd68ec-58b3-401a-af89-de37b838c42c",
+					"based_on_hash": "m8FY+S0qGSEa24WweqKgkSoupycfrG0RW+GefmMgfqs",
+					"disabled": true,
+					"name": "Handling Penalty",
+					"reference": "B52",
+					"cost_type": "percentage",
+					"cost": -5,
+					"affects": "total",
+					"levels": 1
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "7eea1c0a-0fd1-4512-b47e-a7f93575f0a9",
+					"based_on_id": "e316a3e2-cc8d-4b99-8cd0-bd01ccf20388",
+					"based_on_hash": "OO9kfDjc3chVCCEqKXHIbS+Zehd9S7VfUGi2WXCvSMw",
+					"disabled": true,
+					"name": "Newtonian",
+					"reference": "B52",
+					"cost_type": "percentage",
+					"cost": -50,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "40ac6196-5adb-4c43-a701-4ab3693118d4",
+					"based_on_id": "e653e29f-bbea-4a68-8d44-9845da45fad9",
+					"based_on_hash": "oslRs0a9Xx6otzyB1/4ejaN25zxubhm6K09R7ptdXBk",
+					"disabled": true,
+					"name": "Road-Bound",
+					"reference": "B52",
+					"cost_type": "percentage",
+					"cost": -50,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "f543f869-f4dc-4f9b-bb00-0fe5d01eb34f",
+					"based_on_id": "c02f53b9-8918-478b-a962-3d1a8157f312",
+					"based_on_hash": "98rYwSogojMkEVdCO2lN9Y8qPVeJE0h72QBblRXy35M",
+					"disabled": true,
+					"name": "All-Out",
+					"reference": "P49",
+					"cost_type": "percentage",
+					"cost": -20,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "11c19c56-14c0-4921-a189-4355aee3e93b",
+					"based_on_id": "ca26e704-8033-4901-bb38-c0e0510ed357",
+					"based_on_hash": "vNAYu7olw8IEX+TvGOCPo++viZTGL+VdVaHvpRzXoaA",
+					"disabled": true,
+					"name": "Cosmic",
+					"reference": "SU26",
+					"cost_type": "percentage",
+					"cost": 50,
+					"affects": "total",
+					"notes": "Instantaneous Acceleration"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "cfeb07b9-097c-4ad7-a705-029986f45c98",
+					"based_on_id": "fa245c74-9d18-4ca8-8c4e-024c63ccaac1",
+					"based_on_hash": "0aBQJAfoI/YnbzJ3OERwlDT2ojzj+rVNKYklq0HdGio",
+					"disabled": true,
+					"name": "Cosmic",
+					"reference": "SU27",
+					"cost_type": "percentage",
+					"cost": 50,
+					"affects": "total",
+					"notes": "Complete Maneuverability"
+				}
+			],
+			"reference": "B52",
+			"notes": "Multiply normal Ground Move by 1 + level",
+			"categories": [
+				"Advantage"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"id": "cb1f6643-fc2c-4fe5-865e-f7cee851eb68",
+			"based_on_id": "707e522a-2fd6-412e-ac81-b44721b44de6",
+			"based_on_hash": "heE3Lrnuz5b+qnFp1WLXoPTQMb30rF0NuRaMxBvaQ/U",
+			"name": "Night Vision",
+			"physical": true,
+			"levels": "4",
+			"points_per_level": 1,
+			"reference": "B71",
+			"categories": [
+				"Advantage"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"id": "e555b99b-21e3-4aed-a08d-f0036c588296",
+			"based_on_id": "c809cc8e-4a52-47f7-9ce8-bfdc26356632",
+			"based_on_hash": "ehQcmmEGj2PCtv79XfYRu3sLkHxnBiS//kFf1LouUgM",
+			"name": "Parabolic Hearing",
+			"physical": true,
+			"exotic": true,
+			"levels": "2",
+			"points_per_level": 4,
+			"reference": "B72",
+			"categories": [
+				"Advantage"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"id": "d0b865e1-d71d-440d-b969-58ee0fe13124",
+			"based_on_id": "8dadd2f3-cc2c-4980-a376-cc91d00b743a",
+			"based_on_hash": "g5NV7EG9t0QYpBxiAJNabCiNS02NYccZCEuiRzyDO1U",
+			"name": "Peripheral Vision",
+			"physical": true,
+			"base_points": 15,
+			"modifiers": [
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "e814480c-253d-4e35-a045-4c67b34989e8",
+					"based_on_id": "dbd1dea0-de15-436d-b93e-de0f3e92eb85",
+					"based_on_hash": "9B8F5J1mC7BMAoJ+FIEvj0hDDq/8xLIOlVzXrpfcIeA",
+					"disabled": true,
+					"name": "Easy to Hit",
+					"reference": "B75",
+					"cost_type": "percentage",
+					"cost": -20,
+					"affects": "total",
+					"notes": "Others can target your eyes at only -6 to hit"
+				}
+			],
+			"reference": "B74",
+			"categories": [
+				"Advantage"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"id": "24ec5777-5831-4c4b-840e-9c00b4645987",
+			"based_on_id": "6dacf382-cf72-4a64-8653-f61130548f96",
+			"based_on_hash": "JBOoA9aFHKmaahyMAGKlLVkC56tp5qv+QNBWVvnBH6Q",
+			"name": "Sharp Teeth",
+			"physical": true,
+			"exotic": true,
+			"base_points": 1,
+			"weapons": [
+				{
+					"type": "melee_weapon",
+					"damage": {
+						"type": "cut",
+						"st": "thr",
+						"base": "-1"
+					},
+					"usage": "Bite",
+					"reach": "C",
+					"parry": "No",
+					"block": "No",
+					"defaults": [
+						{
+							"type": "Skill",
+							"name": "Brawling"
+						},
+						{
+							"type": "DX"
+						}
+					]
+				}
+			],
+			"modifiers": [
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "b1fbab9e-a6df-4b29-bf94-74d0f145abb4",
+					"based_on_id": "c32922a5-c187-48a9-8109-61776dc618f1",
+					"based_on_hash": "1WScOXq9mB0C9kO0KCejsY3AWjkUSqY9CILzbug/nWQ",
+					"disabled": true,
+					"name": "Provided by Vampiric Bite",
+					"reference": "B96",
+					"cost_type": "points",
+					"cost": -1,
+					"affects": "total"
+				}
+			],
+			"reference": "B91",
+			"categories": [
+				"Perk"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"id": "d2524a24-83f0-4bb4-9486-f6edd5678bea",
+			"based_on_id": "b221e78e-489e-4e44-8d1f-e6d5aeb7f429",
+			"based_on_hash": "+tzwEug56uSFtA/fEzd1e5ayHw1+DYz3DdKypi5vNWA",
+			"name": "Impaling Striker (Horn)",
+			"physical": true,
+			"exotic": true,
+			"base_points": 8,
+			"weapons": [
+				{
+					"type": "melee_weapon",
+					"damage": {
+						"type": "imp",
+						"st": "thr",
+						"modifier_per_die": 1
+					},
+					"reach": "C",
+					"parry": "0",
+					"block": "No",
+					"defaults": [
+						{
+							"type": "DX"
+						},
+						{
+							"type": "Skill",
+							"name": "Brawling"
+						}
+					]
+				}
+			],
+			"reference": "B88",
+			"categories": [
+				"Advantage"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"id": "74211444-3361-428f-9a10-bc97588333bb",
+			"based_on_id": "7f09780d-cf2e-4bbf-a298-955c2db1d87d",
+			"based_on_hash": "GKdPQOMJyKy/hPdkBHVCBkg1RyR1BKjlnIfbhDyiagw",
+			"name": "Ultrahearing",
+			"physical": true,
+			"exotic": true,
+			"base_points": 5,
+			"modifiers": [
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "605da486-84c1-4226-8b58-44e2a5d6813f",
+					"based_on_id": "3c71b0e5-430a-40cb-b636-ef24cdaeb2d7",
+					"based_on_hash": "1LvQqnrIZB9Vl9kogbXx3TXdkh43T7vHtAzm325yxoY",
+					"disabled": true,
+					"name": "No normal hearing",
+					"reference": "B94",
+					"cost_type": "points",
+					"cost": -5,
+					"affects": "total"
+				}
+			],
+			"reference": "B94",
+			"categories": [
+				"Advantage"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"id": "0f6ec147-626d-4640-84f7-eccf1d4a566f",
+			"based_on_id": "227d7609-ce56-4314-8c6a-9d5cb8863e9b",
+			"based_on_hash": "yniEvIu7J2Cc4qySt4tQbCTMw7yIuvdcokWDwFdgSfI",
+			"name": "Bad Sight (Motion Sensitive)",
+			"physical": true,
+			"levels": "6",
+			"points_per_level": -1,
+			"modifiers": [
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "6a7323cc-ee4e-477d-a99a-5bce9f561dea",
+					"based_on_id": "5f9a7d75-de73-40c4-bbc9-f8f6a058a9ba",
+					"based_on_hash": "JpE/3PlHJY09fRDbpMW/C8iEyvy8znBcTS0gPXNCvIA",
+					"disabled": true,
+					"name": "Mitigator",
+					"cost_type": "percentage",
+					"cost": -60,
+					"affects": "total",
+					"notes": "Glasses"
+				}
+			],
+			"reference": "B123",
+			"notes": "-1 per level to vision rolls on non-moving targets",
+			"categories": [
+				"Disadvantage"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"id": "5dcc75cf-acc6-4ab3-add3-a61badd64f29",
+			"based_on_id": "9cba08c8-63ed-4b0c-9183-3c7de0a59ce2",
+			"based_on_hash": "RRm/Zgqresymqc/nijzYgU4dehUNNGHnOd2C0hkp19w",
+			"name": "Restricted Diet (Herbivore)",
+			"physical": true,
+			"modifiers": [
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "cd2d3509-76ac-4b3d-9a82-91be386c1f90",
+					"based_on_id": "0dae0fad-abcc-4e90-a149-326bea6573a8",
+					"based_on_hash": "8KbbVDi/9JOQpLslFKycz/qpeququ87h5zSI9O1zW/0",
+					"disabled": true,
+					"name": "Substitution",
+					"reference": "B151",
+					"cost_type": "percentage",
+					"cost": -50,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "f9e596cc-c900-4d40-a5c0-a0931620bfa2",
+					"based_on_id": "1cc9a927-6c9b-402c-bd43-9fe3454103aa",
+					"based_on_hash": "xnd5Lp19Wsig0WSvWIlT5eZNCcc/zKO6KmohxAgeXL8",
+					"name": "Very Common",
+					"reference": "B151",
+					"cost_type": "points",
+					"cost": -10,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "a7f90c31-c3ce-476f-8f9d-32fe8f9be735",
+					"based_on_id": "7ee9ad59-a4f4-4310-ad24-cbd4d90047c7",
+					"based_on_hash": "y3bj9S6J1hadoQyT1Aq/DK0Pt9FrfOi7XR3WFjFns7o",
+					"disabled": true,
+					"name": "Common",
+					"reference": "B151",
+					"cost_type": "points",
+					"cost": -20,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "38fcb62f-961c-4e5d-b647-5a3686837bde",
+					"based_on_id": "0d16b1d2-ff4b-40d7-a015-5b3a71fbbd1a",
+					"based_on_hash": "l2HcZUfy1AIYrCuhe5PqNkXGkMRoMFEReppT5nBVKNs",
+					"disabled": true,
+					"name": "Occasional",
+					"reference": "B151",
+					"cost_type": "points",
+					"cost": -30,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "50d48301-62d1-48cd-87a7-a7100774be5b",
+					"based_on_id": "2b764a44-21bf-4285-83d6-a2443b93fe36",
+					"based_on_hash": "+HEOm9MkThNFModo5cPDBYT5BwRZg49YWtCBu3SFGiI",
+					"disabled": true,
+					"name": "Rare",
+					"reference": "B151",
+					"cost_type": "points",
+					"cost": -40,
+					"affects": "total"
+				}
+			],
+			"reference": "B151",
+			"categories": [
+				"Disadvantage"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"id": "bc089d98-cdb0-4700-b8ad-7f83f6090edf",
+			"based_on_id": "b29d4127-0d2b-4669-9c69-6090ebd496a8",
+			"based_on_hash": "HvBdqg9enSRgVdcYAmpie3Fsac1F935WHEDHMI4pXAc",
+			"name": "Short Lifespan",
+			"physical": true,
+			"exotic": true,
+			"levels": "1",
+			"points_per_level": -10,
+			"reference": "B154",
+			"categories": [
+				"Disadvantage"
+			]
+		},
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"id": "cfb2a702-6e9d-457b-8475-afc3d46d105e",
+			"based_on_id": "617e4769-153a-457b-9bf6-33cd0c1ab724",
+			"based_on_hash": "H1tsAvArQqmz6r6lS7xEdiVOoTK0J5mMpu2n+BAcwdU",
+			"container_type": "meta_trait",
+			"name": "Meta-Trait: Wild Animal",
+			"reference": "B263",
+			"open": true,
+			"children": [
+				{
+					"type": "advantage",
+					"version": 1,
+					"id": "1f41a28d-cd59-4f08-a445-6b366ee46ddd",
+					"based_on_id": "a2e2d5af-cd05-4e03-a086-4719f4d87b6a",
+					"based_on_hash": "Ffrq1eKjW89GsE4C8ejc/YeK1a7QyPna8TYcDgmFz3Y",
+					"name": "Bestial",
+					"mental": true,
+					"exotic": true,
+					"base_points": -10,
+					"reference": "B124",
+					"categories": [
+						"Disadvantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"id": "4c8c2251-9147-4e76-8f3b-75f33a4d0505",
+					"based_on_id": "adea679e-507e-48d0-99fe-061e297a52dc",
+					"based_on_hash": "fIjpCsWn7f82io+W2eoSjmmtr8+ns11FK2//arN0p4w",
+					"name": "Cannot Speak",
+					"physical": true,
+					"base_points": -15,
+					"reference": "B125",
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": false,
+								"name": {
+									"compare": "is",
+									"qualifier": "stuttering"
+								}
+							}
+						]
+					},
+					"categories": [
+						"Disadvantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"id": "c2bfce1e-5d71-4e3f-bf4e-dbba4b80b0f9",
+					"based_on_id": "d331d926-03c3-4395-af99-84675305efd8",
+					"based_on_hash": "XYr6CnQlD9eKctyjFcukwMDWJjlMyPbju5Yfy0KdodY",
+					"name": "Hidebound",
+					"mental": true,
+					"base_points": -5,
+					"reference": "B138",
+					"notes": "-2 penalty on any task that requires creativity or invention, including most rolls against Artist skill, all Engineer rolls for new inventions, and all skill rolls made to use the Gadgeteer advantage.",
+					"categories": [
+						"Disadvantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"id": "e15de9e9-e6ed-4b23-b2b9-763e453249b7",
+					"based_on_id": "408c5043-993d-406e-ab6f-33cff7e32c1b",
+					"based_on_hash": "pZfybW75iL4y6MxmxXXR7rTHLG5GkJk0Sd7mvjlXr+A",
+					"name": "Taboo Trait (Fixed IQ)",
+					"physical": true,
+					"reference": "B263"
+				}
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"id": "a7df5b50-8e67-48f7-a7a6-2c9dd350f212",
+			"based_on_id": "cc574fa7-dc7b-48ce-b59b-364188e13da5",
+			"based_on_hash": "vxBkNH7/i3zesgMWAj/yBfUQc2kBuV/MWG+bdijwTAw",
+			"name": "Fragile (Unnatural)",
+			"physical": true,
+			"exotic": true,
+			"base_points": -50,
+			"reference": "B137",
+			"notes": "Automatically fail HT roll to stay alive if reduced to -HP or below",
+			"categories": [
+				"Disadvantage"
+			]
+		}
+	],
+	"print_settings": {
+		"units": "in",
+		"orientation": "portrait",
+		"width": 8.5,
+		"height": 11,
+		"top_margin": 0.25,
+		"left_margin": 0.25,
+		"bottom_margin": 0.25,
+		"right_margin": 0.25,
+		"ink_chromaticity": "monochrome",
+		"sides": "single",
+		"quality": "normal"
+	}
+}

@@ -1,41 +1,129 @@
 {
 	"type": "equipment_list",
-	"version": 1,
+	"version": 2,
 	"id": "781161a0-feb6-4621-8143-791d9f39820f",
 	"rows": [
 		{
 			"type": "equipment_container",
-			"version": 1,
-			"id": "033aa149-a963-4329-8bdb-2e72b96e1fd2",
-			"description": "Elixirs",
+			"id": "a5fd8ba6-5cbd-4322-863f-1fc28f1f4f2d",
+			"description": "Amulets",
+			"value": "0",
+			"weight": "0 lb",
+			"calc": {
+				"extended_value": "0",
+				"extended_weight": "0 lb"
+			},
 			"open": true,
 			"children": [
 				{
 					"type": "equipment",
-					"version": 1,
+					"id": "b7f00d4e-2262-4776-be97-8a02b4dc45ca",
+					"quantity": 1,
+					"description": "Amulet of Ironskin",
+					"value": "14608",
+					"weight": "0 lb",
+					"calc": {
+						"extended_value": "14608",
+						"extended_weight": "0 lb"
+					},
+					"features": [
+						{
+							"type": "dr_bonus",
+							"amount": 3,
+							"location": "arm"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 3,
+							"location": "face"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 3,
+							"location": "foot"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 3,
+							"location": "groin"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 3,
+							"location": "hand"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 3,
+							"location": "leg"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 3,
+							"location": "neck"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 3,
+							"location": "skull"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 3,
+							"location": "torso"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 3,
+							"location": "vitals"
+						}
+					],
+					"notes": "Alchemically produced"
+				}
+			]
+		},
+		{
+			"type": "equipment_container",
+			"id": "033aa149-a963-4329-8bdb-2e72b96e1fd2",
+			"description": "Elixirs",
+			"value": "0",
+			"weight": "0 lb",
+			"calc": {
+				"extended_value": "10",
+				"extended_weight": "0 lb"
+			},
+			"open": true,
+			"children": [
+				{
+					"type": "equipment",
 					"id": "ad79ced2-a53d-4be0-87f1-b06350b95633",
 					"quantity": 1,
 					"description": "Paut (Fwush-made)",
 					"value": "10",
+					"weight": "0 lb",
+					"calc": {
+						"extended_value": "10",
+						"extended_weight": "0 lb"
+					},
 					"notes": "1oz per dose, Restores 1 FP per dose"
 				}
 			]
 		},
 		{
 			"type": "equipment_container",
-			"version": 1,
 			"id": "e56e2056-62b7-4b4b-b1cb-dc18c5515106",
-			"based_on_id": "e4f25ec2-c88e-4d14-b412-7ea10ff8c5df",
-			"based_on_hash": "omwDr2By98GbyY2Cb3jkNAnddEjn53j2ah7uo+zDB68",
 			"description": "Powerstones",
+			"value": "0",
+			"weight": "0 lb",
+			"calc": {
+				"extended_value": "26765",
+				"extended_weight": "0.023 lb"
+			},
 			"open": true,
 			"children": [
 				{
 					"type": "equipment",
-					"version": 1,
 					"id": "625dde3d-2faf-40af-852f-3a4ef50af454",
-					"based_on_id": "38e2623f-adf5-4728-85b7-69e47c643bf5",
-					"based_on_hash": "008eM8djfFawitr7z5lIeqqlIWAyU4H+C4fcGbYLQHU",
 					"quantity": 1,
 					"description": "1 pt Powerstone",
 					"value": "75",
@@ -43,6 +131,10 @@
 					"reference": "M20",
 					"uses": 1,
 					"max_uses": 1,
+					"calc": {
+						"extended_value": "75",
+						"extended_weight": "0.001 lb"
+					},
 					"notes": "Costs 7.5p per point to recharge",
 					"categories": [
 						"Powerstone"
@@ -50,10 +142,7 @@
 				},
 				{
 					"type": "equipment",
-					"version": 1,
 					"id": "6139da8a-644a-48ac-b33b-06e04f78a6cf",
-					"based_on_id": "c2dcd0fe-a9a3-42bd-bb17-ebc905cf5442",
-					"based_on_hash": "9IrlR4RVyqTe2Ix18fOi2+38s/fpp210Uhhe5Lr/Y6U",
 					"quantity": 1,
 					"description": "3 pt Powerstone",
 					"value": "295",
@@ -61,6 +150,10 @@
 					"reference": "M20",
 					"uses": 3,
 					"max_uses": 3,
+					"calc": {
+						"extended_value": "295",
+						"extended_weight": "0.001 lb"
+					},
 					"notes": "Costs £0.29 to recharge",
 					"categories": [
 						"Powerstone"
@@ -68,10 +161,7 @@
 				},
 				{
 					"type": "equipment",
-					"version": 1,
 					"id": "02801d61-f39e-4abb-9af6-0e4a5ac8fd38",
-					"based_on_id": "ec8d89a8-7953-4909-afe2-58835796f25c",
-					"based_on_hash": "bDApLJQQ+ZlW3pxaNQBoHCVUyebpo2TexIZWt66wNVc",
 					"quantity": 1,
 					"description": "5 pt Powerstone",
 					"value": "620",
@@ -79,6 +169,10 @@
 					"reference": "M20",
 					"uses": 5,
 					"max_uses": 5,
+					"calc": {
+						"extended_value": "620",
+						"extended_weight": "0.002 lb"
+					},
 					"notes": "Costs £0.62 to recharge",
 					"categories": [
 						"Powerstone"
@@ -86,10 +180,7 @@
 				},
 				{
 					"type": "equipment",
-					"version": 1,
 					"id": "f8dc62cd-b6cc-422a-960c-ef5560c637af",
-					"based_on_id": "7d203b15-291b-4f6c-806b-490dee5150c9",
-					"based_on_hash": "epaNiX7hifNu5zhY7S9ufCrPPqq5p3ongn1ozhjmTpI",
 					"quantity": 1,
 					"description": "15 pt Powerstone",
 					"value": "4125",
@@ -97,6 +188,10 @@
 					"reference": "M20",
 					"uses": 15,
 					"max_uses": 15,
+					"calc": {
+						"extended_value": "4125",
+						"extended_weight": "0.006 lb"
+					},
 					"notes": "Costs £4.125 per point to recharge",
 					"categories": [
 						"Powerstone"
@@ -104,10 +199,7 @@
 				},
 				{
 					"type": "equipment",
-					"version": 1,
 					"id": "16dc8f4e-0dc2-4a4d-97e0-531e089a607f",
-					"based_on_id": "2773d597-24bb-4bad-aaf2-397fc98fc28e",
-					"based_on_hash": "EMm7wXxY0rx8fFTtHrHiq72E6s2NXWiOOUGJrdK2y28",
 					"quantity": 1,
 					"description": "32 pt Powerstone",
 					"value": "21650",
@@ -115,6 +207,10 @@
 					"reference": "M20",
 					"uses": 32,
 					"max_uses": 32,
+					"calc": {
+						"extended_value": "21650",
+						"extended_weight": "0.013 lb"
+					},
 					"notes": "Costs £21.65 per point to recharge",
 					"categories": [
 						"Powerstone"
@@ -124,85 +220,248 @@
 		},
 		{
 			"type": "equipment_container",
-			"version": 1,
-			"id": "89e31191-2b72-45db-ac47-67d8cc5391af",
-			"description": "Enchanted Items",
+			"id": "6c7c793c-a349-4525-b6e9-48d5ce047956",
+			"description": "Misc",
+			"value": "0",
+			"weight": "0 lb",
+			"calc": {
+				"extended_value": "14000",
+				"extended_weight": "1700 lb"
+			},
 			"open": true,
 			"children": [
 				{
 					"type": "equipment",
-					"version": 1,
+					"id": "cd1ede1f-1aa3-4ddb-adb1-89a6622a769f",
+					"quantity": 1,
+					"description": "Steel Golem Armor",
+					"tech_level": "8",
+					"legality_class": "1",
+					"value": "14000",
+					"weight": "1700 lb",
+					"reference": "B285",
+					"calc": {
+						"extended_value": "14000",
+						"extended_weight": "1700 lb"
+					},
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "skill_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "battlesuit"
+								}
+							}
+						]
+					},
+					"features": [
+						{
+							"type": "dr_bonus",
+							"amount": 8,
+							"location": "neck"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 8,
+							"location": "torso"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 8,
+							"location": "vitals"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 8,
+							"location": "groin"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 8,
+							"location": "arm"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 8,
+							"location": "hand"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 8,
+							"location": "leg"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 8,
+							"location": "foot"
+						},
+						{
+							"type": "attribute_bonus",
+							"amount": 35,
+							"attribute": "st",
+							"limitation": "striking_only"
+						},
+						{
+							"type": "attribute_bonus",
+							"amount": 35,
+							"attribute": "st",
+							"limitation": "lifting_only"
+						}
+					],
+					"categories": [
+						"Environment Suits"
+					]
+				}
+			]
+		},
+		{
+			"type": "equipment_container",
+			"id": "89e31191-2b72-45db-ac47-67d8cc5391af",
+			"description": "Enchanted Items",
+			"value": "0",
+			"weight": "0 lb",
+			"calc": {
+				"extended_value": "270813.5",
+				"extended_weight": "36.5 lb"
+			},
+			"open": true,
+			"children": [
+				{
+					"type": "equipment",
+					"id": "c4d0deb1-5454-4319-ab9d-c4ed55a49fac",
+					"quantity": 1,
+					"description": "Wand of Lightning",
+					"value": "11200",
+					"weight": "1 lb",
+					"weapons": [
+						{
+							"type": "ranged_weapon",
+							"damage": {
+								"type": "burn sur side-effect(stun)",
+								"base": "1d-1"
+							},
+							"usage": "Lightning (at skill 15)",
+							"accuracy": "3",
+							"range": "50/100",
+							"calc": {
+								"level": 0,
+								"range": "50/100",
+								"damage": "1d-1 burn sur side-effect(stun)"
+							},
+							"defaults": [
+								{
+									"type": "skill",
+									"name": "Innate Attack",
+									"specialization": "Beam"
+								}
+							]
+						}
+					],
+					"calc": {
+						"extended_value": "11200",
+						"extended_weight": "1 lb"
+					},
+					"notes": "lightning as the spell"
+				},
+				{
+					"type": "equipment",
+					"id": "692264ee-ed23-406e-84ef-398139ecb282",
+					"quantity": 1,
+					"description": "Amulet of Haste 3",
+					"value": "9375",
+					"weight": "0 lb",
+					"calc": {
+						"extended_value": "9375",
+						"extended_weight": "0 lb"
+					},
+					"notes": "casts Haste as the spell on the wearer, for up to a +3 bonus to move and dodge; looks like a knobbly sandy/glassy tube"
+				},
+				{
+					"type": "equipment",
 					"id": "62108080-247e-4bfb-9aa3-38bfcd01fb3d",
-					"based_on_id": "96fff355-713b-426f-8670-a6766e8520c8",
-					"based_on_hash": "t3LxXGwJLzcyewbNA50GSua2ZioVcESAB8IkXJ6G1ng",
 					"quantity": 1,
 					"description": "Faerie Lens",
 					"tech_level": "5",
 					"value": "950",
+					"weight": "0 lb",
+					"calc": {
+						"extended_value": "950",
+						"extended_weight": "0 lb"
+					},
 					"notes": "A pair of glasses enchanted with Gift of Letters(Faerie; £650) and Limit(Mages; £250)"
 				},
 				{
 					"type": "equipment",
-					"version": 1,
 					"id": "a15dd460-5851-42f1-90ca-733167aa8ea7",
-					"based_on_id": "62108080-247e-4bfb-9aa3-38bfcd01fb3d",
-					"based_on_hash": "jwHMow54fLe1Af6QR8eSH6iR23TvZ457xUVIehqBopc",
 					"quantity": 1,
 					"description": "Crystal Ball",
 					"tech_level": "3",
 					"value": "10000",
+					"weight": "0 lb",
 					"reference": "M:48",
+					"calc": {
+						"extended_value": "10000",
+						"extended_weight": "0 lb"
+					},
 					"notes": "allows casting of Communication"
 				},
 				{
 					"type": "equipment",
-					"version": 1,
 					"id": "4c563508-fa1e-426c-a655-67537f91a029",
-					"based_on_id": "a15dd460-5851-42f1-90ca-733167aa8ea7",
-					"based_on_hash": "aCgdRWbX8PDrxlXAvsMbkXdLVdWTcYlh/c1/5Ln8gjQ",
 					"quantity": 1,
 					"description": "Mage-Candle",
 					"tech_level": "3",
 					"value": "250",
+					"weight": "0 lb",
 					"reference": "M:48",
+					"calc": {
+						"extended_value": "250",
+						"extended_weight": "0 lb"
+					},
 					"notes": "Crystal that, when uncovered, glows as bright as a candle, -5 out to 2yds"
 				},
 				{
 					"type": "equipment",
-					"version": 1,
 					"id": "9930d788-57f2-47ac-aed9-b00a68985d0b",
-					"based_on_id": "4c563508-fa1e-426c-a655-67537f91a029",
-					"based_on_hash": "LBi6+jS2hwlvJQwY44AZ7wzYgqFkbjYWdk/ryWEvF94",
 					"quantity": 1,
 					"description": "Mage-Torch",
 					"tech_level": "3",
 					"value": "4380",
+					"weight": "0 lb",
 					"reference": "M:48",
+					"calc": {
+						"extended_value": "4380",
+						"extended_weight": "0 lb"
+					},
 					"notes": "Crystal that, when uncovered, glows as bright as a Torch, -3 out to 2yds"
 				},
 				{
 					"type": "equipment",
-					"version": 1,
 					"id": "f579fb37-9886-4764-8ce2-6e1b444f3cca",
-					"based_on_id": "9930d788-57f2-47ac-aed9-b00a68985d0b",
-					"based_on_hash": "GNPi4Lq8auteF65k4BYI/pe4sZIvn/IYFxPjmdgVpFg",
 					"quantity": 1,
 					"description": "Mage-Sun",
 					"tech_level": "3",
 					"value": "7500",
+					"weight": "0 lb",
 					"reference": "M:48",
+					"calc": {
+						"extended_value": "7500",
+						"extended_weight": "0 lb"
+					},
 					"notes": "Crystal that, when uncovered, glows as bright as day, +0 out to 2yds"
 				},
 				{
 					"type": "equipment",
-					"version": 1,
 					"id": "f19071a3-3cd6-4195-95c8-538aab8e8f2c",
-					"based_on_id": "f579fb37-9886-4764-8ce2-6e1b444f3cca",
-					"based_on_hash": "fTz3lzl4s6qRfJMcXNTdDl8vc2jhX8RCNEPB8fDT/hs",
 					"quantity": 1,
 					"description": "Amulet of Resist Lightning",
 					"tech_level": "3",
 					"value": "13500",
+					"weight": "0 lb",
 					"reference": "M:48",
 					"weapons": [
 						{
@@ -210,26 +469,34 @@
 							"damage": {
 								"type": ""
 							},
+							"calc": {
+								"level": 0,
+								"parry": "",
+								"block": "",
+								"damage": ""
+							},
 							"defaults": [
 								{
-									"type": "Base10",
+									"type": "base10",
 									"modifier": 5
 								}
 							]
 						}
 					],
+					"calc": {
+						"extended_value": "13500",
+						"extended_weight": "0 lb"
+					},
 					"notes": "Casts Resist Lightning with skill 15 on the wearer; mundane value £1000 Platinum"
 				},
 				{
 					"type": "equipment",
-					"version": 1,
 					"id": "32950b9d-fe90-4849-8d1b-888ff42c4957",
-					"based_on_id": "f19071a3-3cd6-4195-95c8-538aab8e8f2c",
-					"based_on_hash": "epKJOzI+ZfYId9TFXkph3J8sjmN13HHFbKpnZOfJ8Xc",
 					"quantity": 1,
 					"description": "Amulet of Resist Fire",
 					"tech_level": "3",
 					"value": "10700",
+					"weight": "0 lb",
 					"reference": "M:48",
 					"weapons": [
 						{
@@ -237,26 +504,34 @@
 							"damage": {
 								"type": ""
 							},
+							"calc": {
+								"level": 0,
+								"parry": "",
+								"block": "",
+								"damage": ""
+							},
 							"defaults": [
 								{
-									"type": "Base10",
+									"type": "base10",
 									"modifier": 5
 								}
 							]
 						}
 					],
+					"calc": {
+						"extended_value": "10700",
+						"extended_weight": "0 lb"
+					},
 					"notes": "Casts Resist Fire with skill 15 on the wearer; mundane value £500 ruby and £200 onyx"
 				},
 				{
 					"type": "equipment",
-					"version": 1,
 					"id": "b182172c-9e67-4e28-a6fb-97e8ed7b922e",
-					"based_on_id": "32950b9d-fe90-4849-8d1b-888ff42c4957",
-					"based_on_hash": "1MLJn9gG8ublbmACauFPpXADIXiwA3s4XtDKAvpR4rI",
 					"quantity": 1,
 					"description": "Amulet of Resist Cold",
 					"tech_level": "3",
 					"value": "10700",
+					"weight": "0 lb",
 					"reference": "M:48",
 					"weapons": [
 						{
@@ -264,26 +539,34 @@
 							"damage": {
 								"type": ""
 							},
+							"calc": {
+								"level": 0,
+								"parry": "",
+								"block": "",
+								"damage": ""
+							},
 							"defaults": [
 								{
-									"type": "Base10",
+									"type": "base10",
 									"modifier": 5
 								}
 							]
 						}
 					],
+					"calc": {
+						"extended_value": "10700",
+						"extended_weight": "0 lb"
+					},
 					"notes": "Casts Resist Cold with skill 15 on the wearer; mundane value £500 emerald and £200 onyx"
 				},
 				{
 					"type": "equipment",
-					"version": 1,
 					"id": "30d2fb69-ea03-4967-92a6-4486f0616607",
-					"based_on_id": "b182172c-9e67-4e28-a6fb-97e8ed7b922e",
-					"based_on_hash": "VGfPHj77+05A1f9b0pwpN5xgES8WR+eGgGsgxwzrs1U",
 					"quantity": 1,
 					"description": "Amulet of Resist Poison",
 					"tech_level": "3",
 					"value": "50000",
+					"weight": "0 lb",
 					"reference": "M:48",
 					"weapons": [
 						{
@@ -291,24 +574,33 @@
 							"damage": {
 								"type": ""
 							},
+							"calc": {
+								"level": 0,
+								"parry": "",
+								"block": "",
+								"damage": ""
+							},
 							"defaults": [
 								{
-									"type": "Base10",
+									"type": "base10",
 									"modifier": 5
 								}
 							]
 						}
 					],
+					"calc": {
+						"extended_value": "50000",
+						"extended_weight": "0 lb"
+					},
 					"notes": "The wearer is immune to all poisons"
 				},
 				{
 					"type": "equipment",
-					"version": 1,
 					"id": "0020d994-b619-4c5a-a42a-309d042efc10",
-					"based_on_id": "50aaed8b-3ddc-45ca-82fa-4f5ecd9bab95",
-					"based_on_hash": "Fy+Ba5qRgVCspxxdEZGSCz1cdAqKe2TYHpBN5kCErU4",
 					"quantity": 1,
 					"description": "Mail Gauntlets of Putting Hands Where They Shouldn't Be",
+					"value": "0",
+					"weight": "0 lb",
 					"weapons": [
 						{
 							"type": "melee_weapon",
@@ -319,12 +611,18 @@
 							"usage": "Punch",
 							"reach": "C",
 							"parry": "+0",
+							"calc": {
+								"level": 0,
+								"parry": "+0",
+								"block": "",
+								"damage": "thr cr"
+							},
 							"defaults": [
 								{
-									"type": "DX"
+									"type": "dx"
 								},
 								{
-									"type": "Skill",
+									"type": "skill",
 									"name": "Brawling"
 								}
 							]
@@ -333,10 +631,7 @@
 					"modifiers": [
 						{
 							"type": "eqp_modifier",
-							"version": 1,
 							"id": "c5f256a0-7065-4ff4-ad06-b2989c432086",
-							"based_on_id": "04b84259-e4a9-4972-9fd8-1d52272ad40c",
-							"based_on_hash": "vjT12eLZdXFowmlYVK+yoiATdlWG+Zu+n5DGAXqyg2A",
 							"disabled": true,
 							"name": "Cane",
 							"reference": "LT106",
@@ -349,17 +644,14 @@
 								{
 									"type": "dr_bonus",
 									"amount": 1,
-									"location": "hands"
+									"location": "hand"
 								}
 							],
 							"notes": "DR 1; Combustible. If DR is penetrated by burning damage, it can catch fire. See Making Things Burn (p. B433); treat the armor material as resistant; Don time: 3 secs; Holdout -1."
 						},
 						{
 							"type": "eqp_modifier",
-							"version": 1,
 							"id": "2daa7d3f-f040-42f8-9fbb-eb1de0ad4e4e",
-							"based_on_id": "c67a7eda-abe8-4816-b56a-bbe84e41f80e",
-							"based_on_hash": "S4GhzD8xwi6O9OqTZncdKjOiQoMmP0t2GYU1eL8Cg+0",
 							"disabled": true,
 							"name": "Cloth, Padded",
 							"reference": "LT103",
@@ -372,17 +664,14 @@
 								{
 									"type": "dr_bonus",
 									"amount": 1,
-									"location": "hands"
+									"location": "hand"
 								}
 							],
 							"notes": "DR 1*; Don time: 2 secs; Holdout -1."
 						},
 						{
 							"type": "eqp_modifier",
-							"version": 1,
 							"id": "ce0fd55a-498f-4223-9143-acbffb686394",
-							"based_on_id": "b07f7d4e-26a6-456b-a743-6ce6c53f8719",
-							"based_on_hash": "DxJ/krlwdUifBMOkAcwd0OqMWsxwmglXQiJtXrb2taQ",
 							"disabled": true,
 							"name": "Horn",
 							"reference": "LT106",
@@ -395,17 +684,14 @@
 								{
 									"type": "dr_bonus",
 									"amount": 3,
-									"location": "hands"
+									"location": "hand"
 								}
 							],
 							"notes": "DR 3; Don time: 3 secs; Holdout -3."
 						},
 						{
 							"type": "eqp_modifier",
-							"version": 1,
 							"id": "4e5591cc-90bc-4daf-bd7b-791e38632793",
-							"based_on_id": "d662b5b4-9d14-4f85-8c85-6b14c07a2af2",
-							"based_on_hash": "qDfX34CdPZy0MgY4HBL9LnSnufVx0vySvVbfCKm9jEY",
 							"disabled": true,
 							"name": "Layered Cloth, Light",
 							"reference": "LT103",
@@ -418,17 +704,14 @@
 								{
 									"type": "dr_bonus",
 									"amount": 2,
-									"location": "hands"
+									"location": "hand"
 								}
 							],
 							"notes": "DR 2*; Don time: 2 secs; Holdout -1."
 						},
 						{
 							"type": "eqp_modifier",
-							"version": 1,
 							"id": "c6375e8d-0629-43a7-b297-22836a093f5c",
-							"based_on_id": "7834b17e-baa9-4942-b8ec-107aaeea6639",
-							"based_on_hash": "pbG4O1aF2ntzON29SgqqWzrH5pWLgWAAGhOXOI5kbjY",
 							"disabled": true,
 							"name": "Layered Cloth, Medium",
 							"reference": "LT103",
@@ -441,17 +724,14 @@
 								{
 									"type": "dr_bonus",
 									"amount": 3,
-									"location": "hands"
+									"location": "hand"
 								}
 							],
 							"notes": "DR 3; Don time: 3 secs; Holdout -3."
 						},
 						{
 							"type": "eqp_modifier",
-							"version": 1,
 							"id": "0f75e0c1-6a73-4930-ac06-f0fae9f2cf97",
-							"based_on_id": "44c22a92-0ee4-4ca6-af81-faebdb15aafa",
-							"based_on_hash": "+lKZw2pfBTpMgdUDai9PcNtbh3w1k6prVwAuyq1Zmoc",
 							"disabled": true,
 							"name": "Layered Cloth, Heavy",
 							"reference": "LT103",
@@ -464,17 +744,14 @@
 								{
 									"type": "dr_bonus",
 									"amount": 4,
-									"location": "hands"
+									"location": "hand"
 								}
 							],
 							"notes": "DR 4; Don time: 3 secs; Holdout -4."
 						},
 						{
 							"type": "eqp_modifier",
-							"version": 1,
 							"id": "2d9a2a64-10a8-424d-8aa3-01f48077a043",
-							"based_on_id": "eddcb239-5893-4ada-842a-acbe4c3d4b59",
-							"based_on_hash": "s2tzWFOL9TOGaGTWvjDdIV3HT4FlDmgO7wmUtHcgTKs",
 							"disabled": true,
 							"name": "Leather, Medium",
 							"reference": "LT104",
@@ -487,17 +764,14 @@
 								{
 									"type": "dr_bonus",
 									"amount": 2,
-									"location": "hands"
+									"location": "hand"
 								}
 							],
 							"notes": "DR 2*; -1 DR vs. impaling; Don time: 3 secs; Holdout -1."
 						},
 						{
 							"type": "eqp_modifier",
-							"version": 1,
 							"id": "9e0dfafb-0747-4586-bc68-7bde3bdd76a5",
-							"based_on_id": "a6a25465-feed-471e-a5bb-77399f29902b",
-							"based_on_hash": "g0LY8tDs0EYtEy/Hchsf2YKTftlRRl90JGE0vClavzg",
 							"disabled": true,
 							"name": "Leather, Heavy",
 							"reference": "LT104",
@@ -510,17 +784,14 @@
 								{
 									"type": "dr_bonus",
 									"amount": 3,
-									"location": "hands"
+									"location": "hand"
 								}
 							],
 							"notes": "DR 3; -1 DR vs. impaling; Don time: 3 secs; Holdout -3."
 						},
 						{
 							"type": "eqp_modifier",
-							"version": 1,
 							"id": "7cbd950c-4136-4c3a-91fe-e99ea954f023",
-							"based_on_id": "dc1e2a54-edc2-42a8-9bfa-d32f04ab34b9",
-							"based_on_hash": "/5hP5+brfpEH+Nl5wmEyqNHORLleruFXxHJPRP1X+vo",
 							"disabled": true,
 							"name": "Straw",
 							"reference": "LT106",
@@ -533,17 +804,14 @@
 								{
 									"type": "dr_bonus",
 									"amount": 2,
-									"location": "hands"
+									"location": "hand"
 								}
 							],
 							"notes": "DR 2; Combustible. If DR is penetrated by burning damage, it can catch fire. See Making Things Burn (p. B433); treat the armor material as resistant; Don time: 3 secs; Holdout -2."
 						},
 						{
 							"type": "eqp_modifier",
-							"version": 1,
 							"id": "250b4541-ff31-47b2-910c-8c0d3a525773",
-							"based_on_id": "9bc73a1b-f132-4636-b62d-c929fd39cb7e",
-							"based_on_hash": "QCBWVDfvfrCwtTK4v/BVwFJ2PdvXnhwerx+DJemwRWY",
 							"disabled": true,
 							"name": "Wood",
 							"reference": "LT106",
@@ -556,17 +824,14 @@
 								{
 									"type": "dr_bonus",
 									"amount": 3,
-									"location": "hands"
+									"location": "hand"
 								}
 							],
 							"notes": "DR 3; Semi-ablative. Loses 1 DR per 10 points of basic damage it resists (see p. B47); Don time: 3 secs; Holdout -3."
 						},
 						{
 							"type": "eqp_modifier",
-							"version": 1,
 							"id": "45c74286-82af-4efb-b19a-7b65ad14c22f",
-							"based_on_id": "8fc30718-4398-45cf-bf8e-61296358b249",
-							"based_on_hash": "nE52m1vhMNaF9ZdU3ElwBn6o/EL4S5QrMQkuTWAMf04",
 							"disabled": true,
 							"name": "Layered Leather, Light",
 							"reference": "LT105",
@@ -579,17 +844,14 @@
 								{
 									"type": "dr_bonus",
 									"amount": 2,
-									"location": "hands"
+									"location": "hand"
 								}
 							],
 							"notes": "DR 2*; Don time: 2 secs; Holdout -1."
 						},
 						{
 							"type": "eqp_modifier",
-							"version": 1,
 							"id": "078ecf84-81cb-4281-8c99-2dbc34e35efe",
-							"based_on_id": "9fbdac8e-1e78-4856-9d75-a99cffe05113",
-							"based_on_hash": "Xntjy8izv7DXsz4OR//ldSXdOq6SLx78oekV5a6thBs",
 							"disabled": true,
 							"name": "Layered Leather, Medium",
 							"reference": "LT105",
@@ -602,17 +864,14 @@
 								{
 									"type": "dr_bonus",
 									"amount": 3,
-									"location": "hands"
+									"location": "hand"
 								}
 							],
 							"notes": "DR 3; Don time: 3 secs; Holdout -3."
 						},
 						{
 							"type": "eqp_modifier",
-							"version": 1,
 							"id": "d4d1208d-3317-47d2-90b7-3c668688b2d3",
-							"based_on_id": "d521eee9-3614-49fb-9c4b-8853051d9b34",
-							"based_on_hash": "iQzMvxej5kfOeRhLzu/sT9OEju5kR/kz8sokmGv71bs",
 							"disabled": true,
 							"name": "Layered Leather, Heavy",
 							"reference": "LT105",
@@ -625,17 +884,14 @@
 								{
 									"type": "dr_bonus",
 									"amount": 4,
-									"location": "hands"
+									"location": "hand"
 								}
 							],
 							"notes": "DR 4; Don time: 3 secs; Holdout -4."
 						},
 						{
 							"type": "eqp_modifier",
-							"version": 1,
 							"id": "552926c1-4b2b-4971-b03b-309844294d42",
-							"based_on_id": "7568cca0-12f8-4611-85dd-df4f9aa61c43",
-							"based_on_hash": "zS14OAMNg3djwwQDo5M8eiEiqcgL2c96LUslnFJtue4",
 							"disabled": true,
 							"name": "Scale, Light",
 							"reference": "LT107",
@@ -648,17 +904,14 @@
 								{
 									"type": "dr_bonus",
 									"amount": 3,
-									"location": "hands"
+									"location": "hand"
 								}
 							],
 							"notes": "DR 3; -1 DR vs. crushing; Don time: 3 secs; Holdout -3."
 						},
 						{
 							"type": "eqp_modifier",
-							"version": 1,
 							"id": "2628a947-9d41-40d3-bee5-637a7c960e63",
-							"based_on_id": "835b5cdb-34d4-408a-a688-07177c2e95bf",
-							"based_on_hash": "YnxZTT66+ObZMhkmyw1408UgEbfYY0gd2i5w+Delxqs",
 							"disabled": true,
 							"name": "Scale, Medium",
 							"reference": "LT107",
@@ -671,17 +924,14 @@
 								{
 									"type": "dr_bonus",
 									"amount": 4,
-									"location": "hands"
+									"location": "hand"
 								}
 							],
 							"notes": "DR 4; -1 DR vs. crushing; Don time: 3 secs; Holdout -4."
 						},
 						{
 							"type": "eqp_modifier",
-							"version": 1,
 							"id": "6434883e-f1fc-45fe-9c2d-32a0a830bce4",
-							"based_on_id": "0d751734-32af-47c6-a6fb-417e8e0dad35",
-							"based_on_hash": "pK7fGJzX3w+wK5S1e/HcCb2u0swLtifvsnHzaxS2i00",
 							"disabled": true,
 							"name": "Scale, Heavy",
 							"reference": "LT107",
@@ -694,17 +944,14 @@
 								{
 									"type": "dr_bonus",
 									"amount": 5,
-									"location": "hands"
+									"location": "hand"
 								}
 							],
 							"notes": "DR 5; Don time: 3 secs; Holdout -5."
 						},
 						{
 							"type": "eqp_modifier",
-							"version": 1,
 							"id": "4f2d139b-38d2-439f-a613-83c76dce6c0d",
-							"based_on_id": "e92e68e0-6183-4e7b-aa95-453ee484d372",
-							"based_on_hash": "J+uMFl4+GITaZuQzCgP6ZONYXJKktHCL+fiF1n1eXV4",
 							"disabled": true,
 							"name": "Hardened Leather, Medium",
 							"reference": "LT105",
@@ -717,17 +964,14 @@
 								{
 									"type": "dr_bonus",
 									"amount": 2,
-									"location": "hands"
+									"location": "hand"
 								}
 							],
 							"notes": "DR 2; Don time: 3 secs; Holdout -2."
 						},
 						{
 							"type": "eqp_modifier",
-							"version": 1,
 							"id": "c7133c9d-109f-4243-8595-0b678201e468",
-							"based_on_id": "c96d2bfc-c052-42b8-895c-7c549422d250",
-							"based_on_hash": "SaaAry0Dr7zAxMbLo0YrVCFbSyFkhyAtB5Xn5/ikYQM",
 							"disabled": true,
 							"name": "Hardened Leather, Heavy",
 							"reference": "LT105",
@@ -740,17 +984,14 @@
 								{
 									"type": "dr_bonus",
 									"amount": 3,
-									"location": "hands"
+									"location": "hand"
 								}
 							],
 							"notes": "DR 3; Don time: 3 secs; Holdout -3."
 						},
 						{
 							"type": "eqp_modifier",
-							"version": 1,
 							"id": "8f100826-1834-45fe-9bdf-c43b3095c8a0",
-							"based_on_id": "e2f11a04-f90d-433d-a03a-0da0e48618ae",
-							"based_on_hash": "IfQKrN9znAThfm9JGg2ZGM/Uqr/3NzAonUKQqx0auSo",
 							"disabled": true,
 							"name": "Jack of Plates",
 							"reference": "LT107",
@@ -763,17 +1004,14 @@
 								{
 									"type": "dr_bonus",
 									"amount": 3,
-									"location": "hands"
+									"location": "hand"
 								}
 							],
 							"notes": "DR 3; -1 DR vs. crushing; Don time: 3 secs; Holdout -3."
 						},
 						{
 							"type": "eqp_modifier",
-							"version": 1,
 							"id": "9b845a3e-ef9a-4a7a-bb2e-e69a8f4d6cd1",
-							"based_on_id": "28b2e67b-7f05-44ab-8656-86eae0a0aa4d",
-							"based_on_hash": "J304vQJasRb586ISrKaH5DPrTdq9C3XUSI957pu69aU",
 							"disabled": true,
 							"name": "Mail, Light",
 							"reference": "LT107",
@@ -786,17 +1024,14 @@
 								{
 									"type": "dr_bonus",
 									"amount": 3,
-									"location": "hands"
+									"location": "hand"
 								}
 							],
 							"notes": "DR 3*; -2 DR vs. crushing; Don time: 2 secs; Holdout -1."
 						},
 						{
 							"type": "eqp_modifier",
-							"version": 1,
 							"id": "490939ec-a6bf-4ad2-ab07-4bb98f25dab0",
-							"based_on_id": "2fc67100-af96-409f-92bb-013536eba391",
-							"based_on_hash": "+lDX9Z6NP19r7SKlWNrd1cuIfgeVmlXh2Fdja1PFndI",
 							"name": "Mail, Fine",
 							"reference": "LT107",
 							"cost_type": "to_original_cost",
@@ -808,17 +1043,14 @@
 								{
 									"type": "dr_bonus",
 									"amount": 4,
-									"location": "hands"
+									"location": "hand"
 								}
 							],
 							"notes": "DR 4*; -2 DR vs. crushing; Don time: 2 secs; Holdout -2."
 						},
 						{
 							"type": "eqp_modifier",
-							"version": 1,
 							"id": "4c48ad49-6635-40ac-9296-345905cbb502",
-							"based_on_id": "3a7d8194-1a80-416a-a00b-7710d37c9449",
-							"based_on_hash": "Hmv4rkKxLe1x5JlADJTmj6EAZLhLF0StHr9HTkbcwPI",
 							"disabled": true,
 							"name": "Mail, Heavy",
 							"reference": "LT107",
@@ -831,17 +1063,14 @@
 								{
 									"type": "dr_bonus",
 									"amount": 5,
-									"location": "hands"
+									"location": "hand"
 								}
 							],
 							"notes": "DR 5*; -2 DR vs. crushing; Don time: 2 secs; Holdout -2."
 						},
 						{
 							"type": "eqp_modifier",
-							"version": 1,
 							"id": "71085916-1a57-4cd7-b621-13ae5cb58cb2",
-							"based_on_id": "2dc857de-443d-47b2-b75e-5e7b0fb566ac",
-							"based_on_hash": "jVdivwo2g5GCBVZT6MHPjSuS8auMF4lp0UiEx0ctcFY",
 							"disabled": true,
 							"name": "Segmented Plate, Light",
 							"reference": "LT107",
@@ -854,17 +1083,14 @@
 								{
 									"type": "dr_bonus",
 									"amount": 3,
-									"location": "hands"
+									"location": "hand"
 								}
 							],
 							"notes": "DR 3; Don time: 5 secs; Holdout -3."
 						},
 						{
 							"type": "eqp_modifier",
-							"version": 1,
 							"id": "7942172f-6110-4222-94f8-d7012d4836ca",
-							"based_on_id": "7f4b7406-700e-4cc6-be0a-8b20633df375",
-							"based_on_hash": "whXTZzjV9NNXWOqF44mvPo6+nArrugRT6PpLX2uAtmc",
 							"disabled": true,
 							"name": "Segmented Plate, Medium",
 							"reference": "LT107",
@@ -877,17 +1103,14 @@
 								{
 									"type": "dr_bonus",
 									"amount": 4,
-									"location": "hands"
+									"location": "hand"
 								}
 							],
 							"notes": "DR 4; Don time: 5 secs; Holdout -4."
 						},
 						{
 							"type": "eqp_modifier",
-							"version": 1,
 							"id": "0956dd80-a5ec-4b8c-b17f-501173a54d08",
-							"based_on_id": "40f62f85-2dbd-4db1-8bdd-9debe1ee9cf0",
-							"based_on_hash": "9mnxm9PUaZc58tz9xFNal2gXoNXHOkugaud4PA9aQIM",
 							"disabled": true,
 							"name": "Segmented Plate, Heavy",
 							"reference": "LT107",
@@ -900,17 +1123,14 @@
 								{
 									"type": "dr_bonus",
 									"amount": 5,
-									"location": "hands"
+									"location": "hand"
 								}
 							],
 							"notes": "DR 5; Don time: 5 secs; Holdout -5."
 						},
 						{
 							"type": "eqp_modifier",
-							"version": 1,
 							"id": "dd366c4a-81d1-4a62-9d26-05b974490c97",
-							"based_on_id": "82b32578-1975-4dc2-8664-eb15beef8b85",
-							"based_on_hash": "t9b/0wsC2is4xq9rWIhhweQJOE/lWuZpn5G1TevvFo8",
 							"disabled": true,
 							"name": "Mail and Plates",
 							"reference": "LT107",
@@ -923,17 +1143,14 @@
 								{
 									"type": "dr_bonus",
 									"amount": 5,
-									"location": "hands"
+									"location": "hand"
 								}
 							],
 							"notes": "DR 5; -1 DR vs. crushing; Don time: 2 secs; Holdout -5."
 						},
 						{
 							"type": "eqp_modifier",
-							"version": 1,
 							"id": "4a9aa9dd-3355-4461-a4ec-906460c6311d",
-							"based_on_id": "b7b1a6e4-1e5f-4d55-8067-1ca350fb66fe",
-							"based_on_hash": "kkNAKthNnkJ9sE0dUwoHVqOU/xLh3CGUh2CZIfpXs6A",
 							"disabled": true,
 							"name": "Mail, Jousting",
 							"reference": "LT107",
@@ -946,17 +1163,14 @@
 								{
 									"type": "dr_bonus",
 									"amount": 6,
-									"location": "hands"
+									"location": "hand"
 								}
 							],
 							"notes": "DR 6; -1 DX, except for Lance skill; Don time: 3 secs; Holdout -6."
 						},
 						{
 							"type": "eqp_modifier",
-							"version": 1,
 							"id": "f981d76d-6dd6-42b5-aa7f-f392c02ed525",
-							"based_on_id": "6bd84c4e-5457-4b68-8660-821ff98bd786",
-							"based_on_hash": "VtUv+SOFxFqD/dX5H3b7QESrIo5zFn3ibLazYEmmQQ8",
 							"disabled": true,
 							"name": "Brigandine, Light",
 							"reference": "LT108",
@@ -969,17 +1183,14 @@
 								{
 									"type": "dr_bonus",
 									"amount": 3,
-									"location": "hands"
+									"location": "hand"
 								}
 							],
 							"notes": "DR 3; Don time: 3 secs; Holdout -3."
 						},
 						{
 							"type": "eqp_modifier",
-							"version": 1,
 							"id": "5da4d0da-170f-4351-9813-54de735e78f7",
-							"based_on_id": "c7a5165f-fb89-4201-8241-362510047b8e",
-							"based_on_hash": "itvX+A8xptBBGt3bK8WDRKMq7XTdfdjZyYywORbrLgo",
 							"disabled": true,
 							"name": "Brigandine, Medium",
 							"reference": "LT108",
@@ -992,17 +1203,14 @@
 								{
 									"type": "dr_bonus",
 									"amount": 5,
-									"location": "hands"
+									"location": "hand"
 								}
 							],
 							"notes": "DR 5; Don time: 3 secs; Holdout -5."
 						},
 						{
 							"type": "eqp_modifier",
-							"version": 1,
 							"id": "a3e90631-f1a2-4c3f-a1a9-82b457d687fe",
-							"based_on_id": "f467d561-6002-4303-92fb-b7ffba4d53e6",
-							"based_on_hash": "eJuULZr2YWVa2bEwRaPJSr69ciSqQE8QysYu5HiKK80",
 							"disabled": true,
 							"name": "Paper, Proofed",
 							"reference": "LT106",
@@ -1015,17 +1223,14 @@
 								{
 									"type": "dr_bonus",
 									"amount": 6,
-									"location": "hands"
+									"location": "hand"
 								}
 							],
 							"notes": "DR 6; Combustible. If DR is penetrated by burning damage, it can catch fire. See Making Things Burn (p. B433); treat the armor material as resistant; Don time: 2 secs; Holdout -6."
 						},
 						{
 							"type": "eqp_modifier",
-							"version": 1,
 							"id": "bd722245-1262-4d53-a9cd-501bb0efa1f0",
-							"based_on_id": "34b59e3c-5dc1-4a9c-82a4-86c5745eeef1",
-							"based_on_hash": "5ICGR7Bk/YvuDNrbEUaM9Iqdofl03VYvHMWxUSl5jrY",
 							"disabled": true,
 							"name": "Plate, Light",
 							"reference": "LT108",
@@ -1038,17 +1243,14 @@
 								{
 									"type": "dr_bonus",
 									"amount": 3,
-									"location": "hands"
+									"location": "hand"
 								}
 							],
 							"notes": "DR 3; Don time: 5 secs; Holdout -3."
 						},
 						{
 							"type": "eqp_modifier",
-							"version": 1,
 							"id": "dca5c383-a811-49f3-bd57-d7dd3a8dee20",
-							"based_on_id": "e78b1777-cbea-42bf-b306-bee64b178564",
-							"based_on_hash": "dVJxmrC1M7T63YEPqsJh/SMioMtVNCTwDlapS3B1AfU",
 							"disabled": true,
 							"name": "Plate, Medium",
 							"reference": "LT108",
@@ -1061,17 +1263,14 @@
 								{
 									"type": "dr_bonus",
 									"amount": 6,
-									"location": "hands"
+									"location": "hand"
 								}
 							],
 							"notes": "DR 6; Don time: 5 secs; Holdout -6."
 						},
 						{
 							"type": "eqp_modifier",
-							"version": 1,
 							"id": "307f366c-6911-44aa-82b5-973fed0df497",
-							"based_on_id": "c54fb5d2-0df4-4af4-bd42-f95a777e3576",
-							"based_on_hash": "W1G8P0KxUXTw+shI3khfRRcVgGQVAogGvnddOPE8B8A",
 							"disabled": true,
 							"name": "Plate, Heavy",
 							"reference": "LT108",
@@ -1084,17 +1283,14 @@
 								{
 									"type": "dr_bonus",
 									"amount": 9,
-									"location": "hands"
+									"location": "hand"
 								}
 							],
 							"notes": "DR 9; Don time: 5 secs; Holdout -9."
 						},
 						{
 							"type": "eqp_modifier",
-							"version": 1,
 							"id": "6654c988-475f-425a-9afd-aebaa1fd7fe4",
-							"based_on_id": "d2311113-0fe3-482c-912e-3406805de5ae",
-							"based_on_hash": "8anoaV42KoWvXFyPA2+coeZ3TFXVKCvMRJmI5wHEMaQ",
 							"disabled": true,
 							"name": "@Covers only half (front only, one arm, etc)@",
 							"reference": "LT100",
@@ -1105,10 +1301,7 @@
 						},
 						{
 							"type": "eqp_modifier",
-							"version": 1,
 							"id": "a8645225-4b1c-4d3f-9aec-79f65cbdc235",
-							"based_on_id": "89cd747f-d2ef-4607-8a9e-11e1db96200a",
-							"based_on_hash": "YPmCdQqcLGCYn+oJaCtc/X68vVpbfK/34kaJncmAVkA",
 							"name": "Fortify 4; Hands",
 							"cost_type": "to_original_cost",
 							"cost": "+187.5",
@@ -1116,16 +1309,13 @@
 								{
 									"type": "dr_bonus",
 									"amount": 4,
-									"location": "hands"
+									"location": "hand"
 								}
 							]
 						},
 						{
 							"type": "eqp_modifier",
-							"version": 1,
 							"id": "6b3442d2-3614-41db-88e5-40167071f7f2",
-							"based_on_id": "3c43badd-0290-4899-8e6f-1552de8e1d7e",
-							"based_on_hash": "0E0VVVEF8s51YNANDl/0tKNkgK8fEixHL0pM53qo+YU",
 							"name": "Puissance 1",
 							"cost_type": "to_original_cost",
 							"cost": "+312.5",
@@ -1137,18 +1327,20 @@
 								}
 							]
 						}
-					]
+					],
+					"calc": {
+						"extended_value": "590",
+						"extended_weight": "1.5 lb"
+					}
 				},
 				{
 					"type": "equipment",
-					"version": 1,
 					"id": "e2ee2338-76ce-47b4-a986-990b4e10cf86",
-					"based_on_id": "b182172c-9e67-4e28-a6fb-97e8ed7b922e",
-					"based_on_hash": "VGfPHj77+05A1f9b0pwpN5xgES8WR+eGgGsgxwzrs1U",
 					"quantity": 1,
 					"description": "Amulet of Resist Acid",
 					"tech_level": "3",
 					"value": "15000",
+					"weight": "0 lb",
 					"reference": "M:48",
 					"weapons": [
 						{
@@ -1156,22 +1348,29 @@
 							"damage": {
 								"type": ""
 							},
+							"calc": {
+								"level": 0,
+								"parry": "",
+								"block": "",
+								"damage": ""
+							},
 							"defaults": [
 								{
-									"type": "Base10",
+									"type": "base10",
 									"modifier": 5
 								}
 							]
 						}
 					],
+					"calc": {
+						"extended_value": "15000",
+						"extended_weight": "0 lb"
+					},
 					"notes": "Casts Resist Acid with skill 15 on the wearer"
 				},
 				{
 					"type": "equipment",
-					"version": 1,
 					"id": "da3f6611-c498-464d-8891-41de8f19c93d",
-					"based_on_id": "49c903c2-e186-4b62-9002-c917f0d12b82",
-					"based_on_hash": "+B9qjZpwut1MHLjgsKSNVT0mFQwGObaY1N6HZ6rWGDk",
 					"quantity": 1,
 					"description": "Hard Hat",
 					"tech_level": "7",
@@ -1181,10 +1380,7 @@
 					"modifiers": [
 						{
 							"type": "eqp_modifier",
-							"version": 1,
 							"id": "17469ef0-e8c4-4756-8b8c-8daf93b8d8e2",
-							"based_on_id": "5e8643ac-140b-4529-aed0-2fd69927d996",
-							"based_on_hash": "Djb5+mDcg/6xfFacVQFHtWKsl4eJ73IN6PwtyKR1TFc",
 							"name": "Fortify 4; Skull",
 							"cost_type": "to_original_cost",
 							"cost": "+187.5",
@@ -1197,6 +1393,10 @@
 							]
 						}
 					],
+					"calc": {
+						"extended_value": "237.5",
+						"extended_weight": "1 lb"
+					},
 					"features": [
 						{
 							"type": "dr_bonus",
@@ -1211,10 +1411,65 @@
 				},
 				{
 					"type": "equipment",
-					"version": 1,
+					"id": "1ffe4edc-a797-4873-8c32-9d168cf406be",
+					"quantity": 1,
+					"description": "Cloak of Insignificance",
+					"tech_level": "0",
+					"value": "8800",
+					"weight": "2 lb",
+					"reference": "LT99",
+					"weapons": [
+						{
+							"type": "ranged_weapon",
+							"damage": {
+								"type": "spec."
+							},
+							"strength": "5",
+							"usage": "Throw",
+							"accuracy": "1",
+							"range": "2",
+							"rate_of_fire": "1",
+							"shots": "T(1)",
+							"bulk": "-4",
+							"calc": {
+								"level": 0,
+								"range": "2",
+								"damage": "spec."
+							},
+							"defaults": [
+								{
+									"type": "dx",
+									"modifier": -5
+								},
+								{
+									"type": "skill",
+									"name": "Net",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Shield",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Cloak"
+								}
+							]
+						}
+					],
+					"calc": {
+						"extended_value": "8800",
+						"extended_weight": "2 lb"
+					},
+					"notes": "Insifgnificance is always on when worn, Per vs. 15 to notice the wearer; May entangle or ensnare the target; see Special Ranged Weapons (pp. B410-411) and Cloaks (p. B404).",
+					"categories": [
+						"Clothing"
+					]
+				},
+				{
+					"type": "equipment",
 					"id": "e6492461-f438-474e-9383-9c6a889dbaeb",
-					"based_on_id": "30d2fb69-ea03-4967-92a6-4486f0616607",
-					"based_on_hash": "ijCsGb6iLazCebhwLeJgX9O4ffNDIFurdIIjVbDKAdg",
 					"quantity": 1,
 					"description": "Protective Lab Coat",
 					"tech_level": "3",
@@ -1227,9 +1482,15 @@
 							"damage": {
 								"type": ""
 							},
+							"calc": {
+								"level": 0,
+								"parry": "",
+								"block": "",
+								"damage": ""
+							},
 							"defaults": [
 								{
-									"type": "Base10",
+									"type": "base10",
 									"modifier": 5
 								}
 							]
@@ -1238,10 +1499,7 @@
 					"modifiers": [
 						{
 							"type": "eqp_modifier",
-							"version": 1,
 							"id": "e7ebf4a1-6f59-4fe4-b5d2-fb27f806ed1e",
-							"based_on_id": "e50969bd-6e53-4e2b-967b-3d1f613560f2",
-							"based_on_hash": "fpq4lirFUMCPgIZVsK51KsxXOFTwd8JNmUFYn+dp5qQ",
 							"name": "Fortify 2, full suit",
 							"cost_type": "to_original_cost",
 							"cost": "+250",
@@ -1249,204 +1507,959 @@
 								{
 									"type": "dr_bonus",
 									"amount": 2,
-									"location": "full_body_except_eyes"
+									"location": "skull"
+								},
+								{
+									"type": "dr_bonus",
+									"amount": 2,
+									"location": "face"
+								},
+								{
+									"type": "dr_bonus",
+									"amount": 2,
+									"location": "neck"
+								},
+								{
+									"type": "dr_bonus",
+									"amount": 2,
+									"location": "torso"
+								},
+								{
+									"type": "dr_bonus",
+									"amount": 2,
+									"location": "vitals"
+								},
+								{
+									"type": "dr_bonus",
+									"amount": 2,
+									"location": "groin"
+								},
+								{
+									"type": "dr_bonus",
+									"amount": 2,
+									"location": "arm"
+								},
+								{
+									"type": "dr_bonus",
+									"amount": 2,
+									"location": "hand"
+								},
+								{
+									"type": "dr_bonus",
+									"amount": 2,
+									"location": "leg"
+								},
+								{
+									"type": "dr_bonus",
+									"amount": 2,
+									"location": "foot"
+								},
+								{
+									"type": "dr_bonus",
+									"amount": 2,
+									"location": "tail"
+								},
+								{
+									"type": "dr_bonus",
+									"amount": 2,
+									"location": "wing"
+								},
+								{
+									"type": "dr_bonus",
+									"amount": 2,
+									"location": "fin"
+								},
+								{
+									"type": "dr_bonus",
+									"amount": 2,
+									"location": "brain"
 								}
 							]
 						}
 					],
-					"notes": "The wearer is immune to all poisons"
+					"calc": {
+						"extended_value": "300",
+						"extended_weight": "10 lb"
+					}
+				},
+				{
+					"type": "equipment",
+					"id": "02766153-e9d7-4bc4-bf8e-730f3c518044",
+					"quantity": 1,
+					"description": "Police Baton, Mental Stun",
+					"value": "13750",
+					"weight": "1 lb",
+					"reference": "ACT1:33",
+					"weapons": [
+						{
+							"type": "melee_weapon",
+							"damage": {
+								"type": "cr",
+								"st": "sw"
+							},
+							"strength": "6",
+							"usage": "swing",
+							"reach": "1",
+							"parry": "0",
+							"block": "No",
+							"calc": {
+								"level": 0,
+								"parry": "0",
+								"block": "No",
+								"damage": "sw cr"
+							},
+							"defaults": [
+								{
+									"type": "skill",
+									"name": "Shortsword"
+								},
+								{
+									"type": "dx",
+									"modifier": -5
+								},
+								{
+									"type": "skill",
+									"name": "Broadsword",
+									"modifier": -2
+								},
+								{
+									"type": "skill",
+									"name": "Jitte/Sai",
+									"modifier": -3
+								},
+								{
+									"type": "skill",
+									"name": "Knife",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Saber",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Smallsword",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Tonfa",
+									"modifier": -3
+								}
+							]
+						},
+						{
+							"type": "melee_weapon",
+							"damage": {
+								"type": "cr",
+								"st": "thr"
+							},
+							"strength": "6",
+							"usage": "thrust",
+							"reach": "1",
+							"parry": "0",
+							"block": "No",
+							"calc": {
+								"level": 0,
+								"parry": "0",
+								"block": "No",
+								"damage": "thr cr"
+							},
+							"defaults": [
+								{
+									"type": "skill",
+									"name": "Shortsword"
+								},
+								{
+									"type": "dx",
+									"modifier": -5
+								},
+								{
+									"type": "skill",
+									"name": "Broadsword",
+									"modifier": -2
+								},
+								{
+									"type": "skill",
+									"name": "Jitte/Sai",
+									"modifier": -3
+								},
+								{
+									"type": "skill",
+									"name": "Knife",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Saber",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Smallsword",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Tonfa",
+									"modifier": -3
+								}
+							]
+						}
+					],
+					"calc": {
+						"extended_value": "13750",
+						"extended_weight": "1 lb"
+					},
+					"notes": "Holdout -2. Casts Mental Stun at 15 on touch for 2FP",
+					"categories": [
+						"Weapons"
+					]
+				},
+				{
+					"type": "equipment_container",
+					"id": "2159558b-be49-456d-9da8-fc8717004106",
+					"description": "Coat, Long Leather",
+					"value": "250",
+					"weight": "10 lb",
+					"reference": "ACT1:31",
+					"modifiers": [
+						{
+							"type": "eqp_modifier",
+							"id": "2ad817aa-f161-41e6-90ce-edb5b581e5c1",
+							"name": "Fortify 3, Torso",
+							"cost_type": "to_original_cost",
+							"cost": "+4376",
+							"features": [
+								{
+									"type": "dr_bonus",
+									"amount": 3,
+									"location": "torso"
+								},
+								{
+									"type": "dr_bonus",
+									"amount": 3,
+									"location": "vitals"
+								}
+							]
+						},
+						{
+							"type": "eqp_modifier",
+							"id": "ccfb01af-4708-493a-b054-6c70f2e2b98b",
+							"name": "Fortify 3, Legs",
+							"cost_type": "to_original_cost",
+							"cost": "+300",
+							"features": [
+								{
+									"type": "dr_bonus",
+									"amount": 3,
+									"location": "leg"
+								}
+							]
+						},
+						{
+							"type": "eqp_modifier",
+							"id": "accf9930-2dcf-4725-9dec-9d217bf76195",
+							"name": "Fortify 3, Arms",
+							"cost_type": "to_original_cost",
+							"cost": "+150",
+							"features": [
+								{
+									"type": "dr_bonus",
+									"amount": 3,
+									"location": "arm"
+								}
+							]
+						},
+						{
+							"type": "eqp_modifier",
+							"id": "6168294c-ca93-4225-8901-b8812f955725",
+							"name": "Hideaway 6, no weight reduction",
+							"cost_type": "to_original_cost",
+							"cost": "+375"
+						}
+					],
+					"calc": {
+						"extended_value": "5451",
+						"extended_weight": "10 lb"
+					},
+					"features": [
+						{
+							"type": "dr_bonus",
+							"amount": 1,
+							"location": "arm"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 1,
+							"location": "leg"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 1,
+							"location": "torso"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 1,
+							"location": "vitals"
+						}
+					],
+					"notes": "Flexible. Holdout +4.",
+					"categories": [
+						"Armor"
+					],
+					"open": true
+				},
+				{
+					"type": "equipment",
+					"id": "56e76de3-d852-4005-8cb1-43cc9d42f93d",
+					"quantity": 1,
+					"description": "Police Baton, Stun",
+					"value": "13750",
+					"weight": "1 lb",
+					"reference": "ACT1:33",
+					"weapons": [
+						{
+							"type": "melee_weapon",
+							"damage": {
+								"type": "cr",
+								"st": "sw"
+							},
+							"strength": "6",
+							"usage": "swing",
+							"reach": "1",
+							"parry": "0",
+							"block": "No",
+							"calc": {
+								"level": 0,
+								"parry": "0",
+								"block": "No",
+								"damage": "sw cr"
+							},
+							"defaults": [
+								{
+									"type": "skill",
+									"name": "Shortsword"
+								},
+								{
+									"type": "dx",
+									"modifier": -5
+								},
+								{
+									"type": "skill",
+									"name": "Broadsword",
+									"modifier": -2
+								},
+								{
+									"type": "skill",
+									"name": "Jitte/Sai",
+									"modifier": -3
+								},
+								{
+									"type": "skill",
+									"name": "Knife",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Saber",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Smallsword",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Tonfa",
+									"modifier": -3
+								}
+							]
+						},
+						{
+							"type": "melee_weapon",
+							"damage": {
+								"type": "cr",
+								"st": "thr"
+							},
+							"strength": "6",
+							"usage": "thrust",
+							"reach": "1",
+							"parry": "0",
+							"block": "No",
+							"calc": {
+								"level": 0,
+								"parry": "0",
+								"block": "No",
+								"damage": "thr cr"
+							},
+							"defaults": [
+								{
+									"type": "skill",
+									"name": "Shortsword"
+								},
+								{
+									"type": "dx",
+									"modifier": -5
+								},
+								{
+									"type": "skill",
+									"name": "Broadsword",
+									"modifier": -2
+								},
+								{
+									"type": "skill",
+									"name": "Jitte/Sai",
+									"modifier": -3
+								},
+								{
+									"type": "skill",
+									"name": "Knife",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Saber",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Smallsword",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Tonfa",
+									"modifier": -3
+								}
+							]
+						}
+					],
+					"calc": {
+						"extended_value": "13750",
+						"extended_weight": "1 lb"
+					},
+					"notes": "Holdout -2. Casts Stun at 15 on touch for 2FP",
+					"categories": [
+						"Weapons"
+					]
+				},
+				{
+					"type": "equipment",
+					"id": "d9cc9147-48b0-47eb-94da-586ac6fd2396",
+					"quantity": 1,
+					"description": "Police Baton, Paralyze Limb",
+					"value": "12500",
+					"weight": "1 lb",
+					"reference": "ACT1:33",
+					"weapons": [
+						{
+							"type": "melee_weapon",
+							"damage": {
+								"type": "cr",
+								"st": "sw"
+							},
+							"strength": "6",
+							"usage": "swing",
+							"reach": "1",
+							"parry": "0",
+							"block": "No",
+							"calc": {
+								"level": 0,
+								"parry": "0",
+								"block": "No",
+								"damage": "sw cr"
+							},
+							"defaults": [
+								{
+									"type": "skill",
+									"name": "Shortsword"
+								},
+								{
+									"type": "dx",
+									"modifier": -5
+								},
+								{
+									"type": "skill",
+									"name": "Broadsword",
+									"modifier": -2
+								},
+								{
+									"type": "skill",
+									"name": "Jitte/Sai",
+									"modifier": -3
+								},
+								{
+									"type": "skill",
+									"name": "Knife",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Saber",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Smallsword",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Tonfa",
+									"modifier": -3
+								}
+							]
+						},
+						{
+							"type": "melee_weapon",
+							"damage": {
+								"type": "cr",
+								"st": "thr"
+							},
+							"strength": "6",
+							"usage": "thrust",
+							"reach": "1",
+							"parry": "0",
+							"block": "No",
+							"calc": {
+								"level": 0,
+								"parry": "0",
+								"block": "No",
+								"damage": "thr cr"
+							},
+							"defaults": [
+								{
+									"type": "skill",
+									"name": "Shortsword"
+								},
+								{
+									"type": "dx",
+									"modifier": -5
+								},
+								{
+									"type": "skill",
+									"name": "Broadsword",
+									"modifier": -2
+								},
+								{
+									"type": "skill",
+									"name": "Jitte/Sai",
+									"modifier": -3
+								},
+								{
+									"type": "skill",
+									"name": "Knife",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Saber",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Smallsword",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Tonfa",
+									"modifier": -3
+								}
+							]
+						}
+					],
+					"calc": {
+						"extended_value": "12500",
+						"extended_weight": "1 lb"
+					},
+					"notes": "Holdout -2. Casts Paralyze Limb at 15 on touch for 3FP",
+					"categories": [
+						"Weapons"
+					]
+				},
+				{
+					"type": "equipment",
+					"id": "f088cf1c-d07a-4cfb-a70b-8c5a3461bda7",
+					"quantity": 1,
+					"description": "Wand of Spark Cloud",
+					"value": "1187.5",
+					"weight": "1 lb",
+					"calc": {
+						"extended_value": "1187.5",
+						"extended_weight": "1 lb"
+					},
+					"notes": "casts Spark Cloud at 15; mundane value £500 platinum, £500 opal"
+				},
+				{
+					"type": "equipment",
+					"id": "46d607af-25d2-4582-b436-4c201fbab7a1",
+					"quantity": 1,
+					"description": "Amulet of Lightning Stare",
+					"value": "13500",
+					"weight": "1 lb",
+					"calc": {
+						"extended_value": "13500",
+						"extended_weight": "1 lb"
+					},
+					"notes": "casts Lightning Stare at 15; mundane value £500 platinum, £500 opal; jet from the eyes, 1-3d burn at 2-6yds"
+				},
+				{
+					"type": "equipment",
+					"id": "9f6c4cd5-8f12-4954-ab29-4d88e6909272",
+					"quantity": 1,
+					"description": "Wand of Acid Jet",
+					"value": "5000",
+					"weight": "1 lb",
+					"calc": {
+						"extended_value": "5000",
+						"extended_weight": "1 lb"
+					},
+					"notes": "1d-1-3d-3 cor,kb 1-3yds, face hits cause HT roll or blinded; stainless steel with emerald embedded"
+				},
+				{
+					"type": "equipment",
+					"id": "1d58273f-0e09-4571-be3b-b205e3310a59",
+					"quantity": 1,
+					"description": "Vampire Hunter's Staff",
+					"tech_level": "1^",
+					"legality_class": "3",
+					"value": "50800",
+					"weight": "4 lb",
+					"weapons": [
+						{
+							"type": "melee_weapon",
+							"damage": {
+								"type": "cr",
+								"st": "sw",
+								"base": "2"
+							},
+							"usage": "Swing",
+							"reach": "1,2",
+							"parry": "+2",
+							"calc": {
+								"level": 0,
+								"parry": "+2",
+								"block": "",
+								"damage": "sw+2 cr"
+							},
+							"defaults": [
+								{
+									"type": "skill",
+									"name": "Staff"
+								}
+							]
+						},
+						{
+							"type": "melee_weapon",
+							"damage": {
+								"type": "imp",
+								"st": "thr",
+								"base": "2",
+								"armor_divisor": 0.5
+							},
+							"usage": "Thrust",
+							"reach": "2",
+							"calc": {
+								"level": 0,
+								"parry": "",
+								"block": "",
+								"damage": "thr+2(0.5) imp"
+							},
+							"defaults": [
+								{
+									"type": "skill",
+									"name": "Spear"
+								}
+							]
+						}
+					],
+					"modifiers": [
+						{
+							"type": "eqp_modifier",
+							"id": "b6f03b7d-6314-46f0-9311-6598b22aca3b",
+							"name": "Puissance 1",
+							"cost_type": "to_original_cost",
+							"cost": "+312.5",
+							"features": [
+								{
+									"type": "weapon_bonus",
+									"amount": 1,
+									"selection_type": "this_weapon"
+								}
+							]
+						},
+						{
+							"type": "eqp_modifier",
+							"id": "2c0aaade-6f53-45bd-b281-98dba6201d10",
+							"name": "Accuracy 1",
+							"cost_type": "to_original_cost",
+							"cost": "+270",
+							"features": [
+								{
+									"type": "skill_bonus",
+									"amount": 1,
+									"selection_type": "this_weapon"
+								}
+							]
+						}
+					],
+					"calc": {
+						"extended_value": "51382.5",
+						"extended_weight": "4 lb"
+					},
+					"features": [
+						{
+							"type": "spell_bonus",
+							"amount": 2,
+							"match": "all_colleges"
+						},
+						{
+							"type": "spell_bonus",
+							"amount": 1,
+							"match": "college_name",
+							"name": {
+								"compare": "contains",
+								"qualifier": "Fire"
+							}
+						}
+					],
+					"notes": "banded in gold and tipped with a ruby on one and and sharpened into a stake on the other; Mage Focus Staff (Fire); also casts Flame Jet",
+					"categories": [
+						"Mage Foci"
+					]
+				},
+				{
+					"type": "equipment",
+					"id": "535b1b51-fc52-4b22-9a66-f7693067e47e",
+					"quantity": 1,
+					"description": "Sun Stick",
+					"value": "810",
+					"weight": "1 lb",
+					"calc": {
+						"extended_value": "810",
+						"extended_weight": "1 lb"
+					},
+					"notes": "Wand of Sunlight; Exclusive 5pt powerstone effectively recovers 3 energy/day and stores up to 15"
 				}
 			]
 		},
 		{
 			"type": "equipment_container",
-			"version": 1,
 			"id": "8f72f922-860a-4143-8cfb-e6aed85dc6ca",
 			"description": "Grimoires",
+			"value": "0",
+			"weight": "0 lb",
+			"calc": {
+				"extended_value": "37600",
+				"extended_weight": "150 lb"
+			},
 			"notes": "Grimoires cost $400 per spell and weigh 12lbs per grimoire (6lbs if 4 or fewer spells); all grimoires are written in Faerie",
 			"open": true,
 			"children": [
 				{
 					"type": "equipment",
-					"version": 1,
 					"id": "3bee3b0b-ce69-4491-a965-5342c94c6cf0",
 					"quantity": 1,
 					"description": "Basic Air Grimoire",
 					"value": "4000",
 					"weight": "12 lb",
+					"calc": {
+						"extended_value": "4000",
+						"extended_weight": "12 lb"
+					},
 					"notes": "contains every spell from the corresponding spell list"
 				},
 				{
 					"type": "equipment",
-					"version": 1,
 					"id": "ac1822db-de46-4ee2-98cf-463c5cc58352",
-					"based_on_id": "3bee3b0b-ce69-4491-a965-5342c94c6cf0",
-					"based_on_hash": "Kxefycw+uMrrBAnC3Fmwdv+45zz48B+I5KMt43Tgjk4",
 					"quantity": 1,
 					"description": "Basic Body Grimoire",
 					"value": "3600",
 					"weight": "12 lb",
+					"calc": {
+						"extended_value": "3600",
+						"extended_weight": "12 lb"
+					},
 					"notes": "contains every spell from the corresponding spell list"
 				},
 				{
 					"type": "equipment",
-					"version": 1,
 					"id": "f95bad45-b404-448a-8c46-91f3772ae6b3",
-					"based_on_id": "ac1822db-de46-4ee2-98cf-463c5cc58352",
-					"based_on_hash": "GkdEWpQpM/uemacCtpRZPsvEYgBsVpgbr1BJacDRvvA",
 					"quantity": 1,
 					"description": "Basic Communication & Empathy Grimoire",
 					"value": "2000",
 					"weight": "12 lb",
+					"calc": {
+						"extended_value": "2000",
+						"extended_weight": "12 lb"
+					},
 					"notes": "contains every spell from the corresponding spell list"
 				},
 				{
 					"type": "equipment",
-					"version": 1,
 					"id": "657760f4-2a38-4303-8b74-1edaf510ae60",
-					"based_on_id": "f95bad45-b404-448a-8c46-91f3772ae6b3",
-					"based_on_hash": "UYen31YggVgfvWkHWO7VdkevdRo6Bj7JtClisIi/WY0",
 					"quantity": 1,
 					"description": "Basic Earth Grimoire",
 					"value": "3600",
 					"weight": "12 lb",
+					"calc": {
+						"extended_value": "3600",
+						"extended_weight": "12 lb"
+					},
 					"notes": "contains every spell from the coresponding spell list"
 				},
 				{
 					"type": "equipment",
-					"version": 1,
 					"id": "27ca5b5c-aae3-4af9-851e-d71d0d677a57",
-					"based_on_id": "657760f4-2a38-4303-8b74-1edaf510ae60",
-					"based_on_hash": "v4KO/5VyBlGac1cetVMFFm8B3hpvHF11a45MLZvUUQE",
 					"quantity": 1,
 					"description": "Basic Enchantment Grimoire",
 					"value": "2800",
 					"weight": "12 lb",
+					"calc": {
+						"extended_value": "2800",
+						"extended_weight": "12 lb"
+					},
 					"notes": "contains every spell from the coresponding spell list"
 				},
 				{
 					"type": "equipment",
-					"version": 1,
 					"id": "6d485965-f315-4cc9-86bc-bfa20739209b",
-					"based_on_id": "27ca5b5c-aae3-4af9-851e-d71d0d677a57",
-					"based_on_hash": "6gvnPNU053B4RX+rhk6m4QfjtbYe/Kdh98IO/oZBgKk",
 					"quantity": 1,
 					"description": "Basic Fire Grimoire",
 					"value": "4400",
 					"weight": "12 lb",
+					"calc": {
+						"extended_value": "4400",
+						"extended_weight": "12 lb"
+					},
 					"notes": "contains every spell from the coresponding spell list"
 				},
 				{
 					"type": "equipment",
-					"version": 1,
 					"id": "7d495f72-13a0-4191-b26a-356f6b82950e",
-					"based_on_id": "6d485965-f315-4cc9-86bc-bfa20739209b",
-					"based_on_hash": "GBl9pzOIw1cNIYTRhHDYPSp4nDWX2oh+FeZoRV4ldO4",
 					"quantity": 1,
 					"description": "Basic Healing Grimoire",
 					"value": "2800",
 					"weight": "12 lb",
+					"calc": {
+						"extended_value": "2800",
+						"extended_weight": "12 lb"
+					},
 					"notes": "contains every spell from the coresponding spell list"
 				},
 				{
 					"type": "equipment",
-					"version": 1,
 					"id": "34b0744f-576f-4e1c-b8af-be97f7966a05",
-					"based_on_id": "7d495f72-13a0-4191-b26a-356f6b82950e",
-					"based_on_hash": "ZPMsEVIeGkm/OEOB2X3ohYpgpI0WvBNDHgzhhdSzmy8",
 					"quantity": 1,
 					"description": "Basic Knowledge Grimoire",
 					"value": "2400",
 					"weight": "12 lb",
+					"calc": {
+						"extended_value": "2400",
+						"extended_weight": "12 lb"
+					},
 					"notes": "contains every spell from the coresponding spell list"
 				},
 				{
 					"type": "equipment",
-					"version": 1,
 					"id": "a975f33a-bce5-4072-abee-3c6cee6d9c08",
-					"based_on_id": "34b0744f-576f-4e1c-b8af-be97f7966a05",
-					"based_on_hash": "B2ilG7q0vJR6+GoRTx8DW/rqfgVTUOl4oJqOksjY42Y",
 					"quantity": 1,
 					"description": "Basic Light & Darkness Grimoire",
 					"value": "1600",
 					"weight": "6 lb",
+					"calc": {
+						"extended_value": "1600",
+						"extended_weight": "6 lb"
+					},
 					"notes": "contains every spell from the coresponding spell list"
 				},
 				{
 					"type": "equipment",
-					"version": 1,
 					"id": "1465929e-8f6f-4784-9d7e-2fa5efebfc80",
-					"based_on_id": "a975f33a-bce5-4072-abee-3c6cee6d9c08",
-					"based_on_hash": "tWTh/MUSwIKAWjCjbrjhvqCYpbY+M+rI+WSSn7B1R9w",
 					"quantity": 1,
 					"description": "Basic Meta Grimoire",
 					"value": "800",
 					"weight": "6 lb",
+					"calc": {
+						"extended_value": "800",
+						"extended_weight": "6 lb"
+					},
 					"notes": "contains every spell from the coresponding spell list"
 				},
 				{
 					"type": "equipment",
-					"version": 1,
 					"id": "43a19d55-c54f-4210-87c7-9d78f7d23331",
-					"based_on_id": "1465929e-8f6f-4784-9d7e-2fa5efebfc80",
-					"based_on_hash": "HkEBPj+wZP6n68egyh4rwOV0hjPz9IHXUqiI8Wt4CCk",
 					"quantity": 1,
 					"description": "Basic Mind Control Grimoire",
 					"value": "2800",
 					"weight": "12 lb",
+					"calc": {
+						"extended_value": "2800",
+						"extended_weight": "12 lb"
+					},
 					"notes": "contains every spell from the coresponding spell list"
 				},
 				{
 					"type": "equipment",
-					"version": 1,
 					"id": "25f29f3f-d6eb-49bc-a836-c555ac6239da",
-					"based_on_id": "43a19d55-c54f-4210-87c7-9d78f7d23331",
-					"based_on_hash": "TsiW7PZde0bWezHpjssQbv+WsUwIiyPMnrvGmm+cIuU",
 					"quantity": 1,
 					"description": "Basic Movement Grimoire",
 					"value": "2400",
 					"weight": "12 lb",
+					"calc": {
+						"extended_value": "2400",
+						"extended_weight": "12 lb"
+					},
 					"notes": "contains every spell from the coresponding spell list"
 				},
 				{
 					"type": "equipment",
-					"version": 1,
 					"id": "8886da27-8cf5-4de1-bc02-73fb1a128d58",
-					"based_on_id": "25f29f3f-d6eb-49bc-a836-c555ac6239da",
-					"based_on_hash": "TiCEMpRPBU94rQ3qAxY1DvRql9iid6IW3i8z9O41goM",
 					"quantity": 1,
 					"description": "Basic Protection & Warning Grimoire",
 					"value": "1200",
 					"weight": "6 lb",
+					"calc": {
+						"extended_value": "1200",
+						"extended_weight": "6 lb"
+					},
 					"notes": "contains every spell from the coresponding spell list"
 				},
 				{
 					"type": "equipment",
-					"version": 1,
 					"id": "f583017e-6853-4220-a421-27c7cce4a871",
-					"based_on_id": "8886da27-8cf5-4de1-bc02-73fb1a128d58",
-					"based_on_hash": "JX4TZAnooNhGNWoRvaYTtoSrZyRE7Da5/aY+AExD+ZY",
 					"quantity": 1,
 					"description": "Basic Water Grimoire",
 					"value": "3200",
 					"weight": "12 lb",
+					"calc": {
+						"extended_value": "3200",
+						"extended_weight": "12 lb"
+					},
 					"notes": "contains every spell from the coresponding spell list"
 				}
 			]
 		},
 		{
 			"type": "equipment_container",
-			"version": 1,
 			"id": "878965e6-02cd-4eee-9c89-18007e5cfd8b",
 			"description": "Mage Foci",
+			"value": "0",
+			"weight": "0 lb",
+			"calc": {
+				"extended_value": "1272000",
+				"extended_weight": "5008.25 lb"
+			},
 			"open": true,
 			"children": [
 				{
 					"type": "equipment",
-					"version": 1,
 					"id": "579f9e24-03c8-4803-bdc2-7544bbb9ea38",
-					"based_on_id": "a9c53254-1878-4ee2-a52d-464016d96c22",
-					"based_on_hash": "0mGZSr/f4BHihsT11071R3Qd7avZv5uRpdA66s8ESos",
 					"quantity": 1,
 					"description": "Mage Focus Ring (@College@)",
 					"tech_level": "3^",
@@ -1462,25 +2475,35 @@
 							},
 							"reach": "C",
 							"parry": "0",
+							"calc": {
+								"level": 0,
+								"parry": "0",
+								"block": "",
+								"damage": "thr cr"
+							},
 							"defaults": [
 								{
-									"type": "Skill",
+									"type": "skill",
 									"name": "Brawling"
 								},
 								{
-									"type": "DX"
+									"type": "dx"
 								},
 								{
-									"type": "Skill",
+									"type": "skill",
 									"name": "Boxing"
 								},
 								{
-									"type": "Skill",
+									"type": "skill",
 									"name": "Karate"
 								}
 							]
 						}
 					],
+					"calc": {
+						"extended_value": "1000",
+						"extended_weight": "0.25 lb"
+					},
 					"features": [
 						{
 							"type": "spell_bonus",
@@ -1498,10 +2521,7 @@
 				},
 				{
 					"type": "equipment",
-					"version": 1,
 					"id": "a9c53254-1878-4ee2-a52d-464016d96c22",
-					"based_on_id": "58465998-ce44-4798-bb66-9aefeb537899",
-					"based_on_hash": "8cmRdwh75msrX8xKvI2IiYFHCJ0Og+lS7VamkQVjJ54",
 					"quantity": 1,
 					"description": "Mage Focus Wand (@College@)",
 					"tech_level": "3^",
@@ -1520,13 +2540,19 @@
 							"usage": "Swing",
 							"reach": "C,1",
 							"parry": "-1",
+							"calc": {
+								"level": 0,
+								"parry": "-1",
+								"block": "",
+								"damage": "sw-2 cr"
+							},
 							"defaults": [
 								{
-									"type": "DX",
+									"type": "dx",
 									"modifier": -4
 								},
 								{
-									"type": "Skill",
+									"type": "skill",
 									"name": "Knife"
 								}
 							]
@@ -1541,18 +2567,28 @@
 							"usage": "Thrust",
 							"reach": "C",
 							"parry": "-1",
+							"calc": {
+								"level": 0,
+								"parry": "-1",
+								"block": "",
+								"damage": "thr cr"
+							},
 							"defaults": [
 								{
-									"type": "Skill",
+									"type": "skill",
 									"name": "Knife"
 								},
 								{
-									"type": "DX",
+									"type": "dx",
 									"modifier": -4
 								}
 							]
 						}
 					],
+					"calc": {
+						"extended_value": "6000",
+						"extended_weight": "1 lb"
+					},
 					"features": [
 						{
 							"type": "spell_bonus",
@@ -1575,10 +2611,7 @@
 				},
 				{
 					"type": "equipment",
-					"version": 1,
 					"id": "20844819-348e-4da7-95c4-3e0727e8109c",
-					"based_on_id": "6e1ba709-6794-4ac6-9348-a5749df018a5",
-					"based_on_hash": "3TKm87OmMBJ2xxQPhPYIGz5gcbhs5t8q8mWp5Jsz+dg",
 					"quantity": 1,
 					"description": "Mage Focus Rod (@College@)",
 					"tech_level": "2^",
@@ -1591,19 +2624,25 @@
 							"damage": {
 								"type": "cr",
 								"st": "sw",
-								"base": "+1"
+								"base": "1"
 							},
 							"strength": "10",
 							"usage": "Swing",
 							"reach": "1",
 							"parry": "0",
+							"calc": {
+								"level": 0,
+								"parry": "0",
+								"block": "",
+								"damage": "sw+1 cr"
+							},
 							"defaults": [
 								{
-									"type": "DX",
+									"type": "dx",
 									"modifier": -5
 								},
 								{
-									"type": "Skill",
+									"type": "skill",
 									"name": "Broadsword"
 								}
 							]
@@ -1613,24 +2652,34 @@
 							"damage": {
 								"type": "cr",
 								"st": "thr",
-								"base": "+1"
+								"base": "1"
 							},
 							"strength": "10",
 							"usage": "Thrust",
 							"reach": "1",
 							"parry": "0",
+							"calc": {
+								"level": 0,
+								"parry": "0",
+								"block": "",
+								"damage": "thr+1 cr"
+							},
 							"defaults": [
 								{
-									"type": "DX",
+									"type": "dx",
 									"modifier": -5
 								},
 								{
-									"type": "Skill",
+									"type": "skill",
 									"name": "Broadsword"
 								}
 							]
 						}
 					],
+					"calc": {
+						"extended_value": "25000",
+						"extended_weight": "3 lb"
+					},
 					"features": [
 						{
 							"type": "spell_bonus",
@@ -1654,16 +2703,17 @@
 				},
 				{
 					"type": "equipment",
-					"version": 1,
 					"id": "4d2809bc-6fe2-4e43-9e72-8aa965801cd0",
-					"based_on_id": "f11914ea-694b-4d37-b7c1-b8e6c0536731",
-					"based_on_hash": "o8j5fqbn/IrL392XLzhYy6vPV6R4D8raZxzKd/EOkxM",
 					"quantity": 1,
 					"description": "Mage Focus Staff (@College@)",
 					"tech_level": "1^",
 					"legality_class": "3",
 					"value": "40000",
 					"weight": "4 lb",
+					"calc": {
+						"extended_value": "40000",
+						"extended_weight": "4 lb"
+					},
 					"features": [
 						{
 							"type": "spell_bonus",
@@ -1686,16 +2736,17 @@
 				},
 				{
 					"type": "equipment",
-					"version": 1,
 					"id": "b6516fb9-d8a7-4722-8d1e-23dad1e24af2",
-					"based_on_id": "8649f241-7fbb-42fb-91ba-33b5926900b1",
-					"based_on_hash": "ya8tTBDD2v8LxEy3pi/y5yVG+ObXZKup4e/WWCilL1M",
 					"quantity": 1,
 					"description": "Mage Focus Altar (@College@)",
 					"tech_level": "1^",
 					"legality_class": "3",
 					"value": "200000",
 					"weight": "1000 lb",
+					"calc": {
+						"extended_value": "200000",
+						"extended_weight": "1000 lb"
+					},
 					"features": [
 						{
 							"type": "spell_bonus",
@@ -1718,16 +2769,17 @@
 				},
 				{
 					"type": "equipment",
-					"version": 1,
 					"id": "8649f241-7fbb-42fb-91ba-33b5926900b1",
-					"based_on_id": "10977e62-740c-4711-85f4-8ecc33d58bfa",
-					"based_on_hash": "g2SQd/ZBOBjyJeR39DqKcDazsstYQO4aFRiz+in4WRY",
 					"quantity": 1,
 					"description": "Mage Focus Complex (@College@)",
 					"tech_level": "1^",
 					"legality_class": "3",
 					"value": "1000000",
 					"weight": "4000 lb",
+					"calc": {
+						"extended_value": "1000000",
+						"extended_weight": "4000 lb"
+					},
 					"features": [
 						{
 							"type": "spell_bonus",
